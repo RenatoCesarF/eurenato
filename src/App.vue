@@ -14,8 +14,8 @@
   <main>
     <content>
       <AboutSection/>
-      <BlogSection/>
       <ProjectSection/>
+      <BlogSection/>
     </content>
   </main>
 </template>

@@ -5,15 +5,25 @@
 </script>
 
 <template>
-  <div>
-    <ProjectTitle/>
-  </div>
-  <div>
-    <ProjectsList/>
-  </div>
+  <section class='project-section'>
+    <div>
+      <ProjectTitle/>
+    </div>
+    <div>
+      <ProjectsList/>
+    </div>
+  </section>
 </template>
 
 
 <style scoped>
+
+.project-section {
+  height: 20rem;
+  padding-top: 2vh;
+  padding-bottom: 10vh;
+  background-color: Blue;
+  width: 100vw;
+}
 
 </style>
