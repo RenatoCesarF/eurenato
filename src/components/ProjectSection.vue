@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-  import ProjectsList from './ProjectsList.vue'
-  import ProjectTitle from './ProjectTitle.vue'
+  import ProjectsList from '@/components/ProjectsList.vue'
+  import ProjectTitle from '@/components/ProjectTitle.vue'
 
 </script>
 

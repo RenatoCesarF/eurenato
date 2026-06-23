@@ -1,10 +1,10 @@
 <script setup lang="ts">
-   import Header from './components/Header.vue'
-   import HeaderMenu from './components/HeaderMenu.vue'
+   import Header from '@/components/Header.vue'
+   import HeaderMenu from '@/components/HeaderMenu.vue'
 
-   import AboutSection from './components/AboutSection.vue'
-   import BlogSection from './components/BlogSection.vue'
-   import ProjectSection from './components/ProjectSection.vue'
+   import AboutSection from '@/components/AboutSection.vue'
+   import BlogSection from '@/components/BlogSection.vue'
+   import ProjectSection from '@/components/ProjectSection.vue'
 </script>
 
 <template>

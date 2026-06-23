@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-  import BlogList from './BlogList.vue'
-  import BlogTitle from './BlogTitle.vue'
+  import BlogList from '@/components/BlogList.vue'
+  import BlogTitle from '@/components/BlogTitle.vue'
 </script>
 
 <template>
