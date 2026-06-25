@@ -5,17 +5,24 @@
 <template>
   <header>
     <div class="header-bg">
+
+      <img class="header-image black-white" src="/assets/header/renatos/black-white.png" alt="" />
+      <img class="header-image purple-red" src="/assets/header/renatos/purple-red.png" alt="" />
+      <img class="header-image purple-yellow" src="/assets/header/renatos/purple-yellow.png" alt="" />
+      <img class="header-image red" src="/assets/header/renatos/red.png" alt="" />
+      <img class="header-image yellow" src="/assets/header/renatos/yellow.png" alt="" />
+
       <div class="header-title">
-        <img class="letter e1" src="/assets/header/E_06.png" alt="" />
-        <img class="letter u" src="/assets/header/U_20.png" alt="" />
-        <img class="letter comma" src="/assets/header/Comma_05.png" alt="" />
-        <img class="letter r" src="/assets/header/R_25.png" alt="" />
-        <img class="letter e2" src="/assets/header/E_25.png" alt="" />
-        <img class="letter n" src="/assets/header/N_05.png" alt="" />
-        <img class="letter a" src="/assets/header/A_47.png" alt="" />
-        <img class="letter t" src="/assets/header/T_05.png" alt="" />
-        <img class="letter o" src="/assets/header/O_26.png" alt="" />
-        <img class="letter flash" src="/assets/header/Flash_02.png" alt="" />
+        <img class="letter e1" src="/assets/header/letters/E_06.png" alt="" />
+        <img class="letter u" src="/assets/header/letters/U_20.png" alt="" />
+        <img class="letter comma" src="/assets/header/letters/Comma_05.png" alt="" />
+        <img class="letter r" src="/assets/header/letters/R_25.png" alt="" />
+        <img class="letter e2" src="/assets/header/letters/E_25.png" alt="" />
+        <img class="letter n" src="/assets/header/letters/N_05.png" alt="" />
+        <img class="letter a" src="/assets/header/letters/A_47.png" alt="" />
+        <img class="letter t" src="/assets/header/letters/T_05.png" alt="" />
+        <img class="letter o" src="/assets/header/letters/O_26.png" alt="" />
+        <img class="letter flash" src="/assets/header/letters/Flash_02.png" alt="" />
       </div>
     </div>
   </header>
@@ -46,12 +53,39 @@
   .letter {
     position: absolute;
     height: auto;
-    pointer-events: none;
     user-select: none;
+
+    --rot: 0deg;
+    transform: rotate(var(--rot));
+  }
+
+  .letter:hover {
+    animation: shake 0.6s steps(1, end) infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(0, 0) rotate(var(--rot));
+    }
+
+    25% {
+      transform: translate(-6px, 5px) rotate(calc(var(--rot) - 4deg));
+    }
+
+    50% {
+      transform: translate(6px, -7px) rotate(calc(var(--rot) + 5deg));
+    }
+
+    75% {
+      transform: translate(-4px, -3px) rotate(calc(var(--rot) - 2deg));
+    }
+
+    100% {
+      transform: translate(0, 0) rotate(var(--rot));
+    }
   }
 
   /* Eu, Renato */
-
   .e1 {
     left: 0%;
     top: 3%;

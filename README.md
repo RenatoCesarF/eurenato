@@ -2,9 +2,9 @@
 
 ## Tasks
 - [ ] Fundo com várias imagens do Renato
-- [ ] Eu, Renato escrito com as fotos das letras
+- [x] Eu, Renato escrito com as fotos das letras
 - [ ] stripe de papel como componente
-- [ ] Importar fonte punk
+- [x] Importar fonte punk
 - [ ] Mudar Sobre, Projetos Blog pra fonte punk
 - [ ] strip de papel rasgado com o texto "sobre"
 - [ ] Foto do Renato com a fita
