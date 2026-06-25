@@ -13,7 +13,7 @@
 
   <main>
     <content>
-      <AboutSection/>
+      <!-- <AboutSection/> -->
       <ProjectSection/>
       <BlogSection/>
     </content>
