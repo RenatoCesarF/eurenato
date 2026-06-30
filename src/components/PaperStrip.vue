@@ -1,27 +1,29 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class='hero'>
-    <img class='paper-strip' src="/assets/cuttings/paper-strip.png" alt="" />
+  <div class="paper-strip-layer" aria-hidden="true">
+    <img class="paper-strip" src="/assets/cuttings/paper-strip.png" alt="" />
   </div>
 </template>
 
 <style scoped>
-
-.hero {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 100px;
+.paper-strip-layer {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: visible;
 }
 
 .paper-strip {
   position: absolute;
-  left: -15svw;
+  top: 30%;
+  left: -20svw;
+  transform: translateY(-50%);
+
+  width: clamp(1400px, 150vw, 2200px);
   max-width: none;
   height: auto;
-  width: clamp(900px, 130vw, 200vw);
+  z-index: 1000;
 }
-
 </style>

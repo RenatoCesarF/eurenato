@@ -4,7 +4,7 @@
 - [x] Fundo com várias imagens do Renato
 - [x] Eu, Renato escrito com as fotos das letras
 - [x] Importar fonte punk
-- [ ] stripe de papel como componente
+- [x] stripe de papel como componente
 - [ ] Mudar Sobre, Projetos Blog pra fonte punk
 - [ ] strip de papel rasgado com o texto "sobre"
 - [ ] Foto do Renato com a fita

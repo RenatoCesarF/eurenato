@@ -52,7 +52,7 @@
   left: 18%;
   bottom: -30%;
   width: 55%;
-  z-index: 10;
+  z-index: 6;
   transform: rotate(0deg);
 }
 
@@ -61,7 +61,7 @@
   right: -8%;
   bottom: -40%;
   width: 46%;
-  z-index: 12;
+  z-index: 8;
   transform: rotate(6deg);
 }
 
@@ -72,12 +72,6 @@
   z-index: 2;
   transform: rotate(6deg);
 }
-
-/* @media (max-width: 768px) { */
-/*   .header-bg { */
-/*     height: clamp(500px, 75svh, 720px); */
-/*   } */
-/* } */
 
 /* ========================= */
 /* TELAS MÉDIAS / TABLET */
@@ -115,7 +109,7 @@
     left: 19%;
     bottom: -5%;
     width: 50%;
-    z-index: 10;
+    /* z-index: 10; */
     transform: rotate(0deg);
   }
 
@@ -123,7 +117,7 @@
     right: -20%;
     bottom: -30%;
     width: 52%;
-    z-index: 12;
+    /* z-index: 12; */
     transform: rotate(6deg);
   }
 
@@ -173,7 +167,7 @@
     left: 10%;
     bottom: -18%;
     width: 60%;
-    z-index: 10;
+    /* z-index: 10; */
     transform: rotate(0deg);
   }
 
@@ -181,7 +175,7 @@
     right: -24%;
     bottom: -32%;
     width: 62%;
-    z-index: 12;
+    /* z-index: 12; */
     transform: rotate(6deg);
   }
 

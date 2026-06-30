@@ -21,8 +21,8 @@
 
 <style scoped>
 .about-section {
-  height: 20rem;
-  padding-top: 2vh;
+  height: 90vh;
+  padding-top: 8rem;
   padding-bottom: 10vh;
   background-color: Green;
   padding-left: 2rem;
