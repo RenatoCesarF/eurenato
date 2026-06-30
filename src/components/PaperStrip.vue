@@ -18,7 +18,7 @@
 .paper-strip {
   position: absolute;
   top: 30%;
-  left: -20svw;
+  left: -8rem;
   transform: translateY(-50%);
 
   width: clamp(1400px, 150vw, 2200px);

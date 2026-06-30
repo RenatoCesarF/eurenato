@@ -17,8 +17,13 @@ import HeaderTitle from '@/components/HeaderTitle.vue'
   position: relative;
   width: 100vw;
   max-width: 100vw;
-  height: clamp(420px, 90svh, 700px);
+  height: clamp(420px, 90svh, 800px);
   overflow: hidden;
   background: black;
+
+  @media (max-width: 1200px) {
+    height: clamp(420px, 90svh, 600px);
+  }
 }
+
 </style>

@@ -165,17 +165,15 @@
 
   .black-white {
     left: 10%;
-    bottom: -18%;
+    bottom: -8%;
     width: 60%;
-    /* z-index: 10; */
     transform: rotate(0deg);
   }
 
   .purple-yellow {
     right: -24%;
-    bottom: -32%;
+    bottom: -12%;
     width: 62%;
-    /* z-index: 12; */
     transform: rotate(6deg);
   }
 
@@ -205,8 +203,8 @@
   }
 
   .purple-red {
-    left: -10%;
-    top: -20%;
+    left: -2%;
+    top: -5%;
     width: 86%;
   }
 
@@ -223,8 +221,8 @@
   }
 
   .purple-yellow {
-    right: -35%;
-    bottom: -18%;
+    right: -30%;
+    bottom: -10%;
     width: 72%;
   }
 
