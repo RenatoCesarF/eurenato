@@ -17,7 +17,7 @@ import HeaderTitle from '@/components/HeaderTitle.vue'
   position: relative;
   width: 100vw;
   max-width: 100vw;
-  height: clamp(520px, 90svh, 900px);
+  height: clamp(420px, 90svh, 700px);
   overflow: hidden;
   background: black;
 }

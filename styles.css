@@ -15,4 +15,5 @@
 body {
   padding: 0;
   background-color: Black;
+  overflow-x: hidden;
 }
