@@ -22,7 +22,7 @@
   height: 20rem;
   padding-top: 2vh;
   padding-bottom: 10vh;
-  background-color: Blue;
+  background-color: var(--blue-bg-color);
   width: 100vw;
 }
 

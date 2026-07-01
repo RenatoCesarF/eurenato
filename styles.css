@@ -8,6 +8,11 @@
   src: url('/assets/punk4.ttf');
 }
 
+:root {
+  --yellow-bg-color: #E1C752;
+  --blue-bg-color: #1C3CFF;
+}
+
 * {
   margin: 0;
 }

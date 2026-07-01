@@ -18,10 +18,10 @@
 
 <style scoped>
 .blog-section {
-  height: 26rem;
-  padding-top: 2vh;
+  height: 200vh;
+  padding-top: 20vh;
   padding-bottom: 10vh;
-  background-color: Yellow;
+  background-color: var(--yellow-bg-color);
   width: 100vw;
 }
 
