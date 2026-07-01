@@ -5,7 +5,7 @@
 - [x] Eu, Renato escrito com as fotos das letras
 - [x] Importar fonte punk
 - [x] stripe de papel como componente
-- [ ] Mudar Sobre, Projetos Blog pra fonte punk
+- [x] Mudar Sobre, Projetos Blog pra fonte punk
 - [ ] strip de papel rasgado com o texto "sobre"
 - [ ] Foto do Renato com a fita
 - [ ] botão apoia.se 
@@ -20,6 +20,7 @@
 - [ ] Blogpost leva pra página com blog
 - [ ] carrosel de blog posts
 - [ ] Fotos da sessão blog
+- [ ] noodles
 ----
 - [ ] Editor visual de posts
 - [ ] Backend pra salver posts (ou sla o que eu vou fazer)
