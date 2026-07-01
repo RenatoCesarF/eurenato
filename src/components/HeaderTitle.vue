@@ -3,16 +3,16 @@
 
 <template>
   <div class="header-title">
-    <img class="letter e1" src="/assets/header/letters/E_06.png" alt="" />
-    <img class="letter u" src="/assets/header/letters/U_20.png" alt="" />
-    <img class="letter comma" src="/assets/header/letters/Comma_05.png" alt="" />
-    <img class="letter r" src="/assets/header/letters/R_25.png" alt="" />
-    <img class="letter e2" src="/assets/header/letters/E_25.png" alt="" />
-    <img class="letter n" src="/assets/header/letters/N_05.png" alt="" />
-    <img class="letter a" src="/assets/header/letters/A_47.png" alt="" />
-    <img class="letter t" src="/assets/header/letters/T_05.png" alt="" />
-    <img class="letter o" src="/assets/header/letters/O_26.png" alt="" />
-    <img class="letter flash" src="/assets/header/letters/Flash_02.png" alt="" />
+    <img class="letter e1" src="/assets/letters/E_06.png" alt="" />
+    <img class="letter u" src="/assets/letters/U_20.png" alt="" />
+    <img class="letter comma" src="/assets/letters/Comma_05.png" alt="" />
+    <img class="letter r" src="/assets/letters/R_25.png" alt="" />
+    <img class="letter e2" src="/assets/letters/E_25.png" alt="" />
+    <img class="letter n" src="/assets/letters/N_05.png" alt="" />
+    <img class="letter a" src="/assets/letters/A_47.png" alt="" />
+    <img class="letter t" src="/assets/letters/T_05.png" alt="" />
+    <img class="letter o" src="/assets/letters/O_26.png" alt="" />
+    <img class="letter flash" src="/assets/letters/Flash_02.png" alt="" />
   </div>
 </template>
 
