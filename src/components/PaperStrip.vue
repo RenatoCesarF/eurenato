@@ -13,6 +13,7 @@
   z-index: -1;
   pointer-events: none;
   overflow: visible;
+  overflow-x: clip;
 }
 
 .paper-strip {
