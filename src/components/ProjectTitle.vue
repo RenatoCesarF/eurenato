@@ -4,6 +4,7 @@
 
 <template>
   <div class="project-title">
+    <img class="letter angel" src="/assets/paper-cuts/angel.png"/>
     <img class="letter p" src="/assets/letters/P_07.png" alt="" />
     <img class="letter r" src="/assets/letters/R_17.png" alt="" />
     <img class="letter o1" src="/assets/letters/O_08.png" alt="" />
@@ -32,7 +33,7 @@
     width: 97.4%;
     height: 81%;
     background: #e4cf00;
-    z-index: 0;
+    z-index: 1;
     clip-path: polygon(
       1.98% 27.32%,
       99.14% 1%,
@@ -48,6 +49,12 @@
     object-fit: contain;
     user-select: none;
     pointer-events: none;
+  }
+
+  .angel {
+    width: 56.2%;
+    top: -110%;
+    z-index: 0;
   }
 
   /* P grande, alto e largo */
