@@ -25,7 +25,6 @@
 
 <style scoped>
 .project-section {
-  /* height: 50rem; */
   min-height: 100vh;
   padding-top: 2vh;
   background-color: var(--blue-bg-color);

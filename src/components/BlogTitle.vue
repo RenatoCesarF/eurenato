@@ -11,15 +11,22 @@
       <img class="letter letter-o" src="/assets/letters/O_01.png" alt="O" />
       <img class="letter letter-g" src="/assets/letters/G_22.png" alt="G" />
     </div>
+      <img class="vessel" src="/assets/paper-cuts/planta.png"
   </div>
 </template>
 
 <style scoped>
 .blog-wrapper {
   width: 100%;
-  display: flex;
-  justify-content: start;
   overflow-x: clip;
+  position: relative;
+}
+
+.vessel {
+  position: absolute;
+  width: 35%;
+  top: -45%;
+  right: 2vw;
 }
 
 .project-title {
@@ -79,6 +86,7 @@ content: "";
   z-index: 6;
   transform: rotate(4deg) translateY(10px);
 }
+
 
 @media (max-width: 600px) {
   .project-title {

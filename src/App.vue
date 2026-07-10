@@ -20,6 +20,10 @@
         <PaperStrip/>
       </div>
       <BlogSection/>
+
+      <div class="paper-strip-wrapper">
+        <PaperStrip/>
+      </div>
     </content>
   </main>
 </template>
