@@ -49,7 +49,7 @@ content: "";
   background: #cf2027;
   z-index: -1;
   transform: none;
-  clip-path: polygon(5.98% 0.12%, 97.38% 29.67%, 92.21% 83.07%, 1.82% 91.18%);
+  clip-path: polygon(4.39% 8.52%, 95.26% 28.4%, 90.73% 77.73%, 3.72% 89.91%);
   width: 118%;
 }
 

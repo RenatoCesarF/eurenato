@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <section class="about-section">
     <!-- Papel rasgado -->
@@ -11,13 +8,22 @@
         alt=""
       />
 
+      <!-- Fitas presas ao papel -->
+      <img
+        class="tape paper-tape paper-tape-one"
+        src="/assets/tapes/strait.png"
+        alt=""
+        aria-hidden="true"
+      />
+
+
       <div class="paper-content">
         <h2 class="about-title">Sobre</h2>
 
         <p class="about-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
         </p>
       </div>
     </div>
@@ -28,6 +34,14 @@
         class="renato-picture"
         src="/assets/profile.png"
         alt="Foto de Renato"
+      />
+
+      <!-- Fita presa à foto -->
+      <img
+        class="tape profile-tape"
+        src="/assets/tapes/rounded.png"
+        alt=""
+        aria-hidden="true"
       />
     </div>
 
@@ -43,22 +57,6 @@
         alt="Apoia-se"
       />
     </a>
-
-    <!--
-      Camada reservada para fitas, rabiscos e outros recortes.
-      Tudo colocado aqui ficará acima dos elementos principais.
-    -->
-    <div class="tape-layer" aria-hidden="true">
-      <!--
-      Exemplo:
-
-      <img
-        class="tape tape-profile"
-        src="/assets/tapes/tape.png"
-        alt=""
-      />
-      -->
-    </div>
   </section>
 </template>
 
@@ -66,12 +64,11 @@
 .about-section {
   position: relative;
   isolation: isolate;
-  min-height: clamp(700px, 90vh, 950px);
+
+  min-height: clamp(680px, 55vw, 980px);
   overflow: hidden;
 
   background-color: var(--blue-bg-color);
-
-  padding: 8rem 2rem 10vh;
 }
 
 /* ==================================================
@@ -82,11 +79,13 @@
   position: absolute;
   z-index: 10;
 
-  top: 14%;
-  left: 7%;
+  top: 17%;
+  left: 6%;
 
-  width: min(76vw, 1230px);
-  height: clamp(320px, 26vw, 430px);
+  width: 73%;
+  height: clamp(300px, 25vw, 500px);
+
+  transform: rotate(-0.4deg);
 }
 
 .paper-background {
@@ -100,37 +99,36 @@
 
   pointer-events: none;
   user-select: none;
+
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 8%));
 }
 
 .paper-content {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
 
-  top: 8%;
-  left: 11%;
-  right: 6%;
+  top: 10%;
+  left: 11.5%;
+  right: 5%;
   bottom: 10%;
 }
 
 .about-title {
-  position: relative;
-
   width: fit-content;
 
-  margin: 0 0 0.35rem;
-  padding: 0;
+  margin: 0 0 0.45rem 4.5%;
 
   font-family: "punk4", sans-serif;
-  font-size: clamp(3rem, 4.5vw, 5.4rem);
+  font-size: clamp(2.8rem, 4.2vw, 5.2rem);
   font-weight: normal;
-  line-height: 0.9;
+  line-height: 0.85;
   text-transform: uppercase;
 
-  transform: rotate(-1deg);
+  transform: rotate(-1.5deg);
 }
 
 .about-text {
-  width: 86%;
+  width: 80%;
   max-width: 1050px;
 
   margin: 0;
@@ -138,8 +136,8 @@
   color: #171717;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.7rem, 2.45vw, 3rem);
-  line-height: 1.04;
+  font-size: clamp(1.4rem, 2.35vw, 2.9rem);
+  line-height: 1.08;
   letter-spacing: -0.035em;
 }
 
@@ -149,17 +147,19 @@
 
 .profile-wrapper {
   position: absolute;
-  z-index: 30;
 
-  top: 14%;
-  right: 5%;
+  top: 18%;
+  right: 4vw;
 
-  width: clamp(340px, 29vw, 510px);
+  width: clamp(320px, 31vw, 620px);
 
   transform-origin: center;
 }
 
 .renato-picture {
+  position: relative;
+  z-index: 10;
+
   display: block;
 
   width: 100%;
@@ -169,7 +169,10 @@
 
   user-select: none;
 
-  filter: saturate(0.85) contrast(1.02);
+  filter:
+    saturate(0.88)
+    contrast(1.03)
+    drop-shadow(0 7px 7px rgb(0 0 0 / 15%));
 }
 
 /* ==================================================
@@ -180,18 +183,28 @@
   position: absolute;
   z-index: 40;
 
-  top: 53%;
-  left: 57%;
+  top: 60%;
+  left: 58%;
 
   display: block;
 
-  width: clamp(165px, 20vw, 260px);
+  width: clamp(185px, 18vw, 260px);
 
-  transform: translate(-20%, -50%) rotate(-1deg);
+  transform: translate(-50%, -50%) rotate(-2deg);
+  transform-origin: center;
+
+  transition:
+    transform 160ms ease,
+    filter 160ms ease;
 }
 
 .support-link:hover {
-  filter: brightness(1.05);
+  filter: brightness(1.06);
+
+  transform:
+    translate(-50%, -50%)
+    rotate(1deg)
+    scale(1.035);
 }
 
 .support-image {
@@ -201,129 +214,161 @@
   height: auto;
 
   user-select: none;
+
+  filter: drop-shadow(0 6px 5px rgb(0 0 0 / 18%));
 }
 
 /* ==================================================
-   Camada para fitas e desenhos
+   Fitas
 ================================================== */
 
-.tape-layer {
+.tape {
   position: absolute;
-  z-index: 50;
-  inset: 0;
+  z-index: 3;
 
-  overflow: hidden;
+  display: block;
+
+  height: auto;
+
   pointer-events: none;
+  user-select: none;
+
+  opacity: 0.82;
+
+  filter: drop-shadow(0 2px 1px rgb(0 0 0 / 12%));
 }
 
 /*
-.tape {
-  position: absolute;
-  display: block;
-}
-
-.tape-profile {
-  width: 220px;
-  right: 1%;
-  bottom: 5%;
-  transform: rotate(-35deg);
-}
+  As duas fitas ficam presas ao papel.
+  Portanto, as posições abaixo são relativas ao próprio papel.
 */
 
-/* ==================================================
-   Tablet
-================================================== */
+.paper-tape-one {
+  top: -20%;
+  left: -8%;
 
-@media (max-width: 1000px) {
-  .about-section {
-    min-height: 850px;
-  }
+  width: 27%;
+}
 
-  .paper {
-    top: 13%;
-    left: 2%;
+/*
+  Esta fita fica presa à foto.
+  Portanto, acompanha a rotação e o tamanho da imagem.
+*/
 
-    width: 88%;
-    height: 390px;
-  }
+.profile-tape {
+  z-index: 30;
 
-  .paper-content {
-    left: 9%;
-    right: 5%;
-  }
+  right: 3%;
+  bottom: -10%;
 
-  .about-text {
-    width: 82%;
-    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  }
-
-  .profile-wrapper {
-    top: 31%;
-    right: -5%;
-
-    width: clamp(320px, 47vw, 470px);
-  }
-
-  .support-link {
-    top: 67%;
-    left: 47%;
-
-    width: clamp(160px, 21vw, 220px);
-  }
+  width: 46%;
 }
 
 /* ==================================================
-   Celular
+   Mobile
 ================================================== */
 
-@media (max-width: 650px) {
+@media (max-width: 720px) {
   .about-section {
-    min-height: 920px;
-    padding-inline: 1rem;
+    min-height: clamp(900px, 215vw, 1080px);
   }
 
-  .paper {
-    top: 6rem;
-    left: -5%;
+  /* --------------------------------------------------
+     Foto atrás do papel
+  -------------------------------------------------- */
 
-    width: 110%;
-    height: 390px;
+  .profile-wrapper {
+    z-index: 10;
+
+    top: 2.5rem;
+    right: 5%;
+
+    width: min(92vw, 430px);
+
+    transform: rotate(-10deg);
+  }
+
+  .profile-tape {
+    top: 5%;
+    right: -16%;
+    bottom: auto;
+
+    width: 43%;
+
+    transform: rotate(260deg);
+  }
+
+  /* --------------------------------------------------
+     Papel na frente da foto
+  -------------------------------------------------- */
+
+  .paper {
+    z-index: 20;
+
+    top: clamp(255px, 68vw, 310px);
+    left: -9%;
+
+    width: 118%;
+    height: clamp(360px, 96vw, 420px);
+
+    transform: rotate(-0.7deg);
   }
 
   .paper-content {
-    top: 12%;
+    top: 14%;
     left: 12%;
     right: 10%;
-    bottom: 12%;
+    bottom: 10%;
   }
 
   .about-title {
-    margin-bottom: 0.75rem;
+    margin: 0 0 0.75rem 5%;
 
-    font-size: clamp(2.8rem, 15vw, 4.2rem);
+    font-size: clamp(2.8rem, 14vw, 4rem);
+    line-height: 0.85;
   }
 
   .about-text {
     width: 100%;
+    max-width: none;
 
-    font-size: clamp(1.25rem, 5.8vw, 1.65rem);
-    line-height: 1.08;
+    font-size: clamp(1.18rem, 5.4vw, 1.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
   }
 
-  .profile-wrapper {
-    top: 49%;
-    right: -11%;
+  /* --------------------------------------------------
+     Fitas do papel
+  -------------------------------------------------- */
 
-    width: min(78vw, 420px);
+  .paper-tape-one {
+    top: -18%;
+    left: -8%;
 
-    transform: rotate(8deg);
+    width: 39%;
+
+    transform: rotate(-28deg);
   }
+
+  /* --------------------------------------------------
+     Apoia-se no canto inferior direito
+  -------------------------------------------------- */
 
   .support-link {
-    top: 73%;
-    left: 27%;
+    z-index: 30;
 
-    width: clamp(140px, 40vw, 190px);
+    top: auto;
+    left: auto;
+    right: 0%;
+    bottom:  23%;
+
+    width: clamp(175px, 48vw, 190px);
+
+    transform: rotate(-4deg);
+  }
+
+  .support-link:hover {
+    transform: rotate(-1deg) scale(1.035);
   }
 }
 </style>

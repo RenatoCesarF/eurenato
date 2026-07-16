@@ -1,13 +1,7 @@
 # eurenato
 
 ## Tasks
-- [x] Fundo com várias imagens do Renato
-- [x] Eu, Renato escrito com as fotos das letras
-- [x] Importar fonte punk
-- [x] stripe de papel como componente
-- [x] Mudar Sobre, Projetos Blog pra fonte punk
-- [ ] Ajustar tamanho do componente e do quadrado vermelho do titulo blog
-- [ ] strip de papel rasgado com o texto "sobre"
+- [x] strip de papel rasgado com o texto "sobre"
 - [ ] Foto do Renato com a fita
 - [ ] botão apoia.se 
 - [ ] Fotos fundo "Sobre"
