@@ -62,20 +62,11 @@ function scrollCarousel(direction) {
           <img
             class="card-image"
             :src="project.image"
-            :alt="project.title"
           />
         </div>
 
         <div class="content">
-          <div>
-            <h3>{{ project.title }}</h3>
-            <p>{{ project.description }}</p>
-          </div>
-
-          <a :href="project.link">
-            Ver projeto
-            <span aria-hidden="true">→</span>
-          </a>
+          <h3>{{ project.title }}</h3>
         </div>
       </li>
     </ul>
@@ -98,8 +89,8 @@ function scrollCarousel(direction) {
 .cards {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: min(75vw, 400px);
-  gap: 1rem;
+  grid-auto-columns: min(75vw, 380px);
+  gap: 2rem;
 
   width: 100%;
   margin: 0;
@@ -125,21 +116,21 @@ function scrollCarousel(direction) {
   display: flex;
   flex-direction: column;
 
-  min-height: 500px;
-  padding: 0.75rem;
+  min-height: 400px;
+  padding: 0.85rem;
+  padding-top: 1rem;
 
-  background: #161616;
-  color: white;
+  background: white;
+  color: black;
 
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 
   scroll-snap-align: start;
 }
 
 .visual {
-  height: 260px;
+  height: 330px;
   overflow: hidden;
-  border-radius: 0.75rem;
 }
 
 .card-image {
@@ -147,6 +138,7 @@ function scrollCarousel(direction) {
 
   width: 100%;
   height: 100%;
+  margin-top: .5rem;
 
   object-fit: cover;
 }
@@ -155,33 +147,16 @@ function scrollCarousel(direction) {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
 
-  padding: 1.25rem 0.75rem 0.75rem;
+  padding: 1rem 0.5rem 0.5rem;
 }
 
 .content h3 {
-  margin: 0 0 0.75rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 
-.content p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.content a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  width: fit-content;
-
-  color: inherit;
-  font-weight: 700;
-  text-decoration: none;
-}
 
 @media (max-width: 600px) {
   .carousel-header {
@@ -195,7 +170,7 @@ function scrollCarousel(direction) {
   }
 
   .card {
-    min-height: 440px;
+    min-height: 400px;
   }
 
   .visual {

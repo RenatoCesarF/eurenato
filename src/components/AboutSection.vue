@@ -48,7 +48,7 @@
     <!-- Apoia-se -->
     <a
       class="support-link"
-      href="#"
+      href="https://apoia.se/campaign?campaignId=69a7046bee13a412181fdfde"
       aria-label="Acessar página do Apoia-se"
     >
       <img

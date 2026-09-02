@@ -1,9 +1,6 @@
 # eurenato
 
 ## Tasks
-- [x] strip de papel rasgado com o texto "sobre"
-- [ ] Foto do Renato com a fita
-- [ ] botão apoia.se 
 - [ ] Fotos fundo "Sobre"
 - [ ] Sessão projetos
 - [ ] Componente de projeto
