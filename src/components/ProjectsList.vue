@@ -68,14 +68,19 @@ function scrollCarousel(direction) {
 
 <template>
   <section class="projects-carousel">
-    <button
-      class="paper-arrow paper-arrow--left"
-      type="button"
-      aria-label="Projeto anterior"
-      @click="scrollCarousel(-1)"
-    >
-      <span class="sr-only">Projeto anterior</span>
-    </button>
+  <button
+    class="paper-arrow paper-arrow--left"
+    type="button"
+    aria-label="Projeto anterior"
+    @click="scrollCarousel(-1)"
+  >
+    <img
+      class="paper-arrow-image"
+      src="/assets/letters/arrow.png"
+      alt=""
+    />
+  </button>
+
 
     <ul ref="carousel" class="cards">
       <li
@@ -101,14 +106,19 @@ function scrollCarousel(direction) {
       </li>
     </ul>
 
-    <button
-      class="paper-arrow paper-arrow--right"
-      type="button"
-      aria-label="Próximo projeto"
-      @click="scrollCarousel(1)"
-    >
+      <button
+        class="paper-arrow paper-arrow--right"
+        type="button"
+        aria-label="Próximo projeto"
+        @click="scrollCarousel(1)"
+      >
+        <img
+          class="paper-arrow-image"
+          src="/assets/letters/arrow.png"
+          alt=""
+        />
+      </button>
       <span class="sr-only">Próximo projeto</span>
-    </button>
   </section>
 </template>
 
@@ -217,7 +227,6 @@ function scrollCarousel(direction) {
   overflow: hidden;
 
   background: #272727;
-  /* border: 1px solid rgb(30 24 18 / 35%); */
 }
 
 /* Sombra colocada sobre a imagem */
@@ -266,30 +275,34 @@ function scrollCarousel(direction) {
   top: 50%;
   z-index: 5;
 
-  width: 64px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   padding: 0;
 
   cursor: pointer;
 
-  background-color: #e8ddc7;
-  background-image:
-    radial-gradient(
-      circle,
-      rgb(75 53 30 / 16%) 0 0.7px,
-      transparent 1px
-    ),
-    linear-gradient(
-      120deg,
-      rgb(255 255 255 / 45%),
-      transparent 55%
-    );
-
-  background-size:
-    8px 9px,
-    100% 100%;
-
+  background: transparent;
   border: 0;
+
+  transform: translateY(-50%);
+  transition: transform 150ms ease;
+}
+
+.paper-arrow--left {
+  left: 0.75rem;
+}
+
+.paper-arrow--right {
+  right: 0.75rem;
+}
+
+.paper-arrow-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 35%));
 
   transition:
@@ -297,53 +310,46 @@ function scrollCarousel(direction) {
     filter 150ms ease;
 }
 
-.paper-arrow--left {
-  left: 0.75rem;
-
-  clip-path: polygon(
-    0 50%,
-    40% 0,
-    40% 25%,
-    100% 25%,
-    100% 75%,
-    40% 75%,
-    40% 100%
-  );
-
-  transform: translateY(-50%) rotate(-4deg);
+/* Considerando que o PNG aponta para a direita */
+.paper-arrow--left .paper-arrow-image {
+  transform: rotate(176deg);
 }
 
-.paper-arrow--right {
-  right: 0.75rem;
-
-  clip-path: polygon(
-    0 25%,
-    60% 25%,
-    60% 0,
-    100% 50%,
-    60% 100%,
-    60% 75%,
-    0 75%
-  );
-
-  transform: translateY(-50%) rotate(5deg);
+.paper-arrow--right .paper-arrow-image {
+  transform: rotate(4deg);
 }
 
-.paper-arrow--left:hover {
-  transform: translateY(-50%) rotate(-4deg) scale(1.1);
-}
-
-.paper-arrow--right:hover {
-  transform: translateY(-50%) rotate(5deg) scale(1.1);
+.paper-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
 }
 
 .paper-arrow:active {
-  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 30%));
+  transform: translateY(-50%) scale(0.95);
+}
+
+.paper-arrow:active .paper-arrow-image {
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 25%));
 }
 
 .paper-arrow:focus-visible {
+  border-radius: 0.25rem;
   outline: 3px solid #171717;
   outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .paper-arrow {
+    width: 52px;
+    height: 52px;
+  }
+
+  .paper-arrow--left {
+    left: 0.25rem;
+  }
+
+  .paper-arrow--right {
+    right: 0.25rem;
+  }
 }
 
 .sr-only {
