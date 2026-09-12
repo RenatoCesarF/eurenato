@@ -5,43 +5,59 @@ const carousel = ref(null)
 
 const projects = [
   {
+    id: 1,
     title: 'Project One',
     description: 'Description of the first project.',
     image: '/assets/projects/project-1.png',
     link: '#',
+    rotation: -2.5,
+    offset: 8,
   },
   {
+    id: 2,
     title: 'Project Two',
     description: 'Description of the second project.',
     image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
+    rotation: 1.8,
+    offset: 0,
   },
   {
+    id: 3,
     title: 'Project Three',
     description: 'Description of the third project.',
     image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
+    rotation: -1.2,
+    offset: 12,
   },
-
   {
-    title: 'Project Three',
-    description: 'Description of the third project.',
+    id: 4,
+    title: 'Project Four',
+    description: 'Description of the fourth project.',
     image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
+    rotation: 2.7,
+    offset: 4,
   },
-
   {
-    title: 'Project Three',
-    description: 'Description of the third project.',
+    id: 5,
+    title: 'Project Five',
+    description: 'Description of the fifth project.',
     image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
+    rotation: -1.9,
+    offset: 10,
   },
 ]
 
 function scrollCarousel(direction) {
   if (!carousel.value) return
 
-  const distance = carousel.value.clientWidth * 0.8
+  const card = carousel.value.querySelector('.card')
+  const styles = getComputedStyle(carousel.value)
+  const gap = Number.parseFloat(styles.columnGap) || 0
+  const distance = card ? card.offsetWidth + gap : carousel.value.clientWidth * 0.8
 
   carousel.value.scrollBy({
     left: direction * distance,
@@ -52,16 +68,30 @@ function scrollCarousel(direction) {
 
 <template>
   <section class="projects-carousel">
+    <button
+      class="paper-arrow paper-arrow--left"
+      type="button"
+      aria-label="Projeto anterior"
+      @click="scrollCarousel(-1)"
+    >
+      <span class="sr-only">Projeto anterior</span>
+    </button>
+
     <ul ref="carousel" class="cards">
       <li
         v-for="project in projects"
-        :key="project.title"
+        :key="project.id"
         class="card"
+        :style="{
+          '--rotation': `${project.rotation}deg`,
+          '--offset': `${project.offset}px`,
+        }"
       >
         <div class="visual">
           <img
             class="card-image"
             :src="project.image"
+            :alt="`Imagem do projeto ${project.title}`"
           />
         </div>
 
@@ -70,30 +100,36 @@ function scrollCarousel(direction) {
         </div>
       </li>
     </ul>
+
+    <button
+      class="paper-arrow paper-arrow--right"
+      type="button"
+      aria-label="Próximo projeto"
+      @click="scrollCarousel(1)"
+    >
+      <span class="sr-only">Próximo projeto</span>
+    </button>
   </section>
 </template>
 
 <style scoped>
 .projects-carousel {
+  position: relative;
   width: 100%;
   overflow: hidden;
-}
-
-.carousel-controls {
-  display: flex;
-  gap: 0.5rem;
 }
 
 .cards {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: min(70vw, 330px);
-  gap: 2rem;
+  grid-auto-columns: clamp(250px, 70vw, 330px);
+  gap: 2.5rem;
 
-  width: 95%;
+  width: 100%;
   margin: 0;
-  padding: 2rem;
+  padding: 3rem 5rem;
 
+  box-sizing: border-box;
   list-style: none;
 
   overflow-x: auto;
@@ -101,7 +137,7 @@ function scrollCarousel(direction) {
 
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: 2rem;
+  scroll-padding-inline: 5rem;
 
   scrollbar-width: none;
 }
@@ -110,27 +146,92 @@ function scrollCarousel(direction) {
   display: none;
 }
 
+/* Papel da Polaroid */
 .card {
   display: flex;
   flex-direction: column;
 
-  height: 370px;
-  padding: 0.85rem;
-  padding-top: 1rem;
+  min-height: 385px;
+  padding: 1rem 1rem 0.75rem;
 
-  background: white;
-  color: black;
+  color: #171717;
+  background-color: #f4f0e6;
+  background-image:
+    radial-gradient(
+      circle at 20% 30%,
+      rgb(90 68 42 / 12%) 0 0.6px,
+      transparent 0.9px
+    ),
+    radial-gradient(
+      circle at 70% 65%,
+      rgb(255 255 255 / 65%) 0 0.7px,
+      transparent 1px
+    ),
+    linear-gradient(
+      115deg,
+      rgb(255 255 255 / 35%),
+      transparent 45%,
+      rgb(70 48 24 / 4%)
+    );
 
-  border-radius: 0.2rem;
+  background-size:
+    9px 11px,
+    13px 15px,
+    100% 100%;
+
+  border: 1px solid rgb(70 50 25 / 12%);
+  border-radius: 0.15rem;
+
+  box-shadow:
+    0 18px 30px rgb(0 0 0 / 28%),
+    0 4px 8px rgb(0 0 0 / 18%);
 
   scroll-snap-align: start;
+
+  transform:
+    translateY(var(--offset))
+    rotate(var(--rotation));
+
+  transform-origin: center;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
+.card:hover {
+  z-index: 2;
+
+  transform:
+    translateY(calc(var(--offset) - 8px))
+    rotate(0deg);
+
+  box-shadow:
+    0 24px 38px rgb(0 0 0 / 32%),
+    0 6px 10px rgb(0 0 0 / 20%);
+}
+
+/* Moldura da fotografia */
 .visual {
-  height: 330px;
+  position: relative;
+  aspect-ratio: 1;
   overflow: hidden;
-  box-shadow: inset 2 2 2 50px bladk;
-  border: 1px solid #d2d2d2d2;
+
+  background: #272727;
+  /* border: 1px solid rgb(30 24 18 / 35%); */
+}
+
+/* Sombra colocada sobre a imagem */
+.visual::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  content: "";
+  pointer-events: none;
+
+  box-shadow:
+    inset 0 0 5px rgb(0 0 0 / 65%),
+    inset 0 0 25px rgb(0 0 0 / 48%);
 }
 
 .card-image {
@@ -138,7 +239,6 @@ function scrollCarousel(direction) {
 
   width: 100%;
   height: 100%;
-  margin-top: .5rem;
 
   object-fit: cover;
 }
@@ -146,31 +246,145 @@ function scrollCarousel(direction) {
 .content {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
-  padding: 1rem 0.5rem 0.5rem;
+  min-height: 68px;
+  padding: 0.8rem 0.5rem 0.25rem;
 }
 
 .content h3 {
+  margin: 0;
+
   font-size: 1.5rem;
   text-align: center;
 }
 
+/* Setas em formato de papel recortado */
+.paper-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  width: 64px;
+  height: 48px;
+  padding: 0;
+
+  cursor: pointer;
+
+  background-color: #e8ddc7;
+  background-image:
+    radial-gradient(
+      circle,
+      rgb(75 53 30 / 16%) 0 0.7px,
+      transparent 1px
+    ),
+    linear-gradient(
+      120deg,
+      rgb(255 255 255 / 45%),
+      transparent 55%
+    );
+
+  background-size:
+    8px 9px,
+    100% 100%;
+
+  border: 0;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 35%));
+
+  transition:
+    transform 150ms ease,
+    filter 150ms ease;
+}
+
+.paper-arrow--left {
+  left: 0.75rem;
+
+  clip-path: polygon(
+    0 50%,
+    40% 0,
+    40% 25%,
+    100% 25%,
+    100% 75%,
+    40% 75%,
+    40% 100%
+  );
+
+  transform: translateY(-50%) rotate(-4deg);
+}
+
+.paper-arrow--right {
+  right: 0.75rem;
+
+  clip-path: polygon(
+    0 25%,
+    60% 25%,
+    60% 0,
+    100% 50%,
+    60% 100%,
+    60% 75%,
+    0 75%
+  );
+
+  transform: translateY(-50%) rotate(5deg);
+}
+
+.paper-arrow--left:hover {
+  transform: translateY(-50%) rotate(-4deg) scale(1.1);
+}
+
+.paper-arrow--right:hover {
+  transform: translateY(-50%) rotate(5deg) scale(1.1);
+}
+
+.paper-arrow:active {
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 30%));
+}
+
+.paper-arrow:focus-visible {
+  outline: 3px solid #171717;
+  outline-offset: 4px;
+}
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+  border: 0;
+}
 
 @media (max-width: 600px) {
-  .carousel-header {
-    padding-inline: 1rem;
-  }
-
   .cards {
-    grid-auto-columns: 70vw;
-    padding: 1rem;
-    scroll-padding-inline: 1rem;
+    grid-auto-columns: 72vw;
+    gap: 1.75rem;
+
+    padding: 2.5rem 3rem;
+    scroll-padding-inline: 3rem;
   }
 
   .card {
-    height: 400px;
+    min-height: 350px;
+  }
+
+  .paper-arrow {
+    width: 48px;
+    height: 38px;
+  }
+
+  .paper-arrow--left {
+    left: 0.25rem;
+  }
+
+  .paper-arrow--right {
+    right: 0.25rem;
   }
 }
 </style>
