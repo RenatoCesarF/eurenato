@@ -29,7 +29,6 @@
 </template>
 
 <style scoped>
-
 .paper-strip-wrapper{
   position: relative;
   width: 100%;
@@ -42,6 +41,6 @@
 
   overflow: visible;
   isolation: isolate;
-  background: yellow;
+  background: var(--yellow-bg-color);
 }
 </style>

@@ -71,7 +71,7 @@
 }
 
 .woman {
-  right: -2vw;
+  right: -1vw;
   bottom: -5vh;
 
   width: clamp(420px, 38vw, 400px);

@@ -22,7 +22,8 @@
   left: -8rem;
   transform: translateY(-50%);
 
-  width: clamp(1400px, 150vw, 2200px);
+  width: clamp(1700px, 170vw, 2600px);
+  height: 35rem;
   max-width: none;
   height: auto;
   z-index: 1000;
