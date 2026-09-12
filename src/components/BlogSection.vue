@@ -35,7 +35,6 @@
 
   background-color: var(--yellow-bg-color);
 
-  /* Impede os recortes de aumentarem a largura da página */
   overflow-x: clip;
 }
 
@@ -52,7 +51,7 @@
 
   width: 100%;
   max-width: 100%;
-  height: clamp(280px, 40vh, 600px);
+  height: clamp(280px, 55vh, 1600px);
   margin-top: auto;
   flex-shrink: 0;
 
@@ -68,7 +67,7 @@
 
   display: block;
 
-  max-height: 100%;
+  /* max-height: 100%; */
   object-fit: contain;
   object-position: bottom;
 
@@ -79,7 +78,7 @@
 .computer {
   left: -2vw;
 
-  width: clamp(280px, 45vw, 770px);
+  width: clamp(380px, 36vw, 1170px);
 
   object-position: left bottom;
 }
@@ -87,7 +86,7 @@
 .pelican {
   right: -2vw;
 
-  width: clamp(310px, 39vw, 640px);
+  width: clamp(310px, 30vw, 1640px);
 
   object-position: right bottom;
 }

@@ -65,7 +65,7 @@
   position: relative;
   isolation: isolate;
 
-  min-height: clamp(680px, 55vw, 980px);
+  min-height: clamp(680px, 65vw, 1080px);
   overflow: hidden;
 
   background-color: var(--blue-bg-color);
@@ -270,7 +270,7 @@
 
 @media (max-width: 720px) {
   .about-section {
-    min-height: clamp(900px, 215vw, 1080px);
+    min-height: clamp(200px, 200vw, 908px);
   }
 
   /* --------------------------------------------------

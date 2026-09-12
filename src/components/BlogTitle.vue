@@ -24,8 +24,8 @@
 
 .vessel {
   position: absolute;
-  width: 35%;
-  top: -45%;
+  width: clamp(280px, 30vw, 500px);
+  top: -40%;
   right: 2vw;
 }
 
@@ -103,6 +103,11 @@ content: "";
 
   .letter-g {
     margin-left: -10px;
+  }
+
+  .vessel {
+    right: -5rem;
+    z-index: 1;
   }
 }
 </style>
