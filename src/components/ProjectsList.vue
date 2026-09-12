@@ -13,27 +13,27 @@ const projects = [
   {
     title: 'Project Two',
     description: 'Description of the second project.',
-    image: '/assets/projects/project-2.png',
+    image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
   },
   {
     title: 'Project Three',
     description: 'Description of the third project.',
-    image: '/assets/projects/project-3.png',
-    link: '#',
-  },
-
-  {
-    title: 'Project Three',
-    description: 'Description of the third project.',
-    image: '/assets/projects/project-3.png',
+    image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
   },
 
   {
     title: 'Project Three',
     description: 'Description of the third project.',
-    image: '/assets/projects/project-3.png',
+    image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
+    link: '#',
+  },
+
+  {
+    title: 'Project Three',
+    description: 'Description of the third project.',
+    image: 'https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill',
     link: '#',
   },
 ]
@@ -79,8 +79,6 @@ function scrollCarousel(direction) {
   overflow: hidden;
 }
 
-
-
 .carousel-controls {
   display: flex;
   gap: 0.5rem;
@@ -89,10 +87,10 @@ function scrollCarousel(direction) {
 .cards {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: min(75vw, 380px);
+  grid-auto-columns: min(70vw, 330px);
   gap: 2rem;
 
-  width: 100%;
+  width: 95%;
   margin: 0;
   padding: 2rem;
 
@@ -116,7 +114,7 @@ function scrollCarousel(direction) {
   display: flex;
   flex-direction: column;
 
-  min-height: 400px;
+  height: 370px;
   padding: 0.85rem;
   padding-top: 1rem;
 
@@ -131,6 +129,8 @@ function scrollCarousel(direction) {
 .visual {
   height: 330px;
   overflow: hidden;
+  box-shadow: inset 2 2 2 50px bladk;
+  border: 1px solid #d2d2d2d2;
 }
 
 .card-image {
@@ -164,17 +164,13 @@ function scrollCarousel(direction) {
   }
 
   .cards {
-    grid-auto-columns: 85vw;
+    grid-auto-columns: 70vw;
     padding: 1rem;
     scroll-padding-inline: 1rem;
   }
 
   .card {
-    min-height: 400px;
-  }
-
-  .visual {
-    height: 220px;
+    height: 400px;
   }
 }
 </style>
