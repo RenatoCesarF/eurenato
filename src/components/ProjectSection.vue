@@ -48,11 +48,8 @@
   margin-top: auto;
   flex-shrink: 0;
 
-  /*
-   * Permite que a mulher avance para cima,
-   * permanecendo atrás das Polaroids.
-   */
-  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 .woman,
