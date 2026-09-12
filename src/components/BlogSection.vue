@@ -4,17 +4,18 @@
 </script>
 
 <template>
-  <section class='blog-section'>
-    <div>
-      <BlogTitle/>
+  <section class="blog-section">
+    <div class="blog-title">
+      <BlogTitle />
     </div>
-    <div>
-      <BlogList/>
+
+    <div class="blog-list">
+      <BlogList />
     </div>
 
     <div class="cuttings">
-      <img class="computer" src="/assets/paper-cuts/computador.png">
-      <img class="pelican" src="/assets/paper-cuts/pelicano.png">
+      <img class="computer" src="/assets/paper-cuts/computador.png" alt="" >
+      <img class="pelican" src="/assets/paper-cuts/pelicano.png" alt="" >
     </div>
   </section>
 </template>
@@ -22,36 +23,116 @@
 
 <style scoped>
 .blog-section {
-  padding-top: 20vh;
-  background-color: var(--yellow-bg-color);
-  width: 100vw;
+  position: relative;
+  isolation: isolate;
 
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 20vh;
+
+  background-color: var(--yellow-bg-color);
+
+  /* Impede os recortes de aumentarem a largura da página */
+  overflow-x: clip;
+}
+
+/* Título e posts sempre ficam acima dos recortes */
+.blog-title,
+.blog-list {
+  position: relative;
+  z-index: 2;
 }
 
 .cuttings {
   position: relative;
-  margin-top: auto;
+  z-index: 1;
 
   width: 100%;
-  height: 40vh;
+  max-width: 100%;
+  height: clamp(280px, 40vh, 600px);
+  margin-top: auto;
   flex-shrink: 0;
+
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
-
+.computer,
 .pelican {
   position: absolute;
-  right: 0;
-  bottom: -5vw;
+  bottom: 0;
+  z-index: 1;
 
-  width: 40%
+  display: block;
+
+  max-height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+
+  user-select: none;
+  pointer-events: none;
 }
-.computer {
-  position: absolute;
-  left: 0;
-  bottom: -5vw;
 
-  width: 35%;
+.computer {
+  left: -2vw;
+
+  width: clamp(280px, 45vw, 770px);
+
+  object-position: left bottom;
+}
+
+.pelican {
+  right: -2vw;
+
+  width: clamp(310px, 39vw, 640px);
+
+  object-position: right bottom;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .blog-section {
+    padding-top: 15vh;
+  }
+
+  .cuttings {
+    height: clamp(250px, 44vw, 430px);
+  }
+
+  .computer {
+    left: -4vw;
+    width: 40vw;
+  }
+
+  .pelican {
+    right: -5vw;
+    width: 45vw;
+  }
+
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .blog-section {
+    padding-top: 8rem;
+  }
+
+  .cuttings {
+    height: clamp(220px, 65vw, 340px);
+  }
+
+  .computer {
+    left: -8vw;
+    width: 52vw;
+  }
+
+  .pelican {
+    right: -12vw;
+    width: 60vw;
+  }
+
 }
 </style>
