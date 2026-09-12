@@ -9,8 +9,8 @@
     <div>
       <ProjectTitle/>
     </div>
-    <div>
-      <ProjectsList/>
+    <div class="projects-list">
+      <ProjectsList />
     </div>
 
     <div class="cuttings">
@@ -34,43 +34,133 @@
   flex-direction: column;
 }
 
+.projects-list {
+  position: relative;
+  z-index: 2;
+}
+
 .cuttings {
   position: relative;
-  margin-top: auto;
+  z-index: 1;
 
   width: 100%;
-  height: 40vh;
+  height: clamp(280px, 40vh, 580px);
+  margin-top: auto;
   flex-shrink: 0;
+
+  /*
+   * Permite que a mulher avance para cima,
+   * permanecendo atrás das Polaroids.
+   */
+  overflow: visible;
+}
+
+.woman,
+.guitar,
+.garca {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: bottom;
+  user-select: none;
+  pointer-events: none;
 }
 
 .woman {
-  position: absolute;
-  right: 0;
-  bottom: -5vw;
+  right: -2vw;
+  bottom: -5vh;
 
-  width: 35%;
+  width: clamp(420px, 38vw, 400px);
+
+  object-position: right bottom;
 }
 
 .guitar {
-  position: absolute;
-  left: 2%;
-  bottom: -4%;
+  left: clamp(0.25rem, 2vw, 2rem);
 
-  width: 20%;
+  bottom: -5vh;
+
+  width: clamp(220px, 35vw, 350px);
+
+  object-position: left bottom;
 }
 
 .garca {
-  position: absolute;
-  left: 30%;
-  bottom: 5%;
+  left: 40%;
 
-  width: 11%;
+  width: clamp(145px, 20vw, 260px);
+
+  transform: translateX(-50%);
 }
 
-.paper-phrase{
-  right: 35%;
-  bottom: 20%;
-  width: 45vw;
+/* Centralizada horizontalmente na tela */
+.paper-phrase {
   position: absolute;
+  left: 50%;
+  right: auto;
+  bottom: 25%;
+  z-index: 2;
+
+  width: clamp(300px, 43vw, 500px);
+
+  transform: translateX(-50%);
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .cuttings {
+    height: clamp(250px, 43vw, 430px);
+  }
+
+  .woman {
+    right: -4vw;
+    width: 52vw;
+  }
+
+  .guitar {
+    left: -1vw;
+    width: 30vw;
+  }
+
+  .garca {
+    left: 40%;
+    width: 19vw;
+  }
+
+  .paper-phrase {
+    bottom: 25%;
+    width: 47vw;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .cuttings {
+    height: clamp(220px, 62vw, 330px);
+  }
+
+  .woman {
+    right: -8vw;
+    width: 68vw;
+  }
+
+  .guitar {
+    left: -5vw;
+    width: 42vw;
+  }
+
+  .garca {
+    left: 42%;
+    width: 25vw;
+  }
+
+  .paper-phrase {
+    bottom: 34%;
+    width: 58vw;
+  }
 }
 </style>
