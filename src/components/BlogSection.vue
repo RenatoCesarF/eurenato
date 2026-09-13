@@ -50,7 +50,7 @@
   z-index: 1;
 
   width: 100%;
-  height: clamp(380px, 58vh, 1600px);
+  height: clamp(380px, 57vh, 700px);
   flex-shrink: 0;
 
   overflow-x: clip;
@@ -60,7 +60,7 @@
 .computer,
 .pelican {
   position: absolute;
-  bottom: 23vw;
+  bottom: 15vw;
   z-index: 1;
 
   display: block;
@@ -81,7 +81,7 @@
 .pelican {
   right: -2vw;
 
-  width: clamp(310px, 40vw, 1740px);
+  width: clamp(310px, 35vw, 640px);
 
   object-position: right bottom;
 }
@@ -93,7 +93,7 @@
   }
 
   .cuttings {
-    height: 47vw
+    height: 57vw
   }
 
   .computer {
@@ -115,7 +115,7 @@
   }
 
   .cuttings{
-    height: 57vw;
+    height: 65vw;
   }
 
   .computer {

@@ -565,8 +565,8 @@ const posts = [
   top: 50%;
   z-index: 5;
 
-  width: 72px;
-  height: 72px;
+  width: 52px;
+  height: 52px;
   padding: 0;
 
   cursor: pointer;
@@ -670,8 +670,8 @@ const posts = [
   }
 
   .paper-arrow {
-    width: 52px;
-    height: 52px;
+    width: 42px;
+    height: 42px;
   }
 
   .paper-arrow--left {
