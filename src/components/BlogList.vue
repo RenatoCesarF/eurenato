@@ -86,13 +86,13 @@ const posts = [
 .cards {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: min(78vw, 370px);
+  grid-auto-columns: min(48vw, 300px);
   align-items: start;
   gap: 1.75rem;
 
   width: 100%;
   margin: 0;
-  padding: 3.5rem 2.5rem 4.5rem;
+  padding: 1.5rem 1.5rem 3.5rem;
 
   list-style: none;
 
@@ -119,7 +119,7 @@ const posts = [
   position: relative;
   isolation: isolate;
 
-  min-height: 430px;
+  min-height: 300px;
   padding: 2rem 1.8rem 1.7rem;
 
   color: #26231f;
@@ -270,7 +270,7 @@ const posts = [
   --paper-texture: url("/assets/textures/04.jpg");
   --tag-color: #6954c7;
 
-  min-height: 400px;
+  min-height: 300px;
 
   clip-path: polygon(
     0.5% 0,
@@ -319,7 +319,7 @@ const posts = [
   --paper-texture: url("/assets/textures/05.jpg");
   --tag-color: #c9484e;
 
-  min-height: 445px;
+  min-height: 345px;
 
   clip-path: polygon(
     2% 1.5%,
@@ -368,7 +368,7 @@ const posts = [
   --paper-texture: url("/assets/textures/06.jpg");
   --tag-color: #d67b27;
 
-  min-height: 415px;
+  min-height: 315px;
 
   clip-path: polygon(
     0 1.8%,
@@ -419,7 +419,7 @@ const posts = [
   --paper-texture: url("/assets/textures/04.jpg");
   --tag-color: #3679b8;
 
-  min-height: 425px;
+  min-height: 325px;
 
   clip-path: polygon(
     1.7% 0.3%,
@@ -484,7 +484,7 @@ const posts = [
 
   color: #201e1a;
 
-  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-size: clamp(2rem, 2vw, 2.55rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
 
@@ -542,12 +542,12 @@ const posts = [
     grid-auto-columns: 84vw;
     gap: 1.25rem;
 
-    padding: 2.75rem 1rem 4rem;
+    padding: 1.75rem 1rem 4rem;
     scroll-padding-inline: 1rem;
   }
 
   .card {
-    min-height: 390px;
+    min-height: 290px;
     padding: 1.7rem 1.5rem 1.5rem;
   }
 

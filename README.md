@@ -1,21 +1,15 @@
 # eurenato
 
 ## Tasks
-- [ ] Fotos fundo "Sobre"
-- [ ] Sessão projetos
-- [ ] Componente de projeto
-- [ ] Componente de projeto leva pra página de projeto
-- [ ] Carrosel de projetos
-- [ ] Fotos sessão "projetos"
-- [ ] Sessão blog
-- [ ] Componente blogpost
-- [ ] Blogpost leva pra página com blog
-- [ ] carrosel de blog posts
-- [ ] Fotos da sessão blog
+- [ ] Texto do sobre
+- [ ] Textura de papel e noise no fundo inteiro.
+- [ ] Fonte escrita a mão
+- [ ] Sessão meta atual: (a fita no meio): completar esse site
+- [ ] Seelcionar e criar projetos (mércure, interpreteoteca, self-hosting, esse site, backtopixels,unamed album (foto borrada), mentoria compassos 
+- [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
+- [ ] Elemento polaroid ter font feita a mão com acento.
 - [ ] noodles
-----
-- [ ] Editor visual de posts
-- [ ] Backend pra salver posts (ou sla o que eu vou fazer)
+- [ ] Pagina de projeto com polaroid, título, descrição e links
 
 - Editor de texto https://tiptap.dev/docs/editor/getting-started/overview
 ## Project Setup

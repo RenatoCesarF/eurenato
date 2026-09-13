@@ -132,7 +132,7 @@ function scrollCarousel(direction) {
 .cards {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(250px, 70vw, 330px);
+  grid-auto-columns: clamp(250px, 45vw, 280px);
   gap: 2.5rem;
 
   width: 100%;
@@ -161,7 +161,7 @@ function scrollCarousel(direction) {
   display: flex;
   flex-direction: column;
 
-  min-height: 385px;
+  min-height: 300px;
   padding: 1rem 1rem 0.75rem;
 
   color: #171717;
@@ -369,15 +369,15 @@ function scrollCarousel(direction) {
 
 @media (max-width: 600px) {
   .cards {
-    grid-auto-columns: 72vw;
-    gap: 1.75rem;
+    grid-auto-columns: 60vw;
+    gap: 2.75rem;
 
     padding: 2.5rem 3rem;
-    scroll-padding-inline: 3rem;
+    scroll-padding-inline: 4rem;
   }
 
   .card {
-    min-height: 350px;
+    min-height: 13rem;
   }
 
   .paper-arrow {

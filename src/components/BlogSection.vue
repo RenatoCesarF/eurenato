@@ -30,8 +30,8 @@
   flex-direction: column;
 
   width: 100%;
-  min-height: 100vh;
-  padding-top: 20vh;
+  height: 140vh;
+  padding-top: 10vh;
 
   background-color: var(--yellow-bg-color);
 
@@ -50,9 +50,8 @@
   z-index: 1;
 
   width: 100%;
-  max-width: 100%;
-  height: clamp(280px, 55vh, 1600px);
-  margin-top: auto;
+  height: clamp(380px, 60vh, 1600px);
+  /* margin-top: auto; */
   flex-shrink: 0;
 
   overflow-x: clip;
@@ -62,12 +61,10 @@
 .computer,
 .pelican {
   position: absolute;
-  bottom: 0;
+  bottom: 10vw;
   z-index: 1;
 
   display: block;
-
-  /* max-height: 100%; */
   object-fit: contain;
   object-position: bottom;
 
@@ -78,7 +75,7 @@
 .computer {
   left: -2vw;
 
-  width: clamp(380px, 36vw, 1170px);
+  width: clamp(400px, 36vw, 1270px);
 
   object-position: left bottom;
 }
@@ -86,7 +83,7 @@
 .pelican {
   right: -2vw;
 
-  width: clamp(310px, 30vw, 1640px);
+  width: clamp(310px, 30vw, 1740px);
 
   object-position: right bottom;
 }
@@ -94,11 +91,12 @@
 /* Tablets */
 @media (max-width: 900px) {
   .blog-section {
-    padding-top: 15vh;
-  }
+    height: 120vh;
 
+  }
   .cuttings {
     height: clamp(250px, 44vw, 430px);
+    bottom: 10vw;
   }
 
   .computer {
@@ -116,11 +114,12 @@
 /* Celulares */
 @media (max-width: 600px) {
   .blog-section {
-    padding-top: 8rem;
+    padding-top: 3rem;
+    height: 100vh;
   }
 
   .cuttings {
-    height: clamp(220px, 65vw, 340px);
+    height: clamp(220px, 25vw, 340px);
   }
 
   .computer {

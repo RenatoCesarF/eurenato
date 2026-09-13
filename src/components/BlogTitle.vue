@@ -24,9 +24,11 @@
 
 .vessel {
   position: absolute;
-  width: clamp(280px, 30vw, 500px);
-  top: -40%;
-  right: 2vw;
+  width: clamp(180px, 30vw, 350px);
+  top: -5vw;
+  right: 15vw;
+
+  z-index: 1;
 }
 
 .project-title {
@@ -47,9 +49,9 @@ content: "";
   top: -4%;
   height: 108%;
   background: #cf2027;
-  z-index: -1;
+  z-index: -20;
   transform: none;
-  clip-path: polygon(4.39% 8.52%, 95.26% 28.4%, 90.73% 77.73%, 3.72% 89.91%);
+  clip-path: polygon(5.02% 4.95%, 93.97% 28.83%, 86.99% 78.89%, 3.57% 92.72%);
   width: 118%;
 }
 
@@ -61,28 +63,28 @@ content: "";
 }
 
 .letter-b {
-  width: clamp(120px, 24vw, 260px);
+  width: clamp(120px, 18vw, 230px);
   z-index: 4;
   transform: rotate(-1deg);
 }
 
 .letter-l {
-  width: clamp(90px, 15vw, 180px);
-  margin-left: -38px;
+  width: clamp(90px, 10vw, 160px);
+  margin-left: -20px;
   z-index: 3;
   transform: rotate(1deg) translateY(2px);
 }
 
 .letter-o {
-  width: clamp(90px, 15vw, 170px);
-  margin-left: -18px;
+  width: clamp(90px, 10vw, 180px);
+  margin-left: -10px;
   z-index: 5;
   transform: rotate(-2deg) translateY(4px);
 }
 
 .letter-g {
-  width: clamp(95px, 16vw, 185px);
-  margin-left: -12px;
+  width: clamp(95px, 10vw, 160px);
+  margin-left: -6px;
   z-index: 6;
   transform: rotate(4deg) translateY(10px);
 }
@@ -90,24 +92,23 @@ content: "";
 
 @media (max-width: 600px) {
   .project-title {
-    padding-inline: 22px;
+    padding-inline: 21px;
   }
 
   .letter-l {
-    margin-left: -24px;
+    margin-left: -19px;
   }
 
   .letter-o {
-    margin-left: -12px;
+    margin-left: -9px;
   }
 
   .letter-g {
-    margin-left: -10px;
+    margin-left: -7px;
   }
 
   .vessel {
-    right: -5rem;
-    z-index: 1;
+    right: -3rem;
   }
 }
 </style>
