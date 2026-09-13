@@ -146,7 +146,7 @@ function scrollCarousel(direction) {
 
   width: 100%;
   margin: 0;
-  padding: 3rem 5rem;
+  padding: 1rem 3rem;
 
   box-sizing: border-box;
   list-style: none;

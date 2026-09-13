@@ -25,7 +25,7 @@
 
 <style scoped>
 .project-section {
-  min-height: 100vh;
+  height: 108vh;
   padding-top: 2vh;
   background-color: var(--blue-bg-color);
   width: 100%;
@@ -44,7 +44,7 @@
   z-index: 1;
 
   width: 100%;
-  height: clamp(280px, 40vh, 580px);
+  height: clamp(200px, 20vh, 580px);
   margin-top: auto;
   flex-shrink: 0;
 
@@ -110,7 +110,7 @@
 /* Tablets */
 @media (max-width: 900px) {
   .cuttings {
-    height: clamp(250px, 43vw, 430px);
+    height: clamp(150px, 33vw, 430px);
   }
 
   .woman {
@@ -137,7 +137,7 @@
 /* Celulares */
 @media (max-width: 600px) {
   .cuttings {
-    height: clamp(220px, 62vw, 330px);
+    height: clamp(120px, 42vw, 330px);
   }
 
   .woman {

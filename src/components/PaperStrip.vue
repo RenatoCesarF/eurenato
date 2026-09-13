@@ -26,6 +26,6 @@
   height: 35rem;
   max-width: none;
   height: auto;
-  z-index: 50;
+  z-index: 1000;
 }
 </style>

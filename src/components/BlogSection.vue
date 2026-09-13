@@ -29,7 +29,7 @@
   flex-direction: column;
 
   width: 100%;
-  height: 115vh;
+  height: 110vh;
   padding-top: 10vh;
 
   background-color: var(--yellow-bg-color);
@@ -48,7 +48,7 @@
   z-index: 1;
 
   width: 100%;
-  height: clamp(380px, 57vh, 700px);
+  height: clamp(350px, 50vh, 700px);
   flex-shrink: 0;
 
   overflow-x: clip;
@@ -91,7 +91,7 @@
   }
 
   .cuttings {
-    height: 57vw
+    height: clamp(350px, 20vh, 550px);
   }
 
   .computer {
@@ -113,11 +113,11 @@
   }
 
   .cuttings{
-    height: 65vw;
+    height: 64vw;
   }
 
   .computer {
-    width: 62vw;
+    width: 65vw;
   }
 
   .pelican {
