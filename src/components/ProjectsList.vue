@@ -146,7 +146,7 @@ function scrollCarousel(direction) {
 
   width: 100%;
   margin: 0;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
 
   box-sizing: border-box;
   list-style: none;
@@ -202,7 +202,7 @@ function scrollCarousel(direction) {
   border-radius: 0.15rem;
 
   box-shadow:
-    0 18px 30px rgb(0 0 0 / 28%),
+    0 8px 10px rgb(0 0 0 / 28%),
     0 4px 8px rgb(0 0 0 / 18%);
 
   scroll-snap-align: start;
@@ -225,7 +225,7 @@ function scrollCarousel(direction) {
     rotate(0deg);
 
   box-shadow:
-    0 24px 38px rgb(0 0 0 / 32%),
+    0 14px 18px rgb(0 0 0 / 32%),
     0 6px 10px rgb(0 0 0 / 20%);
 }
 

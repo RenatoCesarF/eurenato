@@ -2,10 +2,10 @@
 
 ## Tasks
 - [ ] Textura de papel e noise no fundo inteiro.
-- [ ] Fonte escrita a mão
 - [ ] Sessão meta atual: (a fita no meio): completar esse site
+- [ ] Fonte escrita a mão
+- [ ] Separar polaroid em componente
 - [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
-- [ ] Elemento polaroid ter font feita a mão com acento.
 - [ ] .ico da virgula (ou do R)
 - [ ] noodles
 - [ ] Pagina de projeto com polaroid, título, descrição e links
@@ -14,7 +14,7 @@
 ---
 ## Ajustes
 - [ ] Foto do Renato na sessão sobre esta quebrando na versão de celular
-- [ ] Ajustar posicionamento dos cuttings de blog (sempre colados em baixo igual o de projetos)
+- [ ] Elemento polaroid ter font feita.
 - [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular
 - [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
 - [ ] Ta dando pra passardo primeiro post pro post -1, no safari ios

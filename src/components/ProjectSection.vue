@@ -25,7 +25,7 @@
 
 <style scoped>
 .project-section {
-  height: 108vh;
+  height: 53rem;
   padding-top: 2vh;
   background-color: var(--blue-bg-color);
   width: 100%;

@@ -357,12 +357,13 @@
   .support-link {
     z-index: 30;
 
-    top: auto;
+    top: clamp(20vw, 33rem, 150vw);
+
     left: auto;
     right: 0%;
     bottom:  23%;
 
-    width: clamp(175px, 48vw, 190px);
+    width: clamp(175px, 48vw, 250px);
 
     transform: rotate(-4deg);
   }
