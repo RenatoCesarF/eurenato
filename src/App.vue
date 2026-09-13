@@ -24,6 +24,8 @@
       <div class="paper-strip-wrapper">
         <PaperStrip/>
       </div>
+      <div class="last-section">
+      </div>
     </content>
   </main>
 </template>
@@ -66,5 +68,11 @@
 
   mix-blend-mode: soft-light;
   opacity: 0.6;
+}
+
+.last-section{
+  height: 50vh;
+  background: var(--orange-bg-color)
+
 }
 </style>
