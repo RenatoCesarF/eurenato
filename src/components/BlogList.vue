@@ -3,6 +3,21 @@ import { ref } from 'vue'
 
 const carousel = ref(null)
 
+
+function scrollCarousel(direction) {
+  if (!carousel.value) return
+
+  const card = carousel.value.querySelector('.card')
+  const styles = getComputedStyle(carousel.value)
+  const gap = Number.parseFloat(styles.columnGap) || 0
+  const distance = card ? card.offsetWidth + gap : carousel.value.clientWidth * 0.8
+
+  carousel.value.scrollBy({
+    left: direction * distance,
+    behavior: 'smooth',
+  })
+}
+
 const posts = [
   {
     id: 1,
@@ -47,40 +62,75 @@ const posts = [
 ]
 </script>
 
+
 <template>
-  <section class="projects-carousel">
+  <section class="posts-carousel">
+
+    <button
+      class="paper-arrow paper-arrow--left"
+      type="button"
+      aria-label="Projeto anterior"
+      @click="scrollCarousel(-1)"
+    >
+      <img
+        class="paper-arrow-image"
+        src="/assets/letters/arrow_blog.png"
+        alt=""
+      />
+    </button>
+    <span class="sr-only">Projeto Anterior</span>
+
     <ul ref="carousel" class="cards">
-<li
-  v-for="(post, index) in posts"
-  :key="post.id"
-  class="card"
-  :class="`card--cut-${(index % 5) + 1}`"
->
-  <span
-    class="paper-texture"
-    aria-hidden="true"
-  ></span>
+      <li
+        v-for="(post, index) in posts"
+        :key="post.id"
+        class="card"
+        :class="`card--cut-${(index % 5) + 1}`"
+      >
+        <div class="card-paper">
+          <span
+            class="paper-texture"
+            aria-hidden="true"
+          ></span>
 
-  <article class="content">
-          <div>
-            <h3>{{ post.title }}</h3>
+          <article class="content">
+            <div>
+              <h3>{{ post.title }}</h3>
 
-            <p>{{ post.description }}</p>
-          </div>
+              <p>{{ post.description }}</p>
+            </div>
 
-          <a :href="post.link">
-            {{ post.tag }}
-          </a>
-  </article>
-</li>
+            <a :href="post.link">
+              {{ post.tag }}
+            </a>
+          </article>
+        </div>
+      </li>
     </ul>
+
+    <button
+      class="paper-arrow paper-arrow--right"
+      type="button"
+      aria-label="Próximo projeto"
+      @click="scrollCarousel(1)"
+    >
+      <img
+        class="paper-arrow-image"
+        src="/assets/letters/arrow_blog.png"
+        alt=""
+      />
+    </button>
+    <span class="sr-only">Próximo projeto</span>
   </section>
 </template>
 
 <style scoped>
-.projects-carousel {
+.posts-carousel {
   width: 100%;
+  background: transparent;
   overflow: hidden;
+
+  position: relative;
 }
 
 .cards {
@@ -113,23 +163,21 @@ const posts = [
 .card {
   --rotation: 0deg;
   --offset: 0px;
+  --card-min-height: 300px;
+  --card-clip: inset(0);
   --paper-texture: url("/assets/textures/01.jpg");
   --tag-color: #be4040;
 
   position: relative;
-  isolation: isolate;
+  z-index: 1;
 
-  min-height: 300px;
-  padding: 2rem 1.8rem 1.7rem;
-
-  color: #26231f;
-  background-color: #e9e6dd;
+  min-height: var(--card-min-height);
 
   scroll-snap-align: start;
 
   filter:
-    drop-shadow(0 4px 2px rgb(50 38 20 / 16%))
-    drop-shadow(0 14px 12px rgb(50 38 20 / 13%));
+    drop-shadow(0 2px 6px rgb(50 38 20 / 26%))
+    drop-shadow(0 4px 6px rgb(50 38 20 / 23%));
 
   transform:
     translateY(var(--offset))
@@ -143,10 +191,33 @@ const posts = [
 }
 
 /*
+ * Elemento interno:
+ * representa o papel e recebe o recorte.
+ *
+ * Como este elemento possui áreas transparentes,
+ * a sombra aplicada em .card acompanha sua silhueta.
+ */
+.card-paper {
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+
+  box-sizing: border-box;
+  min-height: var(--card-min-height);
+  padding: 2rem 1.8rem 1.7rem;
+
+  color: #26231f;
+  background-color: #e9e6dd;
+
+  clip-path: var(--card-clip);
+}
+
+/*
  * Primeira cópia da textura:
  * Multiply com 55% de opacidade.
  */
-.card::before {
+.card-paper::before {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -186,21 +257,6 @@ const posts = [
   pointer-events: none;
 }
 
-/*
- * Falha na borda usada para simular
- * um pedaço arrancado do papel.
- */
-.card::after {
-  position: absolute;
-  z-index: 3;
-
-  content: "";
-
-  background: var(--yellow-bg-color, #d9bd37);
-
-  pointer-events: none;
-}
-
 .card:hover,
 .card:focus-within {
   z-index: 3;
@@ -214,22 +270,35 @@ const posts = [
     rotate(0deg);
 }
 
-/* Primeiro tipo de recorte */
+/*
+ * Primeiro tipo de recorte:
+ * rasgo na lateral direita.
+ */
 .card--cut-1 {
   --rotation: -2.8deg;
   --offset: 8px;
+  --card-min-height: 300px;
   --paper-texture: url("/assets/textures/01.jpg");
   --tag-color: #41b96b;
 
-  clip-path: polygon(
+  --card-clip: polygon(
     1% 1%,
     18% 0,
     37% 1.4%,
     58% 0.2%,
     79% 1.2%,
     99% 0,
+
     98.6% 18%,
-    100% 38%,
+    100% 31%,
+
+    94% 34%,
+    97% 37%,
+    89% 40%,
+    95% 44%,
+    91% 48%,
+    98.5% 52%,
+
     98.5% 58%,
     99.7% 78%,
     98% 99%,
@@ -245,34 +314,18 @@ const posts = [
   );
 }
 
-.card--cut-1::after {
-  top: 34%;
-  right: -1px;
-
-  width: 30px;
-  height: 45px;
-
-  clip-path: polygon(
-    100% 0,
-    100% 100%,
-    58% 92%,
-    68% 72%,
-    15% 54%,
-    66% 31%,
-    45% 10%
-  );
-}
-
-/* Segundo tipo de recorte */
+/*
+ * Segundo tipo de recorte:
+ * rasgo na lateral esquerda.
+ */
 .card--cut-2 {
   --rotation: 1.9deg;
   --offset: 22px;
+  --card-min-height: 300px;
   --paper-texture: url("/assets/textures/04.jpg");
   --tag-color: #6954c7;
 
-  min-height: 300px;
-
-  clip-path: polygon(
+  --card-clip: polygon(
     0.5% 0,
     24% 1.8%,
     47% 0.4%,
@@ -287,41 +340,34 @@ const posts = [
     52% 99.7%,
     27% 98.4%,
     1% 100%,
+
     2% 79%,
-    0 61%,
+    0% 71%,
+
+    6% 68%,
+    3% 65%,
+    11% 62%,
+    5% 59%,
+    9% 56%,
+    0% 53%,
+
     1.5% 40%,
-    0 18%
+    0% 18%
   );
 }
 
-.card--cut-2::after {
-  top: 58%;
-  left: -1px;
-
-  width: 34px;
-  height: 39px;
-
-  clip-path: polygon(
-    0 0,
-    47% 7%,
-    34% 27%,
-    88% 47%,
-    39% 64%,
-    60% 89%,
-    0 100%
-  );
-}
-
-/* Terceiro tipo de recorte */
+/*
+ * Terceiro tipo de recorte:
+ * rasgo na borda inferior.
+ */
 .card--cut-3 {
   --rotation: -1.3deg;
   --offset: 3px;
+  --card-min-height: 345px;
   --paper-texture: url("/assets/textures/05.jpg");
   --tag-color: #c9484e;
 
-  min-height: 345px;
-
-  clip-path: polygon(
+  --card-clip: polygon(
     2% 1.5%,
     16% 0.2%,
     35% 2%,
@@ -332,8 +378,17 @@ const posts = [
     98% 46%,
     99.6% 67%,
     98% 99%,
+
     81% 97.8%,
-    64% 100%,
+    77% 100%,
+
+    74% 94%,
+    71% 97%,
+    68% 88%,
+    65% 96%,
+    62% 91%,
+    59% 100%,
+
     42% 98.4%,
     22% 99.7%,
     0.6% 98%,
@@ -343,38 +398,30 @@ const posts = [
   );
 }
 
-.card--cut-3::after {
-  right: 24%;
-  bottom: -1px;
-
-  width: 42px;
-  height: 28px;
-
-  clip-path: polygon(
-    0 100%,
-    8% 54%,
-    30% 66%,
-    48% 8%,
-    67% 62%,
-    92% 38%,
-    100% 100%
-  );
-}
-
-/* Quarto tipo de recorte */
+/*
+ * Quarto tipo de recorte:
+ * rasgo na borda superior.
+ */
 .card--cut-4 {
   --rotation: 3.1deg;
   --offset: 18px;
+  --card-min-height: 315px;
   --paper-texture: url("/assets/textures/06.jpg");
   --tag-color: #d67b27;
 
-  min-height: 315px;
-
-  clip-path: polygon(
-    0 1.8%,
+  --card-clip: polygon(
+    0% 1.8%,
     20% 0.4%,
     39% 2.1%,
-    62% 0.5%,
+
+    54% 0.5%,
+    57% 6%,
+    60% 3%,
+    63% 10%,
+    66% 4%,
+    70% 7%,
+    73% 0.8%,
+
     81% 1.8%,
     100% 0,
     98.4% 19%,
@@ -394,34 +441,18 @@ const posts = [
   );
 }
 
-.card--cut-4::after {
-  top: -1px;
-  left: 55%;
-
-  width: 46px;
-  height: 27px;
-
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    85% 44%,
-    62% 31%,
-    50% 94%,
-    31% 39%,
-    9% 58%
-  );
-}
-
-/* Quinto tipo de recorte */
+/*
+ * Quinto tipo de recorte:
+ * rasgo maior na lateral direita.
+ */
 .card--cut-5 {
   --rotation: -3.6deg;
   --offset: 28px;
+  --card-min-height: 325px;
   --paper-texture: url("/assets/textures/04.jpg");
   --tag-color: #3679b8;
 
-  min-height: 325px;
-
-  clip-path: polygon(
+  --card-clip: polygon(
     1.7% 0.3%,
     19% 1.7%,
     40% 0,
@@ -429,7 +460,15 @@ const posts = [
     82% 0.4%,
     99% 2%,
     100% 18%,
-    98.2% 36%,
+
+    99% 22%,
+    94% 25%,
+    97% 28%,
+    88% 32%,
+    95% 36%,
+    90% 40%,
+    97% 44%,
+
     99.8% 55%,
     98.5% 75%,
     100% 97.5%,
@@ -445,35 +484,17 @@ const posts = [
   );
 }
 
-.card--cut-5::after {
-  top: 23%;
-  right: -1px;
-
-  width: 36px;
-  height: 58px;
-
-  clip-path: polygon(
-    100% 0,
-    100% 100%,
-    55% 91%,
-    72% 71%,
-    22% 59%,
-    60% 42%,
-    31% 18%,
-    70% 9%
-  );
-}
-
 .content {
   position: relative;
   z-index: 1;
 
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
   gap: 2.5rem;
 
-  min-height: inherit;
+  width: 100%;
 
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -499,6 +520,7 @@ const posts = [
   font-size: 1.05rem;
   line-height: 1.25;
   text-align: justify;
+
   hyphens: auto;
 }
 
@@ -537,17 +559,105 @@ const posts = [
   outline-offset: 4px;
 }
 
+
+.paper-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  width: 72px;
+  height: 72px;
+  padding: 0;
+
+  cursor: pointer;
+
+  background: transparent;
+  border: 0;
+
+  transform: translateY(-50%);
+  transition: transform 150ms ease;
+}
+
+.paper-arrow--left {
+  left: 0.75rem;
+}
+
+.paper-arrow--right {
+  right: 0.75rem;
+}
+
+.paper-arrow-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 35%));
+
+  transition:
+    transform 150ms ease,
+    filter 150ms ease;
+}
+
+/* Considerando que o PNG aponta para a direita */
+.paper-arrow--left .paper-arrow-image {
+  transform: rotate(266deg);
+}
+
+.paper-arrow--right .paper-arrow-image {
+  transform: rotate(94deg);
+}
+
+.paper-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.paper-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.paper-arrow:active .paper-arrow-image {
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 25%));
+}
+
+.paper-arrow:focus-visible {
+  border-radius: 0.25rem;
+  outline: 3px solid #171717;
+  outline-offset: 4px;
+}
+
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (max-width: 600px) {
   .cards {
     grid-auto-columns: 84vw;
     gap: 1.25rem;
 
     padding: 1.75rem 1rem 4rem;
+
     scroll-padding-inline: 1rem;
   }
 
   .card {
-    min-height: 290px;
+    --card-min-height: 290px;
+  }
+
+  .card-paper {
     padding: 1.7rem 1.5rem 1.5rem;
   }
 
@@ -557,6 +667,19 @@ const posts = [
 
   .content p {
     font-size: 1rem;
+  }
+
+  .paper-arrow {
+    width: 52px;
+    height: 52px;
+  }
+
+  .paper-arrow--left {
+    left: 0.25rem;
+  }
+
+  .paper-arrow--right {
+    right: 0.25rem;
   }
 }
 </style>

@@ -68,57 +68,57 @@ function scrollCarousel(direction) {
 
 <template>
   <section class="projects-carousel">
-  <button
-    class="paper-arrow paper-arrow--left"
-    type="button"
-    aria-label="Projeto anterior"
-    @click="scrollCarousel(-1)"
-  >
-    <img
-      class="paper-arrow-image"
-      src="/assets/letters/arrow.png"
-      alt=""
-    />
-  </button>
+    <button
+      class="paper-arrow paper-arrow--left"
+      type="button"
+      aria-label="Projeto anterior"
+      @click="scrollCarousel(-1)"
+    >
+      <img
+        class="paper-arrow-image"
+        src="/assets/letters/arrow.png"
+        alt=""
+      />
+    </button>
 
 
-    <ul ref="carousel" class="cards">
-      <li
-        v-for="project in projects"
-        :key="project.id"
-        class="card"
-        :style="{
-          '--rotation': `${project.rotation}deg`,
-          '--offset': `${project.offset}px`,
-        }"
-      >
-        <div class="visual">
-          <img
-            class="card-image"
-            :src="project.image"
-            :alt="`Imagem do projeto ${project.title}`"
-          />
-        </div>
+      <ul ref="carousel" class="cards">
+        <li
+          v-for="project in projects"
+          :key="project.id"
+          class="card"
+          :style="{
+            '--rotation': `${project.rotation}deg`,
+            '--offset': `${project.offset}px`,
+          }"
+        >
+          <div class="visual">
+            <img
+              class="card-image"
+              :src="project.image"
+              :alt="`Imagem do projeto ${project.title}`"
+            />
+          </div>
 
-        <div class="content">
-          <h3>{{ project.title }}</h3>
-        </div>
-      </li>
-    </ul>
+          <div class="content">
+            <h3>{{ project.title }}</h3>
+          </div>
+        </li>
+      </ul>
 
-      <button
-        class="paper-arrow paper-arrow--right"
-        type="button"
-        aria-label="Próximo projeto"
-        @click="scrollCarousel(1)"
-      >
-        <img
-          class="paper-arrow-image"
-          src="/assets/letters/arrow.png"
-          alt=""
-        />
-      </button>
-      <span class="sr-only">Próximo projeto</span>
+    <button
+      class="paper-arrow paper-arrow--right"
+      type="button"
+      aria-label="Próximo projeto"
+      @click="scrollCarousel(1)"
+    >
+      <img
+        class="paper-arrow-image"
+        src="/assets/letters/arrow.png"
+        alt=""
+      />
+    </button>
+    <span class="sr-only">Próximo projeto</span>
   </section>
 </template>
 
@@ -383,14 +383,6 @@ function scrollCarousel(direction) {
   .paper-arrow {
     width: 48px;
     height: 38px;
-  }
-
-  .paper-arrow--left {
-    left: 0.25rem;
-  }
-
-  .paper-arrow--right {
-    right: 0.25rem;
   }
 }
 </style>
