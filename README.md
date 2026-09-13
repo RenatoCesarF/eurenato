@@ -4,7 +4,7 @@
 - [ ] Textura de papel e noise no fundo inteiro.
 - [ ] Fonte escrita a mão
 - [ ] Sessão meta atual: (a fita no meio): completar esse site
-- [ ] Seelcionar e criar projetos (mércure, interpreteoteca, self-hosting, esse site, backtopixels,unamed album (foto borrada), mentoria compassos 
+- [ ] Seelcionar e criar projetos unamed album (foto borrada), mentoria compassos 
 - [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
 - [ ] Elemento polaroid ter font feita a mão com acento.
 - [ ] noodles
