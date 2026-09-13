@@ -183,7 +183,7 @@
   position: absolute;
   z-index: 40;
 
-  top: 60%;
+  top: 56%;
   left: 58%;
 
   display: block;
@@ -360,8 +360,7 @@
     top: clamp(20vw, 33rem, 150vw);
 
     left: auto;
-    right: 0%;
-    bottom:  23%;
+    right: -2%;
 
     width: clamp(175px, 48vw, 250px);
 
