@@ -357,7 +357,7 @@
   .support-link {
     z-index: 30;
 
-    top: clamp(20vw, 33rem, 150vw);
+    top: clamp(100vw, 35rem, 290vw);
 
     left: auto;
     right: -2%;
