@@ -29,7 +29,7 @@
   flex-direction: column;
 
   width: 100%;
-  height: 110vh;
+  height: 50rem;
   padding-top: 10vh;
 
   background-color: var(--yellow-bg-color);
@@ -48,7 +48,7 @@
   z-index: 1;
 
   width: 100%;
-  height: clamp(350px, 50vh, 700px);
+  height: clamp(280px, 40vh, 200px);
   flex-shrink: 0;
 
   overflow-x: clip;
@@ -71,7 +71,7 @@
 
 .computer {
   left: -2vw;
-  width: clamp(400px, 40vw, 570px);
+  width: clamp(400px, 30vw, 570px);
 
   object-position: left bottom;
 }
@@ -91,11 +91,11 @@
   }
 
   .cuttings {
-    height: clamp(350px, 20vh, 550px);
+    height: clamp(350px, 30vh, 550px);
   }
 
   .computer {
-    width: 50vw;
+    width: clamp(500px, 35vw, 1070px);
   }
 
   .pelican {
@@ -113,11 +113,11 @@
   }
 
   .cuttings{
-    height: 64vw;
+    height: 54vw;
   }
 
   .computer {
-    width: 65vw;
+    width: clamp(100px, 70vw, 570px);
   }
 
   .pelican {
