@@ -30,7 +30,7 @@
   flex-direction: column;
 
   width: 100%;
-  height: 140vh;
+  height: 115vh;
   padding-top: 10vh;
 
   background-color: var(--yellow-bg-color);
@@ -50,8 +50,7 @@
   z-index: 1;
 
   width: 100%;
-  height: clamp(380px, 60vh, 1600px);
-  /* margin-top: auto; */
+  height: clamp(380px, 58vh, 1600px);
   flex-shrink: 0;
 
   overflow-x: clip;
@@ -61,7 +60,7 @@
 .computer,
 .pelican {
   position: absolute;
-  bottom: 10vw;
+  bottom: 23vw;
   z-index: 1;
 
   display: block;
@@ -74,8 +73,7 @@
 
 .computer {
   left: -2vw;
-
-  width: clamp(400px, 36vw, 1270px);
+  width: clamp(400px, 40vw, 570px);
 
   object-position: left bottom;
 }
@@ -83,7 +81,7 @@
 .pelican {
   right: -2vw;
 
-  width: clamp(310px, 30vw, 1740px);
+  width: clamp(310px, 40vw, 1740px);
 
   object-position: right bottom;
 }
@@ -91,22 +89,20 @@
 /* Tablets */
 @media (max-width: 900px) {
   .blog-section {
-    height: 120vh;
-
+    height: 110vh;
   }
+
   .cuttings {
-    height: clamp(250px, 44vw, 430px);
-    bottom: 10vw;
+    height: 47vw
   }
 
   .computer {
-    left: -4vw;
-    width: 40vw;
+    width: 50vw;
   }
 
   .pelican {
-    right: -5vw;
-    width: 45vw;
+    right: -9vw;
+    width: 58vw;
   }
 
 }
@@ -118,18 +114,17 @@
     height: 100vh;
   }
 
-  .cuttings {
-    height: clamp(220px, 25vw, 340px);
+  .cuttings{
+    height: 57vw;
   }
 
   .computer {
-    left: -8vw;
-    width: 52vw;
+    width: 62vw;
   }
 
   .pelican {
-    right: -12vw;
-    width: 60vw;
+    right: -13vw;
+    width: 66vw;
   }
 
 }
