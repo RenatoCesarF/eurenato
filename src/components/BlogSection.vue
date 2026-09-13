@@ -5,7 +5,7 @@
 
 <template>
   <section class="blog-section">
-    <div class="blog-title">
+    <div class="blog-title" id="blog">
       <BlogTitle />
     </div>
 

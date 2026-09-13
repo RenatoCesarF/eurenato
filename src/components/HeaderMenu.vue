@@ -8,18 +8,26 @@
 
     <menu class="menu">
       <ul class="menu-list">
-        <li class="tag tag-blue">
-          <span class="first-letter">s</span>
-          <span>obre</span>
-        </li>
-        <li class="tag tag-yellow">
-          <span class="first-letter">p</span>
-          <span>rojetos</span>
-        </li>
-        <li class="tag tag-red">
-          <span class="first-letter">b</span>
-          <span>log</span>
-        </li>
+        <a href="#sobre">
+          <li class="tag tag-blue">
+            <span class="first-letter">s</span>
+            <span>obre</span>
+          </li>
+        </a>
+
+        <a href="#projetos">
+          <li class="tag tag-yellow">
+            <span class="first-letter">p</span>
+            <span>rojetos</span>
+          </li>
+        </a>
+
+        <a href="#blog">
+          <li class="tag tag-red">
+            <span class="first-letter">b</span>
+            <span>log</span>
+          </li>
+        </a>
       </ul>
     </menu>
   </nav>

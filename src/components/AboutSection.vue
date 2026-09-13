@@ -17,13 +17,14 @@
       />
 
 
-      <div class="paper-content">
+      <div id="sobre"  class="paper-content">
         <h2 class="about-title">Sobre</h2>
 
         <p class="about-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+          Uma pessoa pode ser definida pela coleção de suas criações.
+          Minhas criações falam sobre curiosidade, busca por conhecimento,
+          solidão e a simplicidade da felicidade.
+          Aqui exponho minhas criações.
         </p>
       </div>
     </div>

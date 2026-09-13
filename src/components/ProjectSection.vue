@@ -6,7 +6,7 @@
 
 <template>
   <section class='project-section'>
-    <div>
+    <div id="projetos">
       <ProjectTitle/>
     </div>
     <div class="projects-list">
