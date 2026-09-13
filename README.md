@@ -4,19 +4,20 @@
 - [ ] Textura de papel e noise no fundo inteiro.
 - [ ] Fonte escrita a mão
 - [ ] Sessão meta atual: (a fita no meio): completar esse site
-- [ ] Seelcionar e criar projetos unamed album (foto borrada), mentoria compassos 
 - [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
 - [ ] Elemento polaroid ter font feita a mão com acento.
+- [ ] .ico da virgula (ou do R)
 - [ ] noodles
 - [ ] Pagina de projeto com polaroid, título, descrição e links
+- [ ] Separar componentes de newsBlog e polaroid project
 
 ---
 ## Ajustes
 - [ ] Foto do Renato na sessão sobre esta quebrando na versão de celular
-- [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
 - [ ] Ajustar posicionamento dos cuttings de blog (sempre colados em baixo igual o de projetos)
 - [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular
-- [ ] .ico da virgula (ou do R)
+- [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
+- [ ] Ta dando pra passardo primeiro post pro post -1, no safari ios
 
 - https://www.calligraphr.com/en/webapp/app_home/?/templates
 

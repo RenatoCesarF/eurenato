@@ -3,21 +3,6 @@ import { ref } from 'vue'
 
 const carousel = ref(null)
 
-
-function scrollCarousel(direction) {
-  if (!carousel.value) return
-
-  const card = carousel.value.querySelector('.card')
-  const styles = getComputedStyle(carousel.value)
-  const gap = Number.parseFloat(styles.columnGap) || 0
-  const distance = card ? card.offsetWidth + gap : carousel.value.clientWidth * 0.8
-
-  carousel.value.scrollBy({
-    left: direction * distance,
-    behavior: 'smooth',
-  })
-}
-
 const posts = [
   {
     id: 1,
@@ -60,6 +45,20 @@ const posts = [
     tag: 'Research',
   },
 ]
+
+function scrollCarousel(direction) {
+  if (!carousel.value) return
+
+  const card = carousel.value.querySelector('.card')
+  const styles = getComputedStyle(carousel.value)
+  const gap = Number.parseFloat(styles.columnGap) || 0
+  const distance = card ? card.offsetWidth + gap : carousel.value.clientWidth * 0.8
+
+  carousel.value.scrollBy({
+    left: direction * distance,
+    behavior: 'smooth',
+  })
+}
 </script>
 
 
@@ -169,7 +168,7 @@ const posts = [
   --tag-color: #be4040;
 
   position: relative;
-  z-index: 1;
+  z-index: 4;
 
   min-height: var(--card-min-height);
 
@@ -575,7 +574,7 @@ const posts = [
   border: 0;
 
   transform: translateY(-50%);
-  transition: transform 150ms ease;
+  transition: transform 100ms ease-in-out;
 }
 
 .paper-arrow--left {

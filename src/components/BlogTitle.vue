@@ -5,7 +5,7 @@
 
 <template>
   <div class="blog-wrapper">
-    <div class="project-title">
+    <div class="blog-title">
       <img class="letter letter-b" src="/assets/letters/B_21.png" alt="B" />
       <img class="letter letter-l" src="/assets/letters/L_04.png" alt="L" />
       <img class="letter letter-o" src="/assets/letters/O_01.png" alt="O" />
@@ -31,17 +31,17 @@
   z-index: 1;
 }
 
-.project-title {
+.blog-title {
   position: relative;
   display: flex;
   align-items: center;
   width: fit-content;
-  padding: 18px 42px 22px 34px;
   isolation: isolate;
+  padding: 18px 42px 22px 34px;
 }
 
 /* fundo vermelho irregular */
-.project-title::before {
+.blog-title::before {
 content: "";
   position: absolute;
   left: -2%;
@@ -49,7 +49,6 @@ content: "";
   top: -4%;
   height: 108%;
   background: #cf2027;
-  z-index: -20;
   transform: none;
   clip-path: polygon(5.02% 4.95%, 93.97% 28.83%, 86.99% 78.89%, 3.57% 92.72%);
   width: 118%;
@@ -91,7 +90,7 @@ content: "";
 
 
 @media (max-width: 600px) {
-  .project-title {
+  .blog-title {
     padding-inline: 21px;
   }
 

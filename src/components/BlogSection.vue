@@ -24,7 +24,6 @@
 <style scoped>
 .blog-section {
   position: relative;
-  isolation: isolate;
 
   display: flex;
   flex-direction: column;
@@ -42,7 +41,6 @@
 .blog-title,
 .blog-list {
   position: relative;
-  z-index: 2;
 }
 
 .cuttings {

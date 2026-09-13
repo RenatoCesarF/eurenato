@@ -64,7 +64,6 @@
 <style scoped>
 .about-section {
   position: relative;
-  isolation: isolate;
 
   min-height: clamp(680px, 65vw, 1080px);
   overflow: hidden;

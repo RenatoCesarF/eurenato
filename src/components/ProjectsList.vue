@@ -248,8 +248,8 @@ function scrollCarousel(direction) {
   pointer-events: none;
 
   box-shadow:
-    inset 0 0 5px rgb(0 0 0 / 65%),
-    inset 0 0 25px rgb(0 0 0 / 48%);
+    inset 0 0 5px rgb(0 0 0 / 45%),
+    inset 0 0 20px rgb(0 0 0 / 48%);
 }
 
 .card-image {

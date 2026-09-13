@@ -47,7 +47,7 @@
 
   overflow: visible;
   isolation: isolate;
-  background: green;
+  background: var(--blue-bg-color);
 }
 
 .menu {

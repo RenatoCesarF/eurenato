@@ -12,8 +12,8 @@
   <Header/>
   <HeaderMenu/>
 
-  <main>
-    <content>
+  <main class="noise-area">
+    <content class="noise-area">
       <AboutSection/>
       <ProjectSection/>
       <div class="paper-strip-wrapper">
@@ -42,5 +42,29 @@
   overflow: visible;
   isolation: isolate;
   background: var(--yellow-bg-color);
+}
+
+.noise-area {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background: #eee8dc;
+}
+
+.noise-area::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background-image: url("/assets/noise.png");
+  background-repeat: repeat;
+  background-size: 512px 512px;
+
+  pointer-events: none;
+  border-radius: inherit;
+
+  mix-blend-mode: soft-light;
+  opacity: 0.6;
 }
 </style>
