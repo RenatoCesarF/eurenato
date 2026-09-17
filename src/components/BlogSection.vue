@@ -43,12 +43,10 @@
 .blog-title,
 .blog-list {
   position: relative;
-  z-index: 1;
 }
 
 .cuttings {
   position: relative;
-  z-index: 3;
 
   width: 100%;
   height: clamp(280px, 40vh, 200px);

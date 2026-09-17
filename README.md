@@ -1,15 +1,14 @@
 # eurenato
 
 ## Tasks
-- [x] Textura de papel e noise no fundo inteiro.
 - [ ] Sessão meta atual: (a fita no meio): completar esse site
 - [ ] Separar polaroid em componente
+- [ ] Separar componente newsblogpost
 - [ ] .ico da virgula (ou do R)
 - [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
 - [ ] Fonte escrita a mão
 - [ ] noodles
 - [ ] Pagina de projeto com polaroid, título, descrição e links
-- [ ] Separar componente newsblogpost
 
 ---
 ## Ajustes
