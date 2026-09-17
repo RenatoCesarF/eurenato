@@ -67,8 +67,6 @@
 
   min-height: clamp(680px, 65vw, 1080px);
   overflow: hidden;
-
-  background-color: var(--blue-bg-color);
 }
 
 /* ==================================================

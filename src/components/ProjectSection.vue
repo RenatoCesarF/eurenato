@@ -27,11 +27,11 @@
 .project-section {
   height: 53rem;
   padding-top: 2vh;
-  background-color: var(--blue-bg-color);
   width: 100%;
 
   display: flex;
   flex-direction: column;
+  background: transparent;
 }
 
 .projects-list {

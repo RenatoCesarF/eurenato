@@ -14,23 +14,33 @@
 
   <main class="noise-area">
     <content class="noise-area">
-      <AboutSection/>
-      <ProjectSection/>
-      <div class="paper-strip-wrapper">
-        <PaperStrip/>
+      <div class="blue-area textured-section">
+        <AboutSection/>
+        <ProjectSection/>
+        <div class="paper-strip-wrapper">
+          <PaperStrip/>
+        </div>
       </div>
       <BlogSection/>
 
       <div class="paper-strip-wrapper">
         <PaperStrip/>
       </div>
-      <div class="last-section">
+      <div class="last-section textured-section">
       </div>
     </content>
   </main>
 </template>
 
 <style scoped>
+.blue-area {
+  --section-background: var(--blue-bg-color);
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .paper-strip-wrapper{
   position: relative;
   width: 100%;
@@ -67,12 +77,13 @@
   border-radius: inherit;
 
   mix-blend-mode: soft-light;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .last-section{
   height: 50vh;
-  background: var(--orange-bg-color)
-
+  position: relative;
+  width: 100%;
+  --section-background: var(--orange-bg-color);
 }
 </style>

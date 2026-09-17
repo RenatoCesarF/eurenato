@@ -9,7 +9,7 @@
 }
 
 :root {
-  --yellow-bg-color: #E1C752;
+  --yellow-bg-color: #FFE469;
   --orange-bg-color: #CD4D39;
   --blue-bg-color: #1C3CFF;
 }
@@ -26,3 +26,25 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.textured-section {
+  background-color: var(--section-background, #eee8dc);
+
+  background-image: url('/assets/paper-background.png');
+  background-position: top center;
+
+  /*
+   * Primeiro valor: horizontal.
+   * Segundo valor: vertical.
+   */
+  background-repeat: no-repeat repeat;
+
+  /*
+   * Ocupa toda a largura e mantém a proporção.
+   * A repetição começa após a altura proporcional da imagem.
+   */
+  background-size: 100% auto;
+
+  background-blend-mode: multiply;
+}
+
