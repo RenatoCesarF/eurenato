@@ -2,7 +2,11 @@
 
 <template>
   <div class="paper-strip-layer" aria-hidden="true">
-    <img class="paper-strip" src="/assets/cuttings/paper-strip.png" alt="" />
+    <img
+      class="paper-strip"
+      src="/assets/cuttings/paper-strip.png"
+      alt=""
+    />
   </div>
 </template>
 
@@ -10,22 +14,25 @@
 .paper-strip-layer {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
+
   pointer-events: none;
+
   overflow: visible;
   overflow-x: clip;
 }
 
 .paper-strip {
   position: absolute;
+  z-index: 1;
+
   top: 30%;
   left: -8rem;
-  transform: translateY(-50%);
 
   width: clamp(1700px, 170vw, 2600px);
-  height: 35rem;
   max-width: none;
   height: auto;
-  z-index: 1000;
+
+  transform: translateY(-50%);
 }
 </style>

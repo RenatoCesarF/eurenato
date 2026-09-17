@@ -33,16 +33,7 @@ html {
   background-image: url('/assets/paper-background.png');
   background-position: top center;
 
-  /*
-   * Primeiro valor: horizontal.
-   * Segundo valor: vertical.
-   */
   background-repeat: no-repeat repeat;
-
-  /*
-   * Ocupa toda a largura e mantém a proporção.
-   * A repetição começa após a altura proporcional da imagem.
-   */
   background-size: 100% auto;
 
   background-blend-mode: multiply;

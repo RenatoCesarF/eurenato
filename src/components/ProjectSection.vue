@@ -32,6 +32,9 @@
   display: flex;
   flex-direction: column;
   background: transparent;
+
+  position: relative;
+  z-index: 0;
 }
 
 .projects-list {

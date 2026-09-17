@@ -11,7 +11,7 @@
       <img class="letter letter-o" src="/assets/letters/O_01.png" alt="O" />
       <img class="letter letter-g" src="/assets/letters/G_22.png" alt="G" />
     </div>
-      <img class="vessel" src="/assets/paper-cuts/planta.png"
+    <img class="vessel" src="/assets/paper-cuts/planta.png"
   </div>
 </template>
 
@@ -20,6 +20,7 @@
   width: 100%;
   overflow-x: clip;
   position: relative;
+  z-index: 0;
 }
 
 .vessel {
@@ -38,6 +39,8 @@
   width: fit-content;
   isolation: isolate;
   padding: 18px 42px 22px 34px;
+
+  z-index: 1;
 }
 
 /* fundo vermelho irregular */
@@ -52,10 +55,13 @@ content: "";
   transform: none;
   clip-path: polygon(5.02% 4.95%, 93.97% 28.83%, 86.99% 78.89%, 3.57% 92.72%);
   width: 118%;
+
+  z-index: 0;
 }
 
 /* letras recortadas */
 .letter {
+  z-index: 3;
   display: block;
   object-fit: contain;
   position: relative;

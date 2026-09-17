@@ -1,7 +1,7 @@
 # eurenato
 
 ## Tasks
-- [ ] Textura de papel e noise no fundo inteiro.
+- [x] Textura de papel e noise no fundo inteiro.
 - [ ] Sessão meta atual: (a fita no meio): completar esse site
 - [ ] Separar polaroid em componente
 - [ ] .ico da virgula (ou do R)

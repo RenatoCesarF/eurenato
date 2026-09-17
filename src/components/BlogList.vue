@@ -61,7 +61,6 @@ function scrollCarousel(direction) {
 }
 </script>
 
-
 <template>
   <section class="posts-carousel">
 
