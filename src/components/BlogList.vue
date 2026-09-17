@@ -188,13 +188,6 @@ function scrollCarousel(direction) {
     filter 180ms ease;
 }
 
-/*
- * Elemento interno:
- * representa o papel e recebe o recorte.
- *
- * Como este elemento possui áreas transparentes,
- * a sombra aplicada em .card acompanha sua silhueta.
- */
 .card-paper {
   position: relative;
   isolation: isolate;
@@ -211,10 +204,6 @@ function scrollCarousel(direction) {
   clip-path: var(--card-clip);
 }
 
-/*
- * Primeira cópia da textura:
- * Multiply com 55% de opacidade.
- */
 .card-paper::before {
   position: absolute;
   inset: 0;
@@ -233,10 +222,6 @@ function scrollCarousel(direction) {
   pointer-events: none;
 }
 
-/*
- * Segunda cópia da textura:
- * Soft Light com 30% de opacidade.
- */
 .paper-texture {
   position: absolute;
   inset: 0;

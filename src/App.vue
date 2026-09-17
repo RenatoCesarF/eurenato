@@ -105,10 +105,6 @@ import ProjectSection from '@/components/ProjectSection.vue'
   isolation: isolate;
 }
 
-/*
- * AboutSection e ProjectSection ficam acima
- * do pseudo-elemento que contém o noise.
- */
 .section-layer {
   position: relative;
   z-index: 1;
@@ -153,7 +149,7 @@ import ProjectSection from '@/components/ProjectSection.vue'
   --section-background: var(--orange-bg-color);
 
   position: relative;
-  z-index: 0;
+  z-index: 2;
 
   height: 50vh;
 
