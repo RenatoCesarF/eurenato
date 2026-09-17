@@ -13,29 +13,30 @@ import ProjectSection from '@/components/ProjectSection.vue'
   <HeaderMenu />
 
   <main class="noise-area">
-    <div class="page-content">
-      <div class="blue-area textured-section">
-        <AboutSection class="section-layer" />
+    <div class="blue-area textured-section">
+      <AboutSection class="section-layer" />
 
-        <ProjectSection class="section-layer" />
-
-        <div class="paper-strip-wrapper">
-          <PaperStrip />
-        </div>
-
-        <BlogSection class="section-layer" />
-      </div>
-
-      <div class="paper-strip-wrapper paper-strip-wrapper--last">
-        <PaperStrip />
-      </div>
-
-      <div class="last-section textured-section"></div>
+      <ProjectSection class="section-layer" />
     </div>
+
+    <div class="paper-strip-wrapper">
+      <PaperStrip />
+    </div>
+
+    <BlogSection class="section-layer" />
+
+    <div class="paper-strip-wrapper paper-strip-wrapper--last">
+      <PaperStrip />
+    </div>
+
+    <div class="last-section textured-section"></div>
   </main>
 </template>
 
 <style scoped>
+/* ==================================================
+   Estrutura geral
+================================================== */
 
 .noise-area {
   position: relative;
@@ -43,27 +44,42 @@ import ProjectSection from '@/components/ProjectSection.vue'
 
   min-height: 100vh;
 
-  background: #eee8dc;
+  background-color: #eee8dc;
 }
 
-.page-content {
+/* ==================================================
+   Seções com papel
+================================================== */
+
+.textured-section {
   position: relative;
-  z-index: 0;
-
   isolation: isolate;
-  overflow: visible;
+
+  background-color: var(--section-background, #eee8dc);
+
+  background-image: url('/assets/paper-background.png');
+  background-position: top center;
+  background-repeat: no-repeat repeat;
+  background-size: 100% auto;
+
+  background-blend-mode: multiply;
 }
 
-.noise-area::after {
+/*
+ * O noise agora pertence ao fundo da seção.
+ * Ele não fica mais sobre a página inteira.
+ */
+.textured-section::after {
   content: '';
 
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
 
   pointer-events: none;
 
   background-image: url('/assets/noise.png');
+  background-position: top left;
   background-repeat: repeat;
   background-size: 512px 512px;
 
@@ -73,18 +89,9 @@ import ProjectSection from '@/components/ProjectSection.vue'
   opacity: 0.4;
 }
 
-.textured-section {
-  position: relative;
-
-  background-color: var(--section-background, #eee8dc);
-  background-image: url('/assets/paper-background.png');
-
-  background-position: top center;
-  background-repeat: no-repeat repeat;
-  background-size: 100% auto;
-
-  background-blend-mode: multiply;
-}
+/* ==================================================
+   Área azul
+================================================== */
 
 .blue-area {
   --section-background: var(--blue-bg-color);
@@ -94,15 +101,22 @@ import ProjectSection from '@/components/ProjectSection.vue'
 
   width: 100%;
 
-  isolation: isolate;
   overflow: visible;
+  isolation: isolate;
 }
 
+/*
+ * AboutSection e ProjectSection ficam acima
+ * do pseudo-elemento que contém o noise.
+ */
 .section-layer {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
+/* ==================================================
+   PaperStrip
+================================================== */
 
 .paper-strip-wrapper {
   position: relative;
@@ -115,17 +129,25 @@ import ProjectSection from '@/components/ProjectSection.vue'
   width: 100%;
   min-height: 50px;
 
-
   overflow: visible;
   isolation: isolate;
   pointer-events: none;
 }
 
+/*
+ * O separador entre Blog e LastSection
+ * permanece acima da seção seguinte.
+ */
 .paper-strip-wrapper--last {
   z-index: 100;
+
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
+
+/* ==================================================
+   Última seção
+================================================== */
 
 .last-section {
   --section-background: var(--orange-bg-color);
@@ -135,6 +157,7 @@ import ProjectSection from '@/components/ProjectSection.vue'
 
   height: 50vh;
 
+  overflow: visible;
   isolation: isolate;
 }
 </style>

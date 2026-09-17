@@ -40,7 +40,6 @@
   z-index: 0;
 }
 
-/* Título e posts sempre ficam acima dos recortes */
 .blog-title,
 .blog-list {
   position: relative;
