@@ -55,7 +55,7 @@ import ProjectSection from '@/components/ProjectSection.vue'
   position: relative;
   isolation: isolate;
 
-  background-color: var(--section-background, #eee8dc);
+  background-color: var(--section-background);
 
   background-image: url('/assets/paper-background.png');
   background-position: top center;

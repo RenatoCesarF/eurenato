@@ -1,7 +1,5 @@
 <script setup>
-const props = defineProps(['title', 'description', 'link', 'tag', 'index' ])
-console.log(props)
-console.log(`card--cut-${(props.index % 5) + 1}`)
+  const props = defineProps(['title', 'description', 'link', 'tag', 'index' ])
 </script>
 
 <template>
@@ -31,7 +29,7 @@ console.log(`card--cut-${(props.index % 5) + 1}`)
 </template>
 
 
-<style>
+<style scoped>
 .card {
   --rotation: 0deg;
   --offset: 0px;

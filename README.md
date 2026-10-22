@@ -1,13 +1,13 @@
 # eurenato
 
 ## Tasks
-- [ ] Separar polaroid em componente
-- [ ] Separar componente newsblogpost
+- [x] Separar polaroid em componente
+- [x] Separar componente newsblogpost
 - [ ] .ico da virgula (ou do R)
 - [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
+- [ ] Pagina de projeto com polaroid, título, descrição e links
 - [ ] Fonte escrita a mão
 - [ ] noodles
-- [ ] Pagina de projeto com polaroid, título, descrição e links
 
 ---
 ## Ajustes
