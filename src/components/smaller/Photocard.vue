@@ -1,6 +1,5 @@
 <script setup>
   const props = defineProps(['title', 'image', 'rotation', 'offset']);
-  console.log(props)
 </script>
 
 <template>
@@ -25,7 +24,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .card {
   display: flex;
   flex-direction: column;
