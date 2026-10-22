@@ -1,7 +1,6 @@
 # eurenato
 
 ## Tasks
-- [ ] Sessão meta atual: (a fita no meio): completar esse site
 - [ ] Separar polaroid em componente
 - [ ] Separar componente newsblogpost
 - [ ] .ico da virgula (ou do R)
@@ -12,6 +11,7 @@
 
 ---
 ## Ajustes
+- [ ] aumentar tamanho do botão do menu header
 - [ ] Otimizar as imagens pra webp e substituir seus usos
 - [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular, mesmo na simulação de celular passa direto, no 
 - [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
