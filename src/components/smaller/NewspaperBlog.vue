@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps(['title', 'description', 'link', 'tag', 'index' ])
+  const props = defineProps(['title', 'description', 'tag', 'index' ])
 </script>
 
 <template>
@@ -20,7 +20,7 @@
           <p>{{ props.description }}</p>
         </div>
 
-        <a :href="props.link">
+        <a :href="props.id">
           {{ props.tag }}
         </a>
       </article>
@@ -37,6 +37,8 @@
   --card-clip: inset(0);
   --paper-texture: url("/assets/textures/01.jpg");
   --tag-color: #be4040;
+
+  cursor: pointer;
 
   position: relative;
   z-index: 4;

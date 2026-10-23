@@ -1,9 +1,8 @@
 <script setup>
 import { ref } from 'vue'
-import BlogPaperCard from "./smaller/BlogPaperCard.vue"
+import NewspaperBlog from "./smaller/NewspaperBlog.vue"
 
 const carousel = ref(null)
-
 
 const posts = [
   {
@@ -85,9 +84,9 @@ function scrollCarousel(direction) {
         v-for="(post, index) in posts"
         :key="post.id"
       >
-        <BlogPaperCard
+        <NewspaperBlog
+          :id="post.id"
           :title="post.title"
-          :link="post.link"
           :index="index"
           :description="post.description"
           :tag="post.tag"
