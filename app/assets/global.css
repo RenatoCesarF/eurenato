@@ -1,0 +1,47 @@
+
+@font-face {
+  font-family: 'punk2';
+  src: url('/assets/punk2.ttf');
+}
+
+@font-face {
+  font-family: 'punk4';
+  src: url('/assets/punk4.ttf');
+}
+
+:root {
+  --yellow-bg-color: #FFE469;
+  --orange-bg-color: #CD4D39;
+  --blue-bg-color: #1C3CFF;
+}
+
+* {
+  margin: 0;
+}
+body {
+  padding: 0;
+  background-color: Black;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Optional: makes the link inherit the text color */
+}
+
+.textured-section {
+  background-color: var(--section-background);
+
+  background-image: url('/assets/paper-background.png');
+  background-position: top center;
+
+  background-repeat: no-repeat repeat;
+  background-size: 100% auto;
+
+  background-blend-mode: multiply;
+}
+

@@ -1,31 +1,34 @@
 <script setup>
-  const props = defineProps(['title', 'description', 'tag', 'index' ])
+  const props = defineProps(['title', 'description', 'tag', 'index', 'path' ])
 </script>
 
 <template>
-  <div
-    class="card"
-    :class="`card--cut-${(props.index % 5) + 1}`"
-  >
-    <div class="card-paper">
-      <span
-        class="paper-texture"
-        aria-hidden="true"
-      ></span>
 
-      <article class="content">
-        <div>
-          <h3>{{ props.title }}</h3>
+  <NuxtLink :to="props.path">
+    <div
+      class="card"
+      :class="`card--cut-${(props.index % 5) + 1}`"
+    >
+      <div class="card-paper">
+        <span
+          class="paper-texture"
+          aria-hidden="true"
+        ></span>
 
-          <p>{{ props.description }}</p>
-        </div>
+        <article class="content">
+          <div>
+            <h3>{{ props.title }}</h3>
 
-        <a :href="props.id">
-          {{ props.tag }}
-        </a>
-      </article>
+            <p>{{ props.description }}</p>
+          </div>
+
+          <a :href="props.tab">
+            {{ props.tag }}
+          </a>
+        </article>
+      </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 
@@ -346,6 +349,8 @@
 }
 
 .content {
+
+  text-decoration: none;
   position: relative;
   z-index: 1;
 
@@ -386,6 +391,7 @@
 }
 
 .content a {
+  text-decoration: none;
   align-self: flex-start;
 
   padding: 0.45rem 0.9rem;

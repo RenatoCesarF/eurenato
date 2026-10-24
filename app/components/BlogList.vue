@@ -4,48 +4,7 @@ import NewspaperBlog from "./smaller/NewspaperBlog.vue"
 
 const carousel = ref(null)
 
-const posts = [
-  {
-    id: 1,
-    title: 'Bold Choices',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-    tag: 'Design',
-  },
-  {
-    id: 2,
-    title: 'Creating New Worlds',
-    description:
-      'Ideas, experiments and observations about games, interfaces and the strange process of creating digital experiences.',
-    link: '#',
-    tag: 'Games',
-  },
-  {
-    id: 3,
-    title: 'Learning Through Play',
-    description:
-      'A small collection of notes about interaction, storytelling and the things games can teach us.',
-    link: '#',
-    tag: 'Thoughts',
-  },
-  {
-    id: 4,
-    title: 'The Shape of an Idea',
-    description:
-      'How unfinished sketches, discarded concepts and small mistakes sometimes become the most interesting parts of a project.',
-    link: '#',
-    tag: 'Process',
-  },
-  {
-    id: 5,
-    title: 'A Curious Experiment',
-    description:
-      'Notes from an experiment involving software, people and unexpected ways of interacting with technology.',
-    link: '#',
-    tag: 'Research',
-  },
-]
+const posts = await queryCollection('blog').all()
 
 function scrollCarousel(direction) {
   if (!carousel.value) return
@@ -85,7 +44,7 @@ function scrollCarousel(direction) {
         :key="post.id"
       >
         <NewspaperBlog
-          :id="post.id"
+          :path="post.path"
           :title="post.title"
           :index="index"
           :description="post.description"

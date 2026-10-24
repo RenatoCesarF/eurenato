@@ -6,6 +6,7 @@ import AboutSection from '@/components/AboutSection.vue'
 import PaperStrip from '@/components/PaperStrip.vue'
 import BlogSection from '@/components/BlogSection.vue'
 import ProjectSection from '@/components/ProjectSection.vue'
+
 </script>
 
 <template>
