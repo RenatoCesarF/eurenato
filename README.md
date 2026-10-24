@@ -1,75 +1,39 @@
-# Nuxt Content Starter
+# eurenato
 
-Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
+## Tasks
+- [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
+- [ ] Conseguir clicar no projeto, e ele levantar e ficar em destaque, 
+      uma carta aparece e mostra detalhes dele, junto com um link pra ir pra sua pagina ou seus links
+- [ ] Pagina de projeto com polaroid, título, descrição e links
+- [ ] Fonte escrita a mão
+- [ ] noodles
+- [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas
 
-## Setup
+---
+## Ajustes
+- [ ] aumentar tamanho do botão do menu header
+- [ ] Otimizar as imagens pra webp e substituir seus usos
+- [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular, mesmo na simulação de celular passa direto, no 
+- [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
+- [ ] Ta dando pra passardo primeiro post pro post -1, no safari ios
 
-Make sure to install dependencies:
+- https://www.calligraphr.com/en/webapp/app_home/?/templates
+- Editor de texto https://tiptap.dev/docs/editor/getting-started/overview
 
-```bash
-# npm
+## Project Setup
+
+```sh
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### Compile and Hot-Reload for Development
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+```sh
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### Type-Check, Compile and Minify for Production
 
-Build the application for production:
-
-```bash
-# npm
+```sh
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

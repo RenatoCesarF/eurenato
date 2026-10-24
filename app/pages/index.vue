@@ -66,10 +66,6 @@ import ProjectSection from '@/components/ProjectSection.vue'
   background-blend-mode: multiply;
 }
 
-/*
- * O noise agora pertence ao fundo da seção.
- * Ele não fica mais sobre a página inteira.
- */
 .textured-section::after {
   content: '';
 

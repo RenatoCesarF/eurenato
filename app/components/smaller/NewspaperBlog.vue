@@ -74,7 +74,6 @@
 
   display: flex;
 
-
   box-sizing: border-box;
   min-height: var(--card-min-height);
   padding: 2rem 1.8rem 1.7rem;
@@ -349,7 +348,6 @@
 }
 
 .content {
-
   text-decoration: none;
   position: relative;
   z-index: 1;
