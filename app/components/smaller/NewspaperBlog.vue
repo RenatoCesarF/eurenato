@@ -18,7 +18,7 @@
 
         <article class="content">
           <div>
-            <h3>{{ props.title }}</h3>
+            <h3>{{ props.title.toUpperCase() }}</h3>
 
             <p>{{ props.description }}</p>
           </div>
