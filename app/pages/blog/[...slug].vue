@@ -347,7 +347,7 @@
 
   /* Título da publicação */
   .post-title {
-    font-size: clamp(2.25rem, 8vw, 3.5rem);
+    font-size: clamp(3.5rem, 12vw, 4.5rem);
     line-height: 1;
     letter-spacing: -0.035em;
     padding: 0 0 1rem;
@@ -366,7 +366,7 @@
   /* Texto principal */
   .content {
     margin-top: 1rem;
-    font-size: 1.0625rem;
+    font-size: 1.3625rem;
     line-height: 1.75;
     text-align: left;
   }
