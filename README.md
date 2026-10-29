@@ -1,7 +1,6 @@
 # eurenato
 
 ## Tasks
-- [ ] Pagina blog post base (titulo, resumo, texto com imagens e vindas de MD)
 - [ ] Tornar paper arrow em um componente
 - [ ] Conseguir clicar no projeto, e ele levantar e ficar em destaque, 
       uma carta aparece e mostra detalhes dele, junto com um link pra ir pra sua pagina ou seus links
@@ -9,6 +8,7 @@
 - [ ] Fonte escrita a mão
 - [ ] noodles
 - [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas
+- [ ] Dark mode no blog
 
 ---
 ## Ajustes

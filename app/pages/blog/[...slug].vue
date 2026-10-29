@@ -53,7 +53,7 @@
       :class="{ 'paper--no-textures': !texturesEnable, 'dark-mode-paper': !darkmodeEnable}"
     >
       <div class="paper-content">
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title">{{ page.title.toUpperCase() }}</h1>
         <p class="post-description">{{ page.description }}</p>
         <p>{{ page.date }}</p>
         <hr />
