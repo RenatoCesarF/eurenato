@@ -1,6 +1,7 @@
 <script setup lang="ts">
   const route = useRoute()
   const router = useRouter()
+  const texturesEnable = ref(true)
 
   const { data: page } = await useAsyncData('blog-' + route.path, () => {
     return queryCollection('blog').path(route.path).first()
@@ -28,17 +29,29 @@
       </button>
 
       <div class="configuration">
-        <button>
+        <button
+          type="button"
+          @click="texturesEnable = !texturesEnable"
+          :aria-presset="!texturesEnable"
+        >
           No Textures
         </button>
 
-        <button>
-          Change Read mode
-        </button>
+        <!-- <button -->
+        <!--   type="button" -->
+        <!--   @click="darkmodeEnable = !darkmodeEnable" -->
+        <!--   :aria_presset="!darkmodeEnable" -->
+        <!-- > -->
+        <!--   Change Read mode -->
+        <!-- </button> -->
+
       </div>
     </div>
 
-    <div class="paper">
+    <div 
+      class="paper"
+      :class="{ 'paper--no-textures': !texturesEnable, 'dark-mode-paper': !darkmodeEnable}"
+    >
       <div class="paper-content">
         <h1 class="post-title">{{ page.title }}</h1>
         <p class="post-description">{{ page.description }}</p>
@@ -123,13 +136,17 @@
   width: auto;
   min-width: 0;
   box-sizing: border-box;
-
   color: #1A1A1A;
 
   margin: 0 clamp(0rem, calc(12vw - 1rem), 10rem);
   padding: 2rem clamp(1rem, 5vw, 4rem);
 
   flex: 1;
+}
+
+.paper--no-textures::before,
+.paper--no-textures::after{
+  display: none;
 }
 
 .paper::before {
@@ -208,7 +225,6 @@
   font-family: jornal-body, serif;
   font-size: clamp(1rem, calc(0.7rem + 1vw), 1.6rem);
   line-height: 1.7;
-  color: #26231f;
   text-align: justify;
   overflow-wrap: break-word;
 }
