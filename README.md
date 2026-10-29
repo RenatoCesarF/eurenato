@@ -1,9 +1,12 @@
 # eurenato
 
 ## Tasks
+- [ ] Definir fundo do html como #2d2d2d, nos celular ta tudo branco 
 - [ ] Tornar paper arrow em um componente
 - [ ] Conseguir clicar no projeto, e ele levantar e ficar em destaque, 
       uma carta aparece e mostra detalhes dele, junto com um link pra ir pra sua pagina ou seus links
+- [ ] Conseguir trazer a data do blog pro card e pro post
+- [ ] Colocar imagens nos blogs
 - [ ] Fonte escrita a mão
 - [ ] noodles
 - [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas

@@ -66,7 +66,7 @@ import ProjectSection from '@/components/ProjectSection.vue'
   background-blend-mode: multiply;
 }
 
-.textured-section::after {
+.textured-section::before {
   content: '';
 
   position: absolute;
