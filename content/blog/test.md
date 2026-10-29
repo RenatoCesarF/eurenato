@@ -1,6 +1,7 @@
 ---
 title: Um novo projeto
 description: Explicando o que é tudo isso, o que isso vai ser e quais minhas ideias pro futuro da minha vida como artista
+date: 29/10/2026
 ---
 
 A muito eu tenho tido projetos. Não só a muito tempo, mas em muita quantidade. Maior parte deles, confesso, são inacabados, deixados de lado e até esquecidos. E estão assim por vários motivos, desde meu eventual desinteresse, até impossibilidade técnica ou intelectual do autor. Mas muitos também por faltar um processo, um processo pra auxiliar na conclusão de projetos, incentivos pra isso, metas a longo prazo, e não apenas tarefas da semana que serão esquecida com facilidade. Além disso, meus projetos caminham por uma gama de temas, tipos, assuntos diferentes que nunca seria possível organiza-los todos em uma plataforma (por causa de como os algoritmos funcionam). Por isso tudo ficou muito distante, separado, deixado de lado porque me desapego da ferramenta, da dinâmica, do assunto ou me frustro no meio do processo e acabo indo pra próxima ideia. 

@@ -1,9 +1,8 @@
 <script setup>
-  const props = defineProps(['title', 'description', 'tag', 'index', 'path' ])
+  const props = defineProps(['title', 'description', 'tag', 'index', 'path','date' ])
 </script>
 
 <template>
-
   <NuxtLink :to="props.path">
     <div
       class="card"
@@ -14,6 +13,8 @@
           class="paper-texture"
           aria-hidden="true"
         ></span>
+
+        <span>{{props.date}}</span>
 
         <article class="content">
           <div>

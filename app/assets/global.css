@@ -1,12 +1,18 @@
 
 @font-face {
+  font-family: 'jornal-body';
+  src: url('/assets/fonts/droid-serif/DroidSerif.tff')
+
+}
+
+@font-face {
   font-family: 'punk2';
-  src: url('/assets/punk2.ttf');
+  src: url('/assets/fonts/punk2.ttf');
 }
 
 @font-face {
   font-family: 'punk4';
-  src: url('/assets/punk4.ttf');
+  src: url('/assets/fonts/punk4.ttf');
 }
 
 :root {

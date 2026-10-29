@@ -49,6 +49,7 @@ function scrollCarousel(direction) {
           :index="index"
           :description="post.description"
           :tag="post.tag"
+          :date="post.date"
         />
       </li>
     </ul>
