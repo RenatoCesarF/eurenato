@@ -97,7 +97,14 @@ function scrollCarousel(direction) {
           v-for="project in projects"
           :key="project.id"
         >
-          <Photocard :title="project.title" :image="project.image" :rotation="project.rotation" :offset="project.offset" />
+
+          <NuxtLink :to="`/projects/${project.id}`">
+            <Photocard
+              :style="{'view-transition-name': `item-image-${project.id}`}"
+              :title="project.title" 
+              :image="project.image" 
+              :rotation="project.rotation" :offset="project.offset" :id="project.id" />
+          </NuxtLink>
         </li>
       </ul>
 

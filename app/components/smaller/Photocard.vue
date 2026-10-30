@@ -1,6 +1,7 @@
 <script setup>
-  const props = defineProps(['title', 'image', 'rotation', 'offset']);
+  const props = defineProps(['id', 'title', 'image', 'rotation', 'offset']);
 </script>
+
 
 <template>
   <div
