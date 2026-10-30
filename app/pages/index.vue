@@ -52,39 +52,39 @@ import ProjectSection from '@/components/ProjectSection.vue'
    Seções com papel
 ================================================== */
 
-.textured-section {
-  position: relative;
-  isolation: isolate;
+/* .textured-section { */
+/*   position: relative; */
+/*   isolation: isolate; */
+/**/
+/*   background-color: var(--section-background); */
+/**/
+/*   background-image: url('/assets/paper-background.png'); */
+/*   background-position: top center; */
+/*   background-repeat: no-repeat repeat; */
+/*   background-size: 100% auto; */
+/**/
+/*   background-blend-mode: multiply; */
+/* } */
 
-  background-color: var(--section-background);
-
-  background-image: url('/assets/paper-background.png');
-  background-position: top center;
-  background-repeat: no-repeat repeat;
-  background-size: 100% auto;
-
-  background-blend-mode: multiply;
-}
-
-.textured-section::before {
-  content: '';
-
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-
-  pointer-events: none;
-
-  background-image: url('/assets/noise.png');
-  background-position: top left;
-  background-repeat: repeat;
-  background-size: 512px 512px;
-
-  border-radius: inherit;
-
-  mix-blend-mode: soft-light;
-  opacity: 0.4;
-}
+/* .textured-section::before { */
+/*   content: ''; */
+/**/
+/*   position: absolute; */
+/*   inset: 0; */
+/*   z-index: 0; */
+/**/
+/*   pointer-events: none; */
+/**/
+/*   background-image: url('/assets/noise.png'); */
+/*   background-position: top left; */
+/*   background-repeat: repeat; */
+/*   background-size: 512px 512px; */
+/**/
+/*   border-radius: inherit; */
+/**/
+/*   mix-blend-mode: soft-light; */
+/*   opacity: 0.4; */
+/* } */
 
 /* ==================================================
    Área azul

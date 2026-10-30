@@ -14,7 +14,7 @@
         <!-- /> -->
       </button>
 
-    <div v-if="currentItem">
+    <div v-if="currentItem" class="test">
             <Photocard
               :title="currentItem.title" 
               :image="currentItem.image" 
@@ -119,5 +119,9 @@ const currentItem = computed(() => {
   object-fit: cover;
   border-radius: 16px;
   margin-top: 1rem;
+}
+
+.test {
+  width: 200px;
 }
 </style>

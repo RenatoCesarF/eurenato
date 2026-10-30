@@ -38,15 +38,3 @@ a {
   color: inherit; /* Optional: makes the link inherit the text color */
 }
 
-.textured-section {
-  background-color: var(--section-background);
-
-  background-image: url('/assets/paper-background.png');
-  background-position: top center;
-
-  background-repeat: no-repeat repeat;
-  background-size: 100% auto;
-
-  background-blend-mode: multiply;
-}
-
