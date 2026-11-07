@@ -1,11 +1,11 @@
-<script setup>
-import {useViewTransitionNavigation} from '~/composable/useViewTransitionNavigation'
 
-import Photocard from '~/components/smaller/Photocard'
+<script setup>
 import { computed } from 'vue'
 import { projects } from '~/data/projects'
+import Photocard from '~/components/smaller/Photocard.vue'
 
 const route = useRoute()
+const router = useRouter()
 
 definePageMeta({
   pageTransition: false,
@@ -25,91 +25,91 @@ if (!project.value) {
     statusMessage: 'Projeto não encontrado',
   })
 }
+
+function closeProject() {
+  const previousPath = window.history.state?.back
+
+  if (
+    typeof previousPath === 'string' &&
+    previousPath.split(/[?#]/)[0] === '/'
+  ) {
+    router.back()
+    return
+  }
+
+  router.replace('/')
+}
 </script>
 
 <template>
-  <main class="project-detail">
+  <main class="project-detail" @click="closeProject">
+      <section
+        class="detail-content"
+        role="dialog"
+        aria-modal="true"
+        :aria-labelledby="`project-title-${project.id}`"
+      >
 
-    <!-- Fundo escurecido -->
-    <NuxtLink
-      to="/projects-test"
-      class="detail-backdrop"
-      aria-label="Fechar projeto"
-      tabindex="-1"
-    />
+        <!-- Polaroid -->
+        <div class="detail-image-column">
 
-    <!-- Conteúdo centralizado -->
-    <section
-      class="detail-content"
-      role="dialog"
-      aria-modal="true"
-      :aria-labelledby="`project-title-${project.id}`"
-    >
+            <div
+              class="shared-photocard"
+              :style="{
+                viewTransitionName: `item-image-${project.id}`
+              }"
+            >
+            <Photocard
+              :title="project.title"
+              :image="project.image"
+              :rotation="project.rotation"
+              :offset="project.offset"
+              :id="project.id"
+            />
+          </div>
 
-      <!-- Polaroid -->
-      <div class="detail-image-column">
-
-        <div
-          class="shared-photocard shared-photocard--detail"
-          :style="{
-            viewTransitionName: `item-image-${project.id}`
-          }"
-        >
-          <Photocard
-            :title="project.title"
-            :image="project.image"
-            :rotation="project.rotation"
-            :offset="project.offset"
-            :id="project.id"
-          />
         </div>
 
-      </div>
-
-      <!-- Folha de apresentação -->
-      <article class="project-paper">
-
-        <NuxtLink
-          to="/projects-test"
+        <!-- Folha de apresentação -->
+        <article class="project-paper">
+        <button
+          type="button"
           class="close-button"
           aria-label="Fechar"
-        >
-          ×
-        </NuxtLink>
+          @click="closeProject">
+            ×
+          </button>
 
-        <small>PROJETO Nº {{ project.id }}</small>
+          <h1 :id="`project-title-${project.id}`">
+            {{ project.title }}
+          </h1>
 
-        <h1 :id="`project-title-${project.id}`">
-          {{ project.title }}
-        </h1>
+          <div class="paper-divider"></div>
 
-        <div class="paper-divider"></div>
+          <p>{{ project.description }}</p>
 
-        <p>{{ project.description }}</p>
+          <a
+            v-if="project.link !== '#'"
+            :href="project.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-external-link"
+          >
+            Conhecer projeto →
+          </a>
 
-        <a
-          v-if="project.link !== '#'"
-          :href="project.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-external-link"
-        >
-          Conhecer projeto →
-        </a>
+          <footer>
+            <span>ARQUIVO DE PROJETOS</span>
+          </footer>
 
-        <footer>
-          <span>ARQUIVO DE PROJETOS</span>
-        </footer>
+        </article>
 
-      </article>
-
-    </section>
+      </section>
 
   </main>
 </template>
 
 <style>
-/* Toda a tela se transforma em uma camada de detalhe */
 .project-detail {
   position: fixed;
   inset: 0;
@@ -121,21 +121,36 @@ if (!project.value) {
   width: 100%;
   min-height: 100dvh;
 
-  padding: 40px;
+  background: var(--blue-bg-color);
+
+  background-image: url('/assets/paper-background.png');
+  background-position: top center;
+  background-repeat: no-repeat repeat;
+  background-size: 100% auto;
+
+  background-blend-mode: multiply;
+
   overflow-y: auto;
 }
 
-/* Fundo */
-.detail-backdrop {
-  position: fixed;
+.project-detail::before {
+  content: '';
+
+  position: absolute;
   inset: 0;
   z-index: 0;
 
-  display: block;
+  pointer-events: none;
 
-  /* background: rgba(0, 0, 0, 0.78); */
+  background-image: url('/assets/noise.png');
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: 512px 512px;
 
-  view-transition-name: project-backdrop;
+  border-radius: inherit;
+
+  mix-blend-mode: soft-light;
+  opacity: 0.4;
 }
 
 /* Grupo central */
@@ -164,6 +179,12 @@ if (!project.value) {
   display: grid;
   place-items: center;
   min-width: 0;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /*

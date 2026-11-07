@@ -83,3 +83,62 @@
     animation-duration: 1ms;
   }
 }
+/* Evita o efeito de mistura que pode clarear os snapshots */
+::view-transition-image-pair(*) {
+  isolation: auto;
+}
+
+::view-transition-old(*),
+::view-transition-new(*) {
+  mix-blend-mode: normal;
+}
+
+/* Configuração geral */
+::view-transition-group(*) {
+  animation-duration: 650ms;
+  animation-timing-function: cubic-bezier(.22, .75, .25, 1);
+}
+
+/* Remove o crossfade genérico */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+/* Photocard sempre acima do fundo */
+::view-transition-group(item-image-1),
+::view-transition-group(item-image-2),
+::view-transition-group(item-image-3),
+::view-transition-group(item-image-4),
+::view-transition-group(item-image-5),
+::view-transition-group(item-image-6) {
+  z-index: 10;
+}
+
+/* Fundo sempre atrás */
+::view-transition-group(project-backdrop) {
+  z-index: 1;
+}
+
+/* Folha acima do fundo, mas abaixo da foto */
+::view-transition-group(project-paper) {
+  z-index: 5;
+}
+
+/* Animações do fundo */
+::view-transition-new(project-backdrop) {
+  animation: backdrop-in 500ms ease both;
+}
+
+::view-transition-old(project-backdrop) {
+  animation: backdrop-out 350ms ease both;
+}
+
+/* Animações da folha */
+::view-transition-new(project-paper) {
+  animation: paper-in 650ms cubic-bezier(.2, .8, .2, 1) both;
+}
+
+::view-transition-old(project-paper) {
+  animation: paper-out 300ms ease both;
+}
