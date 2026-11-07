@@ -3,8 +3,8 @@
 ## Tasks
 - [ ] Definir fundo do html como #2d2d2d, nos celular ta tudo branco 
 - [ ] Tornar paper arrow em um componente
-- [ ] Conseguir clicar no projeto, e ele levantar e ficar em destaque, 
-      uma carta aparece e mostra detalhes dele, junto com um link pra ir pra sua pagina ou seus links
+- [ ] Melhorar o componente do photocard pra ele sempre manter o mesmo aspect, independente da imagem
+- [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
 - [ ] Conseguir trazer a data do blog pro card e pro post
 - [ ] Colocar imagens nos blogs
 - [ ] Fonte escrita a mão

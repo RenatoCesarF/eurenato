@@ -54,7 +54,7 @@ function closeProject() {
         <div class="detail-image-column">
 
             <div
-              class="shared-photocard"
+              class="shared-photocard shared-photocard--detail"
               :style="{
                 viewTransitionName: `item-image-${project.id}`
               }"
@@ -193,7 +193,8 @@ function closeProject() {
  * a posição original e esta posição.
  */
 .shared-photocard--detail {
-  transform: scale(1.12);
+  -webkit-transform: scale(1.12);
+  /* transform: scale(1.12); */
   transform-origin: center;
 }
 

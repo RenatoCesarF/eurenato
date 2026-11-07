@@ -31,6 +31,7 @@
   flex-direction: column;
 
   min-height: 300px;
+  min-width: 250px;
   padding: 1rem 1rem 0.75rem;
 
   color: #171717;
