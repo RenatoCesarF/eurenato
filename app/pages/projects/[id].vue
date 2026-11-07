@@ -84,8 +84,6 @@ function closeProject() {
             {{ project.title }}
           </h1>
 
-          <div class="paper-divider"></div>
-
           <p>{{ project.description }}</p>
 
           <a
@@ -99,7 +97,6 @@ function closeProject() {
           </a>
 
           <footer>
-            <span>ARQUIVO DE PROJETOS</span>
           </footer>
 
         </article>
@@ -131,6 +128,7 @@ function closeProject() {
   background-blend-mode: multiply;
 
   overflow-y: auto;
+  max-width: 100vw;
 }
 
 .project-detail::before {
@@ -231,13 +229,6 @@ function closeProject() {
   font-weight: normal;
 }
 
-.paper-divider {
-  width: 45px;
-  height: 2px;
-  margin-bottom: 25px;
-  background: #a99b80;
-}
-
 .project-paper p {
   font-family: Georgia, serif;
   font-size: 16px;
@@ -260,26 +251,17 @@ function closeProject() {
   color: inherit;
 }
 
-.project-paper footer {
-  margin-top: 45px;
-  padding-top: 15px;
-  border-top: 1px solid #cfc5af;
-
-  font-family: monospace;
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: #827866;
-}
-
 /* Responsividade */
 @media (max-width: 750px) {
   .project-detail {
     place-items: start center;
-    padding: 45px 20px;
+    padding: 95px 20px;
+    min-height: 33vh;
+    max-width: 100vw;
   }
 
   .detail-content {
-    width: min(100%, 420px);
+    width: min(100%, 450px);
 
     grid-template-columns: 1fr;
     gap: 30px;
@@ -287,10 +269,13 @@ function closeProject() {
 
   .shared-photocard--detail {
     transform: scale(1.04);
+
+    max-width: 75vw;
   }
 
   .project-paper {
     min-height: auto;
+    max-width: 75vw;
     padding: 35px 25px;
   }
 }
