@@ -1,0 +1,85 @@
+
+/* Velocidade e comportamento geral */
+::view-transition-group(*) {
+  animation-duration: 650ms;
+  animation-timing-function: cubic-bezier(.22, .75, .25, 1);
+}
+
+/* Remove o crossfade genérico da página.
+   As animações específicas serão controladas abaixo. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+/* Entrada do fundo */
+::view-transition-new(project-backdrop) {
+  animation: backdrop-in 500ms ease both;
+}
+
+/* Saída do fundo */
+::view-transition-old(project-backdrop) {
+  animation: backdrop-out 350ms ease both;
+}
+
+/* Entrada da folha */
+::view-transition-new(project-paper) {
+  animation: paper-in 650ms cubic-bezier(.2, .8, .2, 1) both;
+}
+
+/* Saída da folha */
+::view-transition-old(project-paper) {
+  animation: paper-out 300ms ease both;
+}
+
+/* Keyframes */
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backdrop-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes paper-in {
+  from {
+    opacity: 0;
+    transform: translateX(45px) rotate(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes paper-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+/* Respeita a preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*) {
+    animation-duration: 1ms;
+  }
+}

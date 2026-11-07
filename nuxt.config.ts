@@ -8,8 +8,10 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
-  css: ['~/assets/global.css'],
+  css: ['~/assets/global.css', '~/assets/view-transition.css'],
   app: {
+    pageTransition: false,
+    layoutTransition: false,
     head: {
       htmlAttrs: {
         lang: 'pt-BR',
