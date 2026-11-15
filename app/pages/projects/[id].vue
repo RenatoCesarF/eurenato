@@ -115,7 +115,6 @@ function closeProject() {
 
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   min-height: 100dvh;
 
   background: var(--blue-bg-color);
@@ -136,17 +135,17 @@ function closeProject() {
 
   position: absolute;
   inset: 0;
-  z-index: 0;
 
   pointer-events: none;
+
+  height: 100%;
+  min-height: 100dvh;
 
   background: var(--blue-bg-color);
   background-image: url('/assets/noise.png');
   background-position: top left;
   background-repeat: repeat;
   background-size: 512px 512px;
-
-  border-radius: inherit;
 
   mix-blend-mode: soft-light;
   opacity: 0.4;
@@ -255,8 +254,8 @@ function closeProject() {
 /* Responsividade */
 @media (max-width: 750px) {
   .project-detail {
+    padding-bottom: 10rem;
     place-items: start center;
-    min-height: 33vh;
     max-width: 100vw;
   }
 
@@ -269,6 +268,7 @@ function closeProject() {
 
   .shared-photocard--detail {
     transform: scale(1.04);
+    padding-top: 3rem;
 
     max-width: 75vw;
   }
