@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { projects } from '~/data/projects'
 import Photocard from './smaller/Photocard.vue'
+import ArrowSquare from '~/components/smaller/ArrowSquare'
 
 const carousel = ref(null)
 
@@ -22,18 +23,11 @@ function scrollCarousel(direction) {
 
 <template>
   <section class="projects-carousel">
-    <button
-      class="paper-arrow paper-arrow--left"
-      type="button"
-      aria-label="Projeto anterior"
+    <ArrowSquare 
+      direction="left"
+      type="yellow"
       @click="scrollCarousel(-1)"
-    >
-      <img
-        class="paper-arrow-image"
-        src="/assets/letters/arrow.png"
-        alt=""
-      />
-    </button>
+    />
 
     <ul ref="carousel" class="cards">
       <li
@@ -62,18 +56,12 @@ function scrollCarousel(direction) {
         </li>
     </ul>
 
-    <button
-      class="paper-arrow paper-arrow--right"
-      type="button"
-      aria-label="Próximo projeto"
+    <ArrowSquare 
+      type="yellow"
+      direction="right"
       @click="scrollCarousel(1)"
-    >
-      <img
-        class="paper-arrow-image"
-        src="/assets/letters/arrow.png"
-        alt=""
-      />
-    </button>
+    />
+
     <span class="sr-only">Próximo projeto</span>
   </section>
 </template>
@@ -113,89 +101,6 @@ function scrollCarousel(direction) {
   display: none;
 }
 
-/* Setas em formato de papel recortado */
-.paper-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-
-  width: 72px;
-  height: 72px;
-  padding: 0;
-
-  cursor: pointer;
-
-  background: transparent;
-  border: 0;
-
-  transform: translateY(-50%);
-  transition: transform 150ms ease;
-}
-
-.paper-arrow--left {
-  left: 0.75rem;
-}
-
-.paper-arrow--right {
-  right: 0.75rem;
-}
-
-.paper-arrow-image {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 35%));
-
-  transition:
-    transform 150ms ease,
-    filter 150ms ease;
-}
-
-/* Considerando que o PNG aponta para a direita */
-.paper-arrow--left .paper-arrow-image {
-  transform: rotate(176deg);
-}
-
-.paper-arrow--right .paper-arrow-image {
-  transform: rotate(4deg);
-}
-
-.paper-arrow:hover {
-  transform: translateY(-50%) scale(1.1);
-}
-
-.paper-arrow:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.paper-arrow:active .paper-arrow-image {
-  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 25%));
-}
-
-.paper-arrow:focus-visible {
-  border-radius: 0.25rem;
-  outline: 3px solid #171717;
-  outline-offset: 4px;
-}
-
-@media (max-width: 600px) {
-  .paper-arrow {
-    width: 52px;
-    height: 52px;
-  }
-
-  .paper-arrow--left {
-    left: 0.25rem;
-  }
-
-  .paper-arrow--right {
-    right: 0.25rem;
-  }
-}
-
 .sr-only {
   position: absolute;
 
@@ -222,11 +127,6 @@ function scrollCarousel(direction) {
 
   .card {
     min-height: 13rem;
-  }
-
-  .paper-arrow {
-    width: 48px;
-    height: 38px;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import NewspaperBlog from "./smaller/NewspaperBlog.vue"
+import ArrowSquare from '~/components/smaller/ArrowSquare'
 
 const carousel = ref(null)
 
@@ -24,18 +25,11 @@ function scrollCarousel(direction) {
 <template>
   <section class="posts-carousel">
 
-    <button
-      class="paper-arrow paper-arrow--left"
-      type="button"
-      aria-label="Projeto anterior"
+    <ArrowSquare 
+      direction="left"
+      type="orange"
       @click="scrollCarousel(-1)"
-    >
-      <img
-        class="paper-arrow-image"
-        src="/assets/letters/arrow_blog.png"
-        alt=""
-      />
-    </button>
+    />
     <span class="sr-only">Projeto Anterior</span>
 
     <ul ref="carousel" class="cards">
@@ -54,18 +48,11 @@ function scrollCarousel(direction) {
       </li>
     </ul>
 
-    <button
-      class="paper-arrow paper-arrow--right"
-      type="button"
-      aria-label="Próximo projeto"
-      @click="scrollCarousel(1)"
-    >
-      <img
-        class="paper-arrow-image"
-        src="/assets/letters/arrow_blog.png"
-        alt=""
-      />
-    </button>
+    <ArrowSquare 
+      direction="right"
+      type="orange"
+      @click="scrollCarousel(-1)"
+    />
     <span class="sr-only">Próximo projeto</span>
   </section>
 </template>
@@ -104,47 +91,6 @@ function scrollCarousel(direction) {
 
 .cards::-webkit-scrollbar {
   display: none;
-}
-
-
-.paper-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-
-  width: 52px;
-  height: 52px;
-  padding: 0;
-
-  cursor: pointer;
-
-  background: transparent;
-  border: 0;
-
-  transform: translateY(-50%);
-  transition: transform 100ms ease-in-out;
-}
-
-.paper-arrow--left {
-  left: 0.75rem;
-}
-
-.paper-arrow--right {
-  right: 0.75rem;
-}
-
-.paper-arrow-image {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 35%));
-
-  transition:
-    transform 150ms ease,
-    filter 150ms ease;
 }
 
 /* Considerando que o PNG aponta para a direita */
