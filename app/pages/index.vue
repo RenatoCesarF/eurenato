@@ -48,7 +48,6 @@ definePageMeta({
 
 .noise-area {
   position: relative;
-  isolation: isolate;
 
   min-height: 100vh;
 
@@ -61,7 +60,6 @@ definePageMeta({
 
 .textured-section {
   position: relative;
-  isolation: isolate;
 
   background-color: var(--section-background);
 
@@ -70,7 +68,7 @@ definePageMeta({
   background-repeat: no-repeat repeat;
   background-size: 100% auto;
 
-  /* background-blend-mode: multiply; */
+  background-blend-mode: multiply;
 }
 
 .textured-section::before {
@@ -90,25 +88,25 @@ definePageMeta({
 
   border-radius: inherit;
 
-  /* mix-blend-mode: soft-light; */
+  mix-blend-mode: soft-light;
   opacity: 0.4;
 }
 
 /* ==================================================
    Área azul
 ================================================== */
-
 .blue-area {
   --section-background: var(--blue-bg-color);
-
   background-color: var(--blue-bg-color);
+  background-image: none !important;
+  isolation: auto;
   position: relative;
-  z-index: 0;
 
   width: 100%;
+  overflow-x: clip;
+  isolation: auto;
 
-  overflow: visible;
-  isolation: isolate;
+  z-index: 0;
 }
 
 .section-layer {

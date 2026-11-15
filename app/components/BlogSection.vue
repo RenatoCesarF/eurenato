@@ -12,7 +12,6 @@
     <div class="blog-list">
       <BlogList />
     </div>
-
     <div class="cuttings">
       <img class="computer" src="/assets/paper-cuts/computador.png" alt="" >
       <img class="pelican" src="/assets/paper-cuts/pelicano.png" alt="" >
