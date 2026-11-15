@@ -25,32 +25,32 @@ Um lugar onde todos meus projetos estarão explicados e devidamente documentados
 É curioso pois querendo ou não, esse é só um outro projeto pra me fazer fugir do meu projeto passado. Mas terei fé de que essa vozinha é só uma parte mais chata de mim, que quer me destruir. E vou acreditar no meu coração e produzir algo que eu acredito. Essa plataforma pra guardar e organizar tudo da minhas produções, documentação delas e talvez eventualmente sua própria organização e compartilhamento. Quero construir coisas, quero finaliza-las, quero ter a satisfação de estar feito com algo, ter algo concluído. E que essa satisfação me ajude a pegar mais leve com a pressão do perfecionismo, conseguir criar com menos cobrança e simplesmente ser um artista menos frustrado, uma pessoa melhor.
 
 Conversando comigo mesmo decidi: a partir de agora eu não crio novos projetos, só finalizo coisas que já comecei. Começando por esse site, depois o jogo e em seguida um album musical, esses são os próximos passos.
-
-# Preciso finalizar as coisas
-A ideia aqui é criar não só um processo, mas uma forma de pensar que me ajude a finalizar as coisas, além de regras claras. Trabalhar na disciplina de finalizar as coisas. (essa frase parece escrita por LLM, uhg).
-
-Percebi como isso afeta minha satisfação na vida, principalmente como artista e pessoa criativa.
-
-Primeira coisa que eu defini:
-- Daqui pra frente, eu não crio novos projetos. 0, só projetos que  já exsitem serão trabalhados. Pois já existem muitos e muitas ideias.
-
-- Parar de ser impulsivo, parar de achar novas obsessões que vão durar muito tempo. Se eu ficar curioso sobre algo, essa curiosidade tem que ser resolvida no mesmo dia. Quer entender como funciona arquivamente? Leia sobre arquivamento hoje, mas não guarde coisas pra ler depois, você nunca vai ler. Se não é algo que eu planejei fazer, não vou fazer. Pois se não foi planejado, não entra na agenda, e não faz sentido. 
-- Definir objetivos claros: Tudo que eu fizer tem que ter um objetivo claro e fazer sentido com o que eu realmente quero pra minha vida e pros meus projetos. Usar o método Smart: 
-	- Specific: Todo objetivo tem que ser específico, claro, bem definido, nada abstrato e fora da casinha. Onde, quando, como, quem
-	- Mesurable: Todo objetivo tem que ser metrificavel, quanto tempo vai levar, o que representa pro projeto
-	- Achivable: tem que ser algo que é atingível, algo realistico e não algo distante e irreal. Nada além das capacidades humanas, 
-	- Relevant: tem que ser algo importante pra mim e pra minha vida, relevante pros meus interesses alongo prazo, interesses políticos e artísticos
-	- time-bound: tem que ter uma data limite, um período de construção e não algo infinito ou indeterminado
-- Aprender a priorizar: Tem que existir 1 única prioridade, e essa deve ser usada como régua pra todo o resto, pra toda tomada de decisões, todo novo engajamento. Assim essa prioridade nunca vai ser abandonada, nem perder prioridade até ser concluída 
-- Encontrar e escrever suas razões do porque continuar, do porque finalizar um projeto, do porque trabalhar em algo, do porque não desistir
-
-**regras**
-- A primeira versão tem que vir o quanto antes, independente de quão distante da versão final ela esteja
-
-<!-- # Os porquês -->
-<!-- - politica -->
-<!-- 	- Reforçar minha pesquisa e minha noção crítica, pesquisa e pensamento crítico -->
-<!-- 	- Estudo bibliográfico, organização e compartilharmento de informações -->
-<!-- - mudanças pessoal de vida e ideias -->
-<!-- - foco mais pro lado artístico do que qualqeur outra coisa -->
-<!-- - centralização dos projetos atuais, apssados e futuros  -->
+<!---->
+<!-- # Preciso finalizar as coisas -->
+<!-- A ideia aqui é criar não só um processo, mas uma forma de pensar que me ajude a finalizar as coisas, além de regras claras. Trabalhar na disciplina de finalizar as coisas. (essa frase parece escrita por LLM, uhg). -->
+<!---->
+<!-- Percebi como isso afeta minha satisfação na vida, principalmente como artista e pessoa criativa. -->
+<!---->
+<!-- Primeira coisa que eu defini: -->
+<!-- - Daqui pra frente, eu não crio novos projetos. 0, só projetos que  já exsitem serão trabalhados. Pois já existem muitos e muitas ideias. -->
+<!---->
+<!-- - Parar de ser impulsivo, parar de achar novas obsessões que vão durar muito tempo. Se eu ficar curioso sobre algo, essa curiosidade tem que ser resolvida no mesmo dia. Quer entender como funciona arquivamente? Leia sobre arquivamento hoje, mas não guarde coisas pra ler depois, você nunca vai ler. Se não é algo que eu planejei fazer, não vou fazer. Pois se não foi planejado, não entra na agenda, e não faz sentido.  -->
+<!-- - Definir objetivos claros: Tudo que eu fizer tem que ter um objetivo claro e fazer sentido com o que eu realmente quero pra minha vida e pros meus projetos. Usar o método Smart:  -->
+<!-- 	- Specific: Todo objetivo tem que ser específico, claro, bem definido, nada abstrato e fora da casinha. Onde, quando, como, quem -->
+<!-- 	- Mesurable: Todo objetivo tem que ser metrificavel, quanto tempo vai levar, o que representa pro projeto -->
+<!-- 	- Achivable: tem que ser algo que é atingível, algo realistico e não algo distante e irreal. Nada além das capacidades humanas,  -->
+<!-- 	- Relevant: tem que ser algo importante pra mim e pra minha vida, relevante pros meus interesses alongo prazo, interesses políticos e artísticos -->
+<!-- 	- time-bound: tem que ter uma data limite, um período de construção e não algo infinito ou indeterminado -->
+<!-- - Aprender a priorizar: Tem que existir 1 única prioridade, e essa deve ser usada como régua pra todo o resto, pra toda tomada de decisões, todo novo engajamento. Assim essa prioridade nunca vai ser abandonada, nem perder prioridade até ser concluída  -->
+<!-- - Encontrar e escrever suas razões do porque continuar, do porque finalizar um projeto, do porque trabalhar em algo, do porque não desistir -->
+<!---->
+<!-- **regras** -->
+<!-- - A primeira versão tem que vir o quanto antes, independente de quão distante da versão final ela esteja -->
+<!---->
+<!-- <!-- # Os porquês --> -->
+<!-- <!-- - politica --> -->
+<!-- <!-- 	- Reforçar minha pesquisa e minha noção crítica, pesquisa e pensamento crítico --> -->
+<!-- <!-- 	- Estudo bibliográfico, organização e compartilharmento de informações --> -->
+<!-- <!-- - mudanças pessoal de vida e ideias --> -->
+<!-- <!-- - foco mais pro lado artístico do que qualqeur outra coisa --> -->
+<!-- <!-- - centralização dos projetos atuais, apssados e futuros  --> -->

@@ -120,7 +120,6 @@ function scrollCarousel(direction) {
   outline-offset: 4px;
 }
 
-
 .sr-only {
   position: absolute;
 
