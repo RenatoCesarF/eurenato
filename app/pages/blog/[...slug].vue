@@ -35,14 +35,6 @@
           No Textures
         </button>
 
-        <!-- <button -->
-        <!--   type="button" -->
-        <!--   @click="darkmodeEnable = !darkmodeEnable" -->
-        <!--   :aria_presset="!darkmodeEnable" -->
-        <!-- > -->
-        <!--   Change Read mode -->
-        <!-- </button> -->
-
       </div>
     </div>
 

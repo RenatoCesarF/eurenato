@@ -42,7 +42,7 @@ function closeProject() {
 </script>
 
 <template>
-  <main class="project-detail" @click="closeProject">
+  <div class="project-detail" @click.self="closeProject">
       <section
         class="detail-content"
         role="dialog"
@@ -52,7 +52,6 @@ function closeProject() {
 
         <!-- Polaroid -->
         <div class="detail-image-column">
-
             <div
               class="shared-photocard shared-photocard--detail"
               :style="{
@@ -103,14 +102,13 @@ function closeProject() {
 
       </section>
 
-  </main>
+  </div>
 </template>
 
 <style>
 .project-detail {
-  /* position: fixed; */
+  position: fixed;
   inset: 0;
-  z-index: 9999;
 
   display: grid;
   place-items: center;
@@ -157,7 +155,7 @@ function closeProject() {
 /* Grupo central */
 .detail-content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 
   width: min(100%, 1000px);
 
@@ -225,10 +223,10 @@ function closeProject() {
 }
 
 .project-paper h1 {
-  margin: 30px 0 20px;
+  margin: 10px 0 20px;
 
   font-family: Georgia, serif;
-  font-size: clamp(28px, 4vw, 40px);
+  font-size: clamp(28px, 8vw, 40px);
   font-weight: normal;
 }
 
@@ -258,7 +256,6 @@ function closeProject() {
 @media (max-width: 750px) {
   .project-detail {
     place-items: start center;
-    padding: 95px 20px;
     min-height: 33vh;
     max-width: 100vw;
   }
@@ -278,6 +275,7 @@ function closeProject() {
 
   .project-paper {
     min-height: auto;
+    justify-self: center;
     max-width: 75vw;
     padding: 35px 25px;
   }
