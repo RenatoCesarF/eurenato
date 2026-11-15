@@ -1,15 +1,14 @@
 # eurenato
 
 ## Tasks
-- [ ] Arrumar fundo azul no celular
+- [ ] Ajustar apoia-se
 - [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
 - [ ] Conseguir trazer a data do blog pro card e pro post
 ----
-- [ ] Arrumar fundo azul no celular (acho que a foto do papel ta mt grande ou algo assim)
 - [ ] Colocar imagens nos blogs
 - [ ] Fonte escrita a mão
 - [ ] noodles
-- [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas
+- [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas)
 
 ---
 ## Ajustes

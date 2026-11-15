@@ -30,7 +30,7 @@ function scrollCarousel(direction) {
       type="orange"
       @click="scrollCarousel(-1)"
     />
-    <span class="sr-only">Projeto Anterior</span>
+    <span class="sr-only">Post Anterior</span>
 
     <ul ref="carousel" class="cards">
       <li
@@ -53,7 +53,7 @@ function scrollCarousel(direction) {
       type="orange"
       @click="scrollCarousel(-1)"
     />
-    <span class="sr-only">Próximo projeto</span>
+    <span class="sr-only">Próximo post</span>
   </section>
 </template>
 

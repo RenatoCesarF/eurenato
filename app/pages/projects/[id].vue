@@ -53,21 +53,22 @@ function closeProject() {
 
         <!-- Polaroid -->
         <div class="detail-image-column">
-            <div
-              class="shared-photocard shared-photocard--detail"
-              :style="{
-                viewTransitionName: `item-image-${project.id}`
-              }"
-            >
-            <Photocard
-              :title="project.title"
-              :image="project.image"
-              :rotation="project.rotation"
-              :offset="project.offset"
-              :id="project.id"
-            />
+          <div
+            class="shared-photocard shared-photocard--detail"
+            :style="{
+              viewTransitionName: `item-image-${project.id}`
+            }"
+          >
+            <div class="detail-photocard-visual">
+              <Photocard
+                :title="project.title"
+                :image="project.image"
+                :rotation="project.rotation"
+                :offset="project.offset"
+                :id="project.id"
+              />
+            </div>
           </div>
-
         </div>
 
         <!-- Folha de apresentação -->
@@ -106,7 +107,7 @@ function closeProject() {
   </main>
 </template>
 
-<style>
+<style scoped>
 
 .project-detail {
   position: relative;
@@ -118,7 +119,6 @@ function closeProject() {
   width: 100%;
   min-height: 100dvh;
 
-  /* Cor base: sempre azul */
   background-color: var(--blue-bg-color);
 }
 
@@ -137,7 +137,6 @@ function closeProject() {
   background-repeat: repeat-y;
   background-size: 100% auto;
 
-  /* Mistura a textura com o azul */
   mix-blend-mode: multiply;
 }
 
@@ -200,8 +199,12 @@ function closeProject() {
  * a posição original e esta posição.
  */
 .shared-photocard--detail {
-  -webkit-transform: scale(1.12);
-  /* transform: scale(1.12); */
+  transform: none !important;
+  -webkit-transform: none !important;
+}
+
+.detail-photocard-visual {
+  transform: scale(1.12);
   transform-origin: center;
 }
 

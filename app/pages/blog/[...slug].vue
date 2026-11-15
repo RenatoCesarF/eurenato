@@ -3,7 +3,7 @@
 
   const route = useRoute()
   const router = useRouter()
-  const texturesEnable = ref(true)
+  const darkModeEnable = ref(true)
 
   const { data: page } = await useAsyncData('blog-' + route.path, () => {
     return queryCollection('blog').path(route.path).first()
@@ -12,12 +12,13 @@
   if (!page.value) {
     throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
   }
-   // 
 
 </script>
 
 <template>
-  <div class="bg">
+  <div class="blog-bg"
+      :class="{'dark-mode': !darkModeEnable }"
+  >
     <div class="blog-header">
       <div class="paper-arrow">
         <ArrowSquare 
@@ -29,20 +30,19 @@
       <div class="configuration">
         <button
           type="button"
-          @click="texturesEnable = !texturesEnable"
-          :aria-presset="!texturesEnable"
+          @click="darkModeEnable = !darkModeEnable"
+          :aria-presset="!darkModeEnable"
         >
-          No Textures
+          DarkMode
         </button>
 
       </div>
     </div>
 
-    <div 
-      class="paper"
-      :class="{ 'paper--no-textures': !texturesEnable, 'dark-mode-paper': !darkmodeEnable}"
-    >
-      <div class="paper-content">
+    <div class="paper" >
+      <div
+        class="paper-content"
+      >
         <h1 class="post-title">{{ page.title.toUpperCase() }}</h1>
         <p class="post-description">{{ page.description }}</p>
         <p>{{ page.date }}</p>
@@ -59,13 +59,60 @@
 </template>
 
 <style scoped>
-.bg {
-  background-color: #2d2d2d;
+.blog-bg {
+  position: relative;
+  isolation: isolate;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  min-height: 100dvh;
+
+
+  background-color: var(--yellow-bg-color);
 }
+
+.blog-bg.dark-mode {
+  background-color: #292929;
+}
+
+/* Camada 1: textura de papel */
+.blog-bg::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  pointer-events: none;
+
+  background-image: url('/assets/paper-background-10.png');
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+
+  mix-blend-mode: multiply;
+}
+
+.blog-bg::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
+
+  background-image: url('/assets/noise.png');
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: 512px 512px;
+
+  mix-blend-mode: soft-light;
+  opacity: 0.4;
+}
+
 
 .blog-header {
   display: flex;
@@ -119,11 +166,6 @@
   padding: 2rem clamp(1rem, 5vw, 4rem);
 
   flex: 1;
-}
-
-.paper--no-textures::before,
-.paper--no-textures::after{
-  display: none;
 }
 
 .paper::before {
