@@ -14,20 +14,18 @@
 .paper-strip-layer {
   position: absolute;
   inset: 0;
-  z-index: 0;
 
   pointer-events: none;
-
   overflow: visible;
-  overflow-x: clip;
 }
 
 .paper-strip {
   position: absolute;
-  z-index: 1;
 
   top: 30%;
   left: -8rem;
+
+  display: block;
 
   width: clamp(1700px, 170vw, 2600px);
   max-width: none;

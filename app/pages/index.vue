@@ -48,6 +48,7 @@ definePageMeta({
 
 .noise-area {
   position: relative;
+  isolation: isolate;
 
   min-height: 100vh;
 
@@ -60,6 +61,7 @@ definePageMeta({
 
 .textured-section {
   position: relative;
+  isolation: isolate;
 
   background-color: var(--section-background);
 
@@ -97,14 +99,13 @@ definePageMeta({
 ================================================== */
 .blue-area {
   --section-background: var(--blue-bg-color);
+
   background-color: var(--blue-bg-color);
-  background-image: none !important;
-  isolation: auto;
   position: relative;
 
   width: 100%;
   overflow-x: clip;
-  isolation: auto;
+  isolation: isolate;
 
   z-index: 0;
 }
@@ -122,15 +123,10 @@ definePageMeta({
   position: relative;
   z-index: 10;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 100%;
-  min-height: 50px;
+  height: 50px;
 
   overflow: visible;
-  isolation: isolate;
   pointer-events: none;
 }
 
