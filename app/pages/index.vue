@@ -125,20 +125,16 @@ definePageMeta({
 
   width: 100%;
   height: 50px;
+  min-height: 50px;
 
-  overflow: visible;
+  overflow: clip;
+  isolation: isolate;
+
   pointer-events: none;
 }
 
-/*
- * O separador entre Blog e LastSection
- * permanece acima da seção seguinte.
- */
 .paper-strip-wrapper--last {
   z-index: 100;
-
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
 }
 
 /* ==================================================
