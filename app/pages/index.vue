@@ -49,8 +49,11 @@ definePageMeta({
 .noise-area {
   position: relative;
   isolation: isolate;
-
   min-height: 100vh;
+  width: 100%;
+
+  overflow-x: clip;
+  overflow-y: visible;
 
   background-color: #eee8dc;
 }
@@ -123,13 +126,15 @@ definePageMeta({
   position: relative;
   z-index: 10;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
-  height: 50px;
   min-height: 50px;
 
-  overflow: clip;
+  overflow: visible;
   isolation: isolate;
-
   pointer-events: none;
 }
 

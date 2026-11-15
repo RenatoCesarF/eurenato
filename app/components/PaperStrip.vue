@@ -15,23 +15,19 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-
   width: 100%;
   height: 100%;
-
   pointer-events: none;
-
   overflow: visible;
 }
 
 .paper-strip {
   position: absolute;
+  display: block;
   z-index: 1;
 
-  top: 30%;
+  top: 50%;
   left: -8rem;
-
-  display: block;
 
   width: clamp(1700px, 170vw, 2600px);
   max-width: none;
