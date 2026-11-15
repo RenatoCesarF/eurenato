@@ -101,7 +101,7 @@
   flex: 0 0 auto;
   z-index: 5;
 
-  transform: rotate(96deg);
+  transform: rotate(0deg);
   width: clamp(2rem, 4vw, 3.25rem);
   height: clamp(2rem, 4vw, 3.25rem);
   padding: 0;

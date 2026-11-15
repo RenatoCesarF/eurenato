@@ -1,9 +1,11 @@
 # eurenato
 
 ## Tasks
-- [ ] Arrumar fundo azul no celular (acho que a foto do papel ta mt grande ou algo assim)
+- [ ] Clicar em qualquer lugar do projeto ta saindo do projeto, paia
 - [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
 - [ ] Conseguir trazer a data do blog pro card e pro post
+----
+- [ ] Arrumar fundo azul no celular (acho que a foto do papel ta mt grande ou algo assim)
 - [ ] Colocar imagens nos blogs
 - [ ] Fonte escrita a mão
 - [ ] noodles
