@@ -103,24 +103,20 @@ definePageMeta({
 .blue-area {
   --section-background: var(--blue-bg-color);
 
-  background-color: var(--blue-bg-color);
+  background-color: var(--blue-bg-color) !important;
   position: relative;
 
   width: 100%;
   overflow-x: clip;
-  isolation: isolate;
+  /* isolation: isolate; */
 
-  z-index: 0;
+  z-index: 1;
 }
 
 .section-layer {
   position: relative;
   z-index: 1;
 }
-
-/* ==================================================
-   PaperStrip
-================================================== */
 
 .paper-strip-wrapper {
   position: relative;
@@ -141,10 +137,6 @@ definePageMeta({
 .paper-strip-wrapper--last {
   z-index: 100;
 }
-
-/* ==================================================
-   Última seção
-================================================== */
 
 .last-section {
   --section-background: var(--orange-bg-color);
