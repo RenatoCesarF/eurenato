@@ -2,23 +2,22 @@
 
 ## Tasks
 - [ ] Definir fundo do html como #2d2d2d, nos celular ta tudo branco 
-- [ ] Tornar paper arrow em um componente
-- [ ] Melhorar o componente do photocard pra ele sempre manter o mesmo aspect, independente da imagem
 - [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
+- [ ] Arrumar fundo azul no celular (acho que a foto do papel ta mt grande ou algo assim)
+- [ ] Tornar paper arrow em um componente
 - [ ] Conseguir trazer a data do blog pro card e pro post
 - [ ] Colocar imagens nos blogs
 - [ ] Fonte escrita a mão
 - [ ] noodles
 - [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas
-- [ ] Dark mode no blog
 
 ---
 ## Ajustes
 - [ ] aumentar tamanho do botão do menu header
-- [ ] Otimizar as imagens pra webp e substituir seus usos
 - [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular, mesmo na simulação de celular passa direto, no 
 - [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
 - [ ] Ta dando pra passardo primeiro post pro post -1, no safari ios
+- [ ] Dark mode no blog
 
 - https://www.calligraphr.com/en/webapp/app_home/?/templates
 - Editor de texto https://tiptap.dev/docs/editor/getting-started/overview

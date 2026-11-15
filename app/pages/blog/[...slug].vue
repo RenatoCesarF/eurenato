@@ -130,7 +130,7 @@
   position: relative;
   isolation: isolate;
 
-  background-color: #F4ECD8;
+  background-color: var(--paper-bg-color);
 
   min-height: 100vh;
   width: auto;

@@ -79,8 +79,8 @@
   min-height: var(--card-min-height);
   padding: 2rem 1.8rem 1.7rem;
 
-  color: #26231f;
-  background-color: #e9e6dd;
+  color: #201e1a;
+  background-color: var(--paper-bg-color);
 
   clip-path: var(--card-clip);
 }
@@ -361,7 +361,7 @@
 
   width: 100%;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: jornal-body, serif;
 }
 
 .content h3 {
@@ -373,6 +373,7 @@
   font-size: clamp(2rem, 2vw, 2.55rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
+  text-align: center;
 
   border-bottom: 4px double #292620;
 }

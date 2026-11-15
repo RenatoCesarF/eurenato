@@ -213,8 +213,8 @@ function scrollCarousel(direction) {
 
 @media (max-width: 600px) {
   .cards {
-    grid-auto-columns: 60vw;
-    gap: 2.75rem;
+    grid-auto-columns: 70vw;
+    gap: 2.0rem;
 
     padding: 2.5rem 3rem;
     scroll-padding-inline: 4rem;
