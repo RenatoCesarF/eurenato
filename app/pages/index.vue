@@ -70,7 +70,7 @@ definePageMeta({
   background-repeat: no-repeat repeat;
   background-size: 100% auto;
 
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
 }
 
 .textured-section::before {
@@ -82,6 +82,7 @@ definePageMeta({
 
   pointer-events: none;
 
+  background-color: var(--section-background);
   background-image: url('/assets/noise.png');
   background-position: top left;
   background-repeat: repeat;
@@ -89,7 +90,7 @@ definePageMeta({
 
   border-radius: inherit;
 
-  mix-blend-mode: soft-light;
+  /* mix-blend-mode: soft-light; */
   opacity: 0.4;
 }
 
@@ -100,6 +101,7 @@ definePageMeta({
 .blue-area {
   --section-background: var(--blue-bg-color);
 
+  background-color: var(--blue-bg-color);
   position: relative;
   z-index: 0;
 

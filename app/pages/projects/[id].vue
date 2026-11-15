@@ -108,7 +108,7 @@ function closeProject() {
 
 <style>
 .project-detail {
-  position: fixed;
+  /* position: fixed; */
   inset: 0;
   z-index: 9999;
 
@@ -116,6 +116,8 @@ function closeProject() {
   place-items: center;
 
   width: 100%;
+  height: 100%;
+  min-height: 100vh;
   min-height: 100dvh;
 
   background: var(--blue-bg-color);
@@ -140,6 +142,7 @@ function closeProject() {
 
   pointer-events: none;
 
+  background: var(--blue-bg-color);
   background-image: url('/assets/noise.png');
   background-position: top left;
   background-repeat: repeat;

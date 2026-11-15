@@ -1,17 +1,27 @@
+
 <script setup>
-  const props = defineProps(['direction', 'type' ])
+
+  const props = defineProps({
+    direction: String,
+    type: String,
+    scale: {
+      type: Number,
+      default: 1
+    }
+  })
   const emit = defineEmits(['click']);
 
-  let arrowImg = props.type == 'yellow' ? '/assets/letters/arrow.png' : "/assets/letters/arrow_blog.png"
+  let arrowImg = props.type == 'yellow' ? '/assets/letters/arrow.png' : "/assets/letters/arrow_orange.png"
 
 </script>
 
 <template>
   <div>
     <button
+      :style="{'--arrow-scale': props.scale}"
       :class="`paper-arrow paper-arrow--${props.direction}`"
       type="button"
-      aria-label="Projeto anterior"
+      aria-label="Anterior"
       @click="emit('click')"
     >
       <img
@@ -30,8 +40,8 @@
   top: 50%;
   z-index: 5;
 
-  width: 52px;
-  height: 52px;
+  width: calc(52px * var(--arrow-scale));
+  height: calc(52px * var(--arrow-scale));
   padding: 0;
 
   cursor: pointer;
@@ -42,10 +52,6 @@
   transform: translateY(-50%);
   transition: transform 100ms ease-in-out;
 }
-/* .paper-arrow { */
-/*   width: 72px; */
-/*   height: 72px; */
-/* } */
 
 .paper-arrow--left {
   left: 0.75rem;

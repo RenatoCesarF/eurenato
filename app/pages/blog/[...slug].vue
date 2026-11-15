@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import ArrowSquare from '~/components/smaller/ArrowSquare'
+
   const route = useRoute()
   const router = useRouter()
   const texturesEnable = ref(true)
@@ -10,24 +12,20 @@
   if (!page.value) {
     throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
   }
+   // 
+
 </script>
 
 <template>
   <div class="bg">
     <div class="blog-header">
-      <button
-        class="paper-arrow paper-arrow--left"
-        type="button"
-        aria-label="Projeto anterior"
-        @click="$router.back()"
-      >
-        <img
-          class="paper-arrow-image"
-          src="/assets/letters/arrow_blog.png"
-          alt=""
+      <div class="paper-arrow">
+        <ArrowSquare 
+          direction="left"
+          type="orange"
+          @click="$router.back()"
         />
-      </button>
-
+      </div>
       <div class="configuration">
         <button
           type="button"
@@ -103,7 +101,7 @@
   flex: 0 0 auto;
   z-index: 5;
 
-  transform: rotate(266deg);
+  transform: rotate(96deg);
   width: clamp(2rem, 4vw, 3.25rem);
   height: clamp(2rem, 4vw, 3.25rem);
   padding: 0;
@@ -111,19 +109,6 @@
   cursor: pointer;
   background: transparent;
   border: 0;
-}
-
-.paper-arrow-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 35%));
-
-  transition:
-    transform 150ms ease,
-    filter 150ms ease;
 }
 
 .paper {

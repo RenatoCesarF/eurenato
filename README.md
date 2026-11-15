@@ -1,10 +1,8 @@
 # eurenato
 
 ## Tasks
-- [ ] Definir fundo do html como #2d2d2d, nos celular ta tudo branco 
-- [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
 - [ ] Arrumar fundo azul no celular (acho que a foto do papel ta mt grande ou algo assim)
-- [ ] Tornar paper arrow em um componente
+- [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
 - [ ] Conseguir trazer a data do blog pro card e pro post
 - [ ] Colocar imagens nos blogs
 - [ ] Fonte escrita a mão

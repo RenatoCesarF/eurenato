@@ -26,6 +26,7 @@ function scrollCarousel(direction) {
     <ArrowSquare 
       direction="left"
       type="yellow"
+      scale="1.2"
       @click="scrollCarousel(-1)"
     />
 
@@ -59,6 +60,7 @@ function scrollCarousel(direction) {
     <ArrowSquare 
       type="yellow"
       direction="right"
+      scale="1.2"
       @click="scrollCarousel(1)"
     />
 
