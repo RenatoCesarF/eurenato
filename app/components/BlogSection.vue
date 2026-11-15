@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <section class="blog-section textured-section">
+  <section class="blog-section">
     <div class="blog-title" id="blog">
       <BlogTitle />
     </div>
@@ -23,7 +23,6 @@
 
 <style scoped>
 .blog-section {
-  --section-background: var(--yellow-bg-color);
   position: relative;
 
   display: flex;
@@ -32,8 +31,6 @@
   width: 100%;
   height: 50rem;
   padding-top: 10vh;
-
-  background-color: var(--yellow-bg-color);
 
   overflow-x: clip;
 

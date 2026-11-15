@@ -42,11 +42,12 @@ function closeProject() {
 </script>
 
 <template>
-  <div class="project-detail" @click.self="closeProject">
+  <main class="project-detail" @click.self="closeProject">
       <section
         class="detail-content"
         role="dialog"
         aria-modal="true"
+        @click.self="closeProject"
         :aria-labelledby="`project-title-${project.id}`"
       >
 
@@ -102,34 +103,26 @@ function closeProject() {
 
       </section>
 
-  </div>
+  </main>
 </template>
 
 <style>
+
 .project-detail {
   position: relative;
   isolation: isolate;
-
-  inset: 0;
 
   display: grid;
   place-items: center;
 
   width: 100%;
-  height: 100%;
   min-height: 100dvh;
 
-  background: var(--blue-bg-color);
+  /* Cor base: sempre azul */
   background-color: var(--blue-bg-color);
-
-  background-image: url('/assets/paper-background.png');
-  background-position: top center;
-  background-repeat: no-repeat repeat;
-  background-size: 100% auto;
-
-  background-blend-mode: multiply;
 }
 
+/* Camada 1: textura de papel */
 .project-detail::before {
   content: '';
 
@@ -138,12 +131,27 @@ function closeProject() {
   z-index: 0;
 
   pointer-events: none;
-  /* height: 100%; */
-  /* min-height: 100dvh; */
 
-  background: var(--blue-bg-color);
+  background-image: url('/assets/paper-background-10.png');
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+
+  /* Mistura a textura com o azul */
+  mix-blend-mode: multiply;
+}
+
+/* Camada 2: noise */
+.project-detail::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
+
   background-color: var(--blue-bg-color);
-
   background-image: url('/assets/noise.png');
   background-position: top left;
   background-repeat: repeat;
@@ -152,7 +160,6 @@ function closeProject() {
   mix-blend-mode: soft-light;
   opacity: 0.4;
 }
-
 /* Grupo central */
 .detail-content {
   position: relative;
@@ -256,7 +263,7 @@ function closeProject() {
 /* Responsividade */
 @media (max-width: 750px) {
   .project-detail {
-    padding-bottom: 10rem;
+    padding-bottom: 5vh;
     place-items: start center;
     max-width: 100vw;
   }

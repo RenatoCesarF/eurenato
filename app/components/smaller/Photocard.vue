@@ -30,9 +30,9 @@
   display: flex;
   flex-direction: column;
 
-  aspect-ratio: 9 / 12;
-  /* min-height: 300px; */
-  /* min-width: 200px; */
+  aspect-ratio: 9 / 12 !important;
+  min-height: 300px;
+  min-width: 200px;
   padding: 1rem 1rem 0.75rem;
 
   color: #171717;

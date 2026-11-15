@@ -1,7 +1,7 @@
 # eurenato
 
 ## Tasks
-- [ ] Clicar em qualquer lugar do projeto ta saindo do projeto, paia
+- [ ] Arrumar fundo azul no celular
 - [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
 - [ ] Conseguir trazer a data do blog pro card e pro post
 ----

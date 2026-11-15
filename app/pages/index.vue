@@ -20,7 +20,7 @@ definePageMeta({
   <Header />
   <HeaderMenu />
 
-  <main class="noise-area">
+  <main>
     <div class="blue-area textured-section">
       <AboutSection class="section-layer" />
 
@@ -31,7 +31,9 @@ definePageMeta({
       <PaperStrip />
     </div>
 
-    <BlogSection class="section-layer" />
+    <div class="yellow-area textured-section">
+      <BlogSection class="section-layer" />
+    </div>
 
     <div class="paper-strip-wrapper paper-strip-wrapper--last">
       <PaperStrip />
@@ -42,40 +44,19 @@ definePageMeta({
 </template>
 
 <style scoped>
-/* ==================================================
-   Estrutura geral
-================================================== */
-
-.noise-area {
-  position: relative;
-  isolation: isolate;
-  min-height: 100vh;
-  width: 100%;
-
-  overflow-x: clip;
-  overflow-y: visible;
-
-  background-color: #eee8dc;
-}
 
 /* ==================================================
-   Seções com papel
+   SISTEMA DE TEXTURAS
 ================================================== */
 
 .textured-section {
   position: relative;
   isolation: isolate;
 
-  background-color: var(--section-background);
-
-  background-image: url('/assets/paper-background.png');
-  background-position: top center;
-  background-repeat: no-repeat repeat;
-  background-size: 100% auto;
-
-  background-blend-mode: multiply;
+  background-color: var(--texture-color);
 }
 
+/* Textura de papel */
 .textured-section::before {
   content: '';
 
@@ -85,37 +66,73 @@ definePageMeta({
 
   pointer-events: none;
 
-  background-color: var(--section-background);
+  background-color: transparent;
+  background-image: url('/assets/paper-background.png');
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+
+  mix-blend-mode: multiply;
+}
+
+/* Noise */
+.textured-section::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
+
+  background-color: transparent;
   background-image: url('/assets/noise.png');
   background-position: top left;
   background-repeat: repeat;
   background-size: 512px 512px;
-
-  border-radius: inherit;
 
   mix-blend-mode: soft-light;
   opacity: 0.4;
 }
 
 /* ==================================================
-   Área azul
+   CORES DAS SEÇÕES
 ================================================== */
+
 .blue-area {
-  --section-background: var(--blue-bg-color);
+  --texture-color: var(--blue-bg-color);
 
-  background-color: var(--blue-bg-color) !important;
   position: relative;
-
   width: 100%;
-  overflow-x: clip;
-  /* isolation: isolate; */
-
   z-index: 1;
+
+  overflow-x: clip;
 }
 
+.yellow-area {
+  --texture-color: var(--yellow-bg-color);
+
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  overflow-x: clip;
+}
+
+.last-section {
+  --texture-color: var(--orange-bg-color);
+
+  position: relative;
+  z-index: 2;
+
+  height: 50vh;
+  overflow: visible;
+}
+
+/* Conteúdo acima das texturas */
 .section-layer {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .paper-strip-wrapper {
@@ -138,15 +155,4 @@ definePageMeta({
   z-index: 100;
 }
 
-.last-section {
-  --section-background: var(--orange-bg-color);
-
-  position: relative;
-  z-index: 2;
-
-  height: 50vh;
-
-  overflow: visible;
-  isolation: isolate;
-}
 </style>

@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  vite: {
+    server: {
+      allowedHosts: ['01b6-2804-3300-e1f6-af00-b99f-b8bb-316b-17ab.ngrok-free.app'],
+    },
+  },
   experimental: {
     viewTransition: true,
   },
