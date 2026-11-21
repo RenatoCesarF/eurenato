@@ -3,16 +3,16 @@
 
 <template>
   <div class="header-title">
-    <img class="letter e1" src="/assets/letters/E_06.png" alt="" />
-    <img class="letter u" src="/assets/letters/U_20.png" alt="" />
-    <img class="letter comma" src="/assets/letters/Comma_05.png" alt="" />
-    <img class="letter r" src="/assets/letters/R_25.png" alt="" />
-    <img class="letter e2" src="/assets/letters/E_25.png" alt="" />
-    <img class="letter n" src="/assets/letters/N_05.png" alt="" />
-    <img class="letter a" src="/assets/letters/A_47.png" alt="" />
-    <img class="letter t" src="/assets/letters/T_05.png" alt="" />
-    <img class="letter o" src="/assets/letters/O_26.png" alt="" />
-    <img class="letter flash" src="/assets/letters/Flash_02.png" alt="" />
+    <img class="letter e1" src="/assets/letters/eurenato/E_06.webp" alt="" />
+    <img class="letter u" src="/assets/letters/eurenato/U_20.webp" alt="" />
+    <img class="letter comma" src="/assets/letters/eurenato/Comma_05.webp" alt="" />
+    <img class="letter r" src="/assets/letters/eurenato/R_25.webp" alt="" />
+    <img class="letter e2" src="/assets/letters/eurenato/E_25.webp" alt="" />
+    <img class="letter n" src="/assets/letters/eurenato/N_05.webp" alt="" />
+    <img class="letter a" src="/assets/letters/eurenato/A_47.webp" alt="" />
+    <img class="letter t" src="/assets/letters/eurenato/T_05.webp" alt="" />
+    <img class="letter o" src="/assets/letters/eurenato/O_26.webp" alt="" />
+    <img class="letter flash" src="/assets/letters/eurenato/Flash_02.webp" alt="" />
   </div>
 </template>
 
