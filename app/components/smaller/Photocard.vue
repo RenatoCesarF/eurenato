@@ -2,7 +2,6 @@
   const props = defineProps(['id', 'title', 'image', 'rotation', 'offset']);
 </script>
 
-
 <template>
   <div
     class="card"
@@ -12,7 +11,10 @@
     }"
   >
     <div class="visual">
-      <img
+      <NuxtImg
+        format="webp"
+        quality="80"
+        loading="lazy"
         class="card-image"
         :src="props.image"
         :alt="`Imagem do projeto ${props.title}`"

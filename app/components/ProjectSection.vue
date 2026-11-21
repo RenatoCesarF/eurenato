@@ -14,10 +14,34 @@
     </div>
 
     <div class="cuttings">
-      <img class="paper-phrase" src="/assets/paper-tape-phrase.png">
-      <img class="guitar" src="/assets/paper-cuts/guitar.png">
-      <img class="garca" src="/assets/paper-cuts/garca.png">
-      <img class="woman" src="/assets/paper-cuts/girl flower.png">
+      <NuxtImg
+        src="/assets/paper-tape-phrase.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="paper-phrase"
+      />
+      <NuxtImg
+        src="/assets/paper-cuts/guitar.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="guitar"
+      />
+      <NuxtImg
+        src="/assets/paper-cuts/garca.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="garca"
+      />
+      <NuxtImg
+        src="/assets/paper-cuts/girl flower.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="woman"
+      />
     </div>
   </section>
 </template>

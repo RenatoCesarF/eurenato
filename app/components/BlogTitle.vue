@@ -6,12 +6,46 @@
 <template>
   <div class="blog-wrapper">
     <div class="blog-title">
-      <img class="letter letter-b" src="/assets/letters/B_21.png" alt="B" />
-      <img class="letter letter-l" src="/assets/letters/L_04.png" alt="L" />
-      <img class="letter letter-o" src="/assets/letters/O_01.png" alt="O" />
-      <img class="letter letter-g" src="/assets/letters/G_22.png" alt="G" />
+      <NuxtImg
+        src="/assets/letters/B_21.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="letter letter-o"
+        alt='B'
+      />
+      <NuxtImg
+        src="/assets/letters/L_04.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="letter letter-o"
+        alt='L'
+      />
+      <NuxtImg
+        src="/assets/letters/O_01.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="letter letter-o"
+        alt='O'
+      />
+      <NuxtImg
+        src="/assets/letters/G_22.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="letter letter-g"
+        alt='G'
+      />
     </div>
-    <img class="vessel" src="/assets/paper-cuts/planta.png"
+    <NuxtImg
+      src="/assets/paper-cuts/planta.png"
+      format="webp"
+      quality="80"
+      loading="lazy"
+      class="vessel"
+    />
   </div>
 </template>
 

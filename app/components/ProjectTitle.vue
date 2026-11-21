@@ -4,15 +4,15 @@
 
 <template>
   <div class="project-title">
-    <img class="letter angel" src="/assets/paper-cuts/angel.png"/>
-    <img class="letter p" src="/assets/letters/P_07.png" alt="" />
-    <img class="letter r" src="/assets/letters/R_17.png" alt="" />
-    <img class="letter o1" src="/assets/letters/O_08.png" alt="" />
-    <img class="letter j" src="/assets/letters/J_12.png" alt="" />
-    <img class="letter e" src="/assets/letters/E_01.png" alt="" />
-    <img class="letter t" src="/assets/letters/T_20.png" alt="" />
-    <img class="letter o2" src="/assets/letters/O_13.png" alt="" />
-    <img class="letter s" src="/assets/letters/S_06.png" alt="" />
+    <NuxtImg src="/assets/paper-cuts/angel.png" format="webp" quality="80" loading="lazy" class="letter angel" />
+    <NuxtImg src="/assets/letters/P_07.png" format="webp" quality="80" loading="lazy" class="letter p" />
+    <NuxtImg src="/assets/letters/R_17.png" format="webp" quality="80" loading="lazy" class="letter r" />
+    <NuxtImg src="/assets/letters/O_08.png" format="webp" quality="80" loading="lazy" class="letter o1" />
+    <NuxtImg src="/assets/letters/J_12.png" format="webp" quality="80" loading="lazy" class="letter j" />
+    <NuxtImg src="/assets/letters/E_01.png" format="webp" quality="80" loading="lazy" class="letter e" />
+    <NuxtImg src="/assets/letters/T_20.png" format="webp" quality="80" loading="lazy" class="letter t" />
+    <NuxtImg src="/assets/letters/O_13.png" format="webp" quality="80" loading="lazy" class="letter o2" />
+    <NuxtImg src="/assets/letters/S_06.png" format="webp" quality="80" loading="lazy" class="letter s" />
   </div>
 </template>
 

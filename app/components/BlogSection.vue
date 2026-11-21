@@ -14,8 +14,20 @@
     </div>
 
     <div class="cuttings">
-      <img class="computer" src="/assets/paper-cuts/computador.png" alt="" >
-      <img class="pelican" src="/assets/paper-cuts/pelicano.png" alt="" >
+      <NuxtImg
+        src="/assets/paper-cuts/computador.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="computer"
+      />
+      <NuxtImg
+        src="/assets/paper-cuts/pelicano.png"
+        format="webp"
+        quality="80"
+        loading="lazy"
+        class="pelican"
+      />
     </div>
   </section>
 </template>

@@ -31,9 +31,12 @@
 
     <!-- Foto -->
     <div class="profile-wrapper">
-      <img
-        class="renato-picture"
-        src="/assets/profile.png"
+      <NuxtImg 
+        src="/assets/profile.png" 
+        format="webp" 
+        quality="80" 
+        loading="lazy" 
+        class="renato-picture" 
         alt="Foto de Renato"
       />
 
@@ -52,9 +55,12 @@
       href="https://apoia.se/campaign?campaignId=69a7046bee13a412181fdfde"
       aria-label="Acessar página do Apoia-se"
     >
-      <img
-        class="support-image"
-        src="/assets/apoiase.png"
+      <NuxtImg 
+        src="/assets/apoiase.png" 
+        format="webp" 
+        quality="80" 
+        loading="lazy" 
+        class="support-image" 
         alt="Apoia-se"
       />
     </a>

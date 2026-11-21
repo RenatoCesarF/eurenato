@@ -3,12 +3,54 @@
 </script>
 
 <template>
-    <img class="header-image black-white" src="/assets/header/renatos/black-white.png" alt="" />
-    <img class="header-image purple-red" src="/assets/header/renatos/purple-red.png" alt="" />
-    <img class="header-image purple-yellow" src="/assets/header/renatos/purple-yellow.png" alt="" />
-    <img class="header-image red" src="/assets/header/renatos/red.png" alt="" />
-    <img class="header-image blue" src="/assets/header/renatos/blue.png" alt="" />
-    <img class="header-image yellow" src="/assets/header/renatos/yellow.png" alt="" />
+    <NuxtImg
+      src="/assets/header/renatos/black-white.png"
+      format="webp"
+      quality="80"
+      loading="eager"
+      class="header-image black-white"
+      :preload="{ fetchPriority: 'high' }"
+    />
+    <NuxtImg
+      src="/assets/header/renatos/purple-red.png"
+      format="webp"
+      quality="80"
+      loading="eager"
+      class="header-image purple-red"
+      :preload="{ fetchPriority: 'high' }"
+    />
+    <NuxtImg
+      src="/assets/header/renatos/purple-yellow.png"
+      format="webp"
+      quality="80"
+      loading="eager"
+      class="header-image purple-yellow"
+      :preload="{ fetchPriority: 'high' }"
+    />
+    <NuxtImg
+      src="/assets/header/renatos/red.png"
+      format="webp"
+      quality="80"
+      loading="eager"
+      class="header-image red"
+      :preload="{ fetchPriority: 'high' }"
+    />
+    <NuxtImg
+      src="/assets/header/renatos/blue.png"
+      format="webp"
+      quality="80"
+      loading="eager"
+      class="header-image blue"
+      :preload="{ fetchPriority: 'high' }"
+    />
+    <NuxtImg
+      src="/assets/header/renatos/yellow.png"
+      format="webp"
+      quality="80"
+      loading="eager"
+      class="header-image yellow"
+      :preload="{ fetchPriority: 'high' }"
+    />
 </template>
 
 

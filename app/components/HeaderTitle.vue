@@ -16,7 +16,6 @@
   </div>
 </template>
 
-
 <style scoped>
 
   .header-title {

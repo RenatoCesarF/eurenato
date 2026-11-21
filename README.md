@@ -1,19 +1,18 @@
 # eurenato
 
 ## Tasks
-- [ ] tamanho da pagina de post esta esquisito no celular, garantir que o azul ocupe todo o atamanho disponível
-- [ ] garantir que scroll de projetos lateral se mantenha após voltar de um detalhe de projeto t
 - [ ] Conseguir trazer a data do blog pro card e pro post
 - [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
+- [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas)
 - [ ] Colocar imagens nos blogs
 - [ ] Ajustar apoia-se
 ----
 - [ ] Fonte escrita a mão
 - [ ] noodles
-- [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas)
 
 ---
 ## Ajustes
+- [ ] garantir que scroll de projetos lateral se mantenha após voltar de um detalhe de projeto 
 - [ ] Adicioner noodles no background do blog e de projetos
 - [ ] aumentar tamanho do botão do menu header
 - [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular, mesmo na simulação de celular passa direto, no 
