@@ -24,7 +24,6 @@ function scrollCarousel(direction) {
 
 <template>
   <section class="posts-carousel">
-
     <ArrowSquare 
       direction="left"
       type="orange"

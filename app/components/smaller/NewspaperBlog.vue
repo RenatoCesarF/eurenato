@@ -14,7 +14,6 @@
           aria-hidden="true"
         ></span>
 
-        <span>{{props.date}}</span>
 
         <article class="content">
           <div>
@@ -23,9 +22,13 @@
             <p>{{ props.description }}</p>
           </div>
 
-          <a :href="props.tab">
-            {{ props.tag }}
-          </a>
+          <div class="footer">
+            <a :href="props.tab">
+              {{ props.tag }}
+            </a>
+
+            <span>{{props.date}}</span>
+          </div>
         </article>
       </div>
     </div>
@@ -424,6 +427,13 @@
 .content a:focus-visible {
   outline: 3px solid #201e1a;
   outline-offset: 4px;
+}
+
+.content .footer {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: jornal-body, serif;
 }
 
 @media (max-width: 600px) {

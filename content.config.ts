@@ -10,7 +10,7 @@ export default defineContentConfig({
         path: z.string(),
         title: z.string(),
         description: z.string(),
-        date: z.date(),
+        date: z.string(),
         seo: z.intersection(
           z.object({
             title: z.string().optional(),

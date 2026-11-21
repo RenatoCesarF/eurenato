@@ -11,7 +11,7 @@
         format="webp"
         quality="80"
         loading="lazy"
-        class="letter letter-o"
+        class="letter letter-b"
         alt='B'
       />
       <NuxtImg
