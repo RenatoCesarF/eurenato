@@ -113,7 +113,7 @@
 
   box-shadow:
     inset 0 0 5px rgb(0 0 0 / 45%),
-    inset 0 0 20px rgb(0 0 0 / 48%);
+    inset 0 0 12px rgb(0 0 0 / 48%);
 }
 
 .card-image {

@@ -260,7 +260,7 @@
 }
 
 .content :deep(h1) {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(3rem, 10vw, 5rem);
   margin: clamp(1.5rem, 4vw, 3rem) 0
     clamp(0.75rem, 2vw, 1.5rem);
 }
@@ -285,7 +285,6 @@
   text-align: justify;
   margin: 0 0 clamp(1rem, 2vw, 1.5rem);
   hyphens: auto;
-  text-indent: clamp(0.75rem, 2vw, 2rem);
 }
 
 /* Links */
@@ -408,14 +407,14 @@
 
   /* Hierarquia dos títulos internos */
   .content :deep(h1) {
-    font-size: clamp(1.75rem, 7vw, 2.25rem);
+    font-size: clamp(2rem, 20vw, 5rem);
     line-height: 1.2;
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 0.5rem;
   }
 
   .content :deep(h2) {
     font-size: clamp(1.4rem, 5.5vw, 1.75rem);
-    line-height: 1.3;
+    line-height: 1.2;
     margin: 1.75rem 0 0.75rem;
   }
 
@@ -425,7 +424,6 @@
     margin: 1.5rem 0 0.5rem;
   }
 
-  /* Parágrafos mais confortáveis em telas estreitas */
   .content :deep(p) {
     text-align: left;
     text-indent: 1rem;

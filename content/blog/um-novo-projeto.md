@@ -1,56 +1,44 @@
 ---
 title: Um novo projeto
-description: Explicando o que é tudo isso, o que isso vai ser e quais minhas ideias pro futuro da minha vida como artista
+description: "Quero dar um passo adiante na minha vida como artista, produtor e pessoa política. Aqui explico de onde surgiu e os porquês da criação desse site."
 date: '29/10/2026' 
 ---
+Aqui começa uma nova fase na minha vida, uma fase que venho a muito evitando, mas que também venho a mundo desejando. Aqui tomo uma decisão, que venho a muito precisando tomar. Aqui inicia-se algo que eu não apenas gosto, mas preciso. Minha paixão pela criação, meus projetos ecléticos, minha solidificação política. Aqui tudo se junta, em um só site, no meu cantinho, onde pretendo dar os próximos passos na minha vida política, artística e pessoal.
 
-A muito eu tenho tido projetos. Não só a muito tempo, mas em muita quantidade. Maior parte deles, confesso, são inacabados, deixados de lado e até esquecidos. E estão assim por vários motivos, desde meu eventual desinteresse, até impossibilidade técnica ou intelectual do autor. Mas muitos também por faltar um processo, um processo pra auxiliar na conclusão de projetos, incentivos pra isso, metas a longo prazo, e não apenas tarefas da semana que serão esquecida com facilidade. Além disso, meus projetos caminham por uma gama de temas, tipos, assuntos diferentes que nunca seria possível organiza-los todos em uma plataforma (por causa de como os algoritmos funcionam). Por isso tudo ficou muito distante, separado, deixado de lado porque me desapego da ferramenta, da dinâmica, do assunto ou me frustro no meio do processo e acabo indo pra próxima ideia. 
+Durante minha vida eu nunca entendi direito qual era o lance. Sobre o que é tudo isso. E daí surgiram crises existências sobre a origem da matéria e a infinitude do universo, e assim como ele, um vazio enorme. Acreditava que eventualmente algo ia fazer sentido, talvez eu só era novo de mais pra entender, talvez quando eu virasse "adulto" as coisas fariam sentido. Mas de certa forma nunca fizeram. A não ser uma coisa, uma coisa que sempre me prendia, me dava razão. O clássico Tesão pela Vida. 
 
-E essa maldita próxima ideia, sempre parece maior que a anterior, melhor, mais gostosa, mais atraente, mais promissora. E agora, tão rápido quanto  a que antes, ontem pra ser mais exato, assumia esse mesmo papel, agora é destronada pela ideia de (hoje?) amanhã. Não faço ideia de onde isso vem, será que tenho medo de criar algo e fracassar? Será que me cobro tanto pra ser perfeito no que boto no mundo, que isso faz com que eu não bote no mundo? Será que, tentando evitar ser o artista que nunca criou nada, que todos tememos ser, eu acabei me tornando ele disfarçadamente? Quase como uma mania infiltrada pra causar o caos?
+# A Arte
+As coisas começaram a ter mais sentido quando comecei a gostar de ideias: imagens, sons, formas e sentimentos que ecoam no fundo da mente e podem ser materializados através do fantástico ato da criação.
 
-De qualquer forma, o que quero dizer é que minha forma de produção nunca me agradou muito, pois fez com que eu não compartilhasse, não chegasse no fim, algo tão necessário não só para artistas, mas pra satisfação humana também. O compartilhar, o melhorar, o demonstrar, o expressar.
+Não lembro quando foi a primeira vez que criei. Mas lembro-me de um desenho que fiz no quarto ano do fundamental. Eu prestei muita atenção naquela cadeira, em suas formas, seus ângulos e suas cores. Sentei e foquei toda minha energia e me dediquei a desenhar aquela simples e cotidiana cadeira. Alguns colegas gostaram do desenho também. Mas eu confesso que fiquei quase que apaixonado. Lembro de olhar pra cadeira e pro desenho de novo e de novo, vendo se faltou algo e gostando do resultado. Eu representei a cadeira, e isso era legal.
 
-Os projetos que cheguei mais longe de um ponto final, foram projetos mais públicos, projetos dos quais eu tinha um apego a sua documentação pública, e os que tinham haver com as minhas maiores paixoes, como o interpreteoteca, um podcast que produzo uma vez por ano (e nunca morreu). Outro projeto publico foi o joguinho em DragonRuby. Ele foi muito longe porque ele chegava em mais pessoas, tinha uma referencia pública (o Tiktok) e isso me ajudou a avançar, pela animação dele estar sendo visto, por ter a observação e aprovação do público, de interessados (talvez eu tenha que ver isso na terapia). Outro projeto que estou indo bem longe é o de Self-Hosting, cheguei bem mais longe do que geralmente chego em projetos. Consigo contar nos dedos o que falta pra finalizar. Ou seja, se eu tiver algum tipo de documentação pública, como youtube, textos e etc serve como um incentivo para esses projetos. 
+Daí em diante tudo que envolvia ideias e arte me cativava. No meio disso tiveram muitos jogos, comédia de TV, Rock 'n Roll e quadrinhos. E o consumo eventualmente levou a criação. Quando você junta tantas referências, filosofias, ideias, interpretações, uma pequena faísca começa a iluminar um espaço escuro dentro da sua cabeça. Daí, isso que antes você consumia e se admirava, começa a surgir dentro de você mesmo.
 
-Somando tudo temos: nunca terminar as coisas + ideias chegando a milhares + espalhamento dos projetos em diversos pontos desconexos desde plataformas até mídias diferentes. Isso tudo dentro da internet, o único lugar onde as coisas realmente somem, onde a "matéria" desse campo etério nada mais é do que a menor representação de matéria: 0s e 1s.
+Piadas em grupos de amigos, rascunhos no cabeçalho dos cadernos, frases rimadas em momentos de dor, ritmos novos, histórias nunca antes contadas e novos cenários a serem explorados. Tudo isso só começou a crescer, se expandir, ascender como uma luz que revela o caminho. E sempre foi prazeroso, sempre foi bom, nunca foi dor. E mesmo quando surge da dor, se transforma em algo bonito, ajuda a entender o que se sente, pois é necessário representar. Representar aquele sentimento confuso, aquela imagem bonita, aquele sonho terrível. 
 
-O que sobra? Sobram projetos inacabados, abandonados, esquecidos, descompilados, com diversos tipos de formas de orgnização diferentes, espalhado por dezenas de plataformas não correlatas e fechadas em sí. Minha vida, minhas obras, minhas ideias, meus arquivamentos de criação, minha criatividade. Espalhada, separada. 
+Quero criar, quero representar tudo isso, mas também quero compartilhar. Assim como eu consumi pra gerar essa faísca, quero criar pra provoca-la também. Pois a arte também exibe seu valor quando aquele que representa é compreendido, aquele que expressa é ouvido e aquela ideia se transfere pra mente do próximo.
 
-Esse projeto, que voz apresento hoje, pretende melhorar isso. Sim, estou finalmente tentando resolver o problema de nunca terminar projetos, começando um novo projeto sobre terminar projetos. E assim Císifo continua sua tortura.
+Artisticamente eu quero compartilhar o que eu faço, me colocar no mundo como artista e como autor em vez de me esconder de um julgamento, de uma ridicularização, de uma vergonha. 
 
-Todo esse discurso foi só pra dizer que esse projeto que você esta lendo agora nada mais é do que a coletânea artística, politica e pessoal do Renato.
+# A Política
+A gente vive numa sociedade, o meme de perceber o quão doentio o mundo é, o quão injusto e cruelmente satírico o mundo é. Desde a minha adolescência isso me incomodou. Porque é assim? Porque uns tem muito e outros tão pouco? Porque somos obrigados a doar 1/3 da nossa vida apenas pelo direito de ter onde dormir e o que comer? Essas sempre foram incógnitas na minha existência política, até que descobri o comunismo. Venho estudando e aprendendo cada vez mais sobre essa teoria social que tanto explica sobre nosso mundo. Mas meus estudos sobre ela são ainda, meio imprudentes, ideológico até eu diria. 
 
-Um lugar onde todos meus projetos estarão explicados e devidamente documentados, preservados e corretamente direcionado para sua respectiva plataforma. Aqui também documentarei parte de todos esses projetos, criando uma ferramenta que me ajude a focar na produção e que cresça com o tempo.
+Vejo que, apesar de sentir dentro da minha cabeça, boa parte do que explica esses porquês, é extremamente difícil explicar pros outros, discutir os temas e desconstruir os espantalhos e mitos do pensamento popular. O que falta em meu conhecimento? Gostaria de conseguir explicar, ter vários exemplos, uma linha de raciocínio passiva e compreensiva. Além disso também tem a questão de como diversos fatores da teoria comunista e do estudo da modernidade explicam nosso mundo atual, mas isso nunca esta consolidados e explicado em um lugar só.
 
-É curioso pois querendo ou não, esse é só um outro projeto pra me fazer fugir do meu projeto passado. Mas terei fé de que essa vozinha é só uma parte mais chata de mim, que quer me destruir. E vou acreditar no meu coração e produzir algo que eu acredito. Essa plataforma pra guardar e organizar tudo da minhas produções, documentação delas e talvez eventualmente sua própria organização e compartilhamento. Quero construir coisas, quero finaliza-las, quero ter a satisfação de estar feito com algo, ter algo concluído. E que essa satisfação me ajude a pegar mais leve com a pressão do perfecionismo, conseguir criar com menos cobrança e simplesmente ser um artista menos frustrado, uma pessoa melhor.
+Politicamente eu quero compilar e justificar minhas opniões políticas e teorias pouco ortodoxas em um só lugar, estudando e achando referências que não só as comprovam mas também induzem ao convencimento, ou ao menos ao questionamento. 
 
-Conversando comigo mesmo decidi: a partir de agora eu não crio novos projetos, só finalizo coisas que já comecei. Começando por esse site, depois o jogo e em seguida um album musical, esses são os próximos passos.
-<!---->
-<!-- # Preciso finalizar as coisas -->
-<!-- A ideia aqui é criar não só um processo, mas uma forma de pensar que me ajude a finalizar as coisas, além de regras claras. Trabalhar na disciplina de finalizar as coisas. (essa frase parece escrita por LLM, uhg). -->
-<!---->
-<!-- Percebi como isso afeta minha satisfação na vida, principalmente como artista e pessoa criativa. -->
-<!---->
-<!-- Primeira coisa que eu defini: -->
-<!-- - Daqui pra frente, eu não crio novos projetos. 0, só projetos que  já exsitem serão trabalhados. Pois já existem muitos e muitas ideias. -->
-<!---->
-<!-- - Parar de ser impulsivo, parar de achar novas obsessões que vão durar muito tempo. Se eu ficar curioso sobre algo, essa curiosidade tem que ser resolvida no mesmo dia. Quer entender como funciona arquivamente? Leia sobre arquivamento hoje, mas não guarde coisas pra ler depois, você nunca vai ler. Se não é algo que eu planejei fazer, não vou fazer. Pois se não foi planejado, não entra na agenda, e não faz sentido.  -->
-<!-- - Definir objetivos claros: Tudo que eu fizer tem que ter um objetivo claro e fazer sentido com o que eu realmente quero pra minha vida e pros meus projetos. Usar o método Smart:  -->
-<!-- 	- Specific: Todo objetivo tem que ser específico, claro, bem definido, nada abstrato e fora da casinha. Onde, quando, como, quem -->
-<!-- 	- Mesurable: Todo objetivo tem que ser metrificavel, quanto tempo vai levar, o que representa pro projeto -->
-<!-- 	- Achivable: tem que ser algo que é atingível, algo realistico e não algo distante e irreal. Nada além das capacidades humanas,  -->
-<!-- 	- Relevant: tem que ser algo importante pra mim e pra minha vida, relevante pros meus interesses alongo prazo, interesses políticos e artísticos -->
-<!-- 	- time-bound: tem que ter uma data limite, um período de construção e não algo infinito ou indeterminado -->
-<!-- - Aprender a priorizar: Tem que existir 1 única prioridade, e essa deve ser usada como régua pra todo o resto, pra toda tomada de decisões, todo novo engajamento. Assim essa prioridade nunca vai ser abandonada, nem perder prioridade até ser concluída  -->
-<!-- - Encontrar e escrever suas razões do porque continuar, do porque finalizar um projeto, do porque trabalhar em algo, do porque não desistir -->
-<!---->
-<!-- **regras** -->
-<!-- - A primeira versão tem que vir o quanto antes, independente de quão distante da versão final ela esteja -->
-<!---->
-<!-- <!-- # Os porquês --> -->
-<!-- <!-- - politica --> -->
-<!-- <!-- 	- Reforçar minha pesquisa e minha noção crítica, pesquisa e pensamento crítico --> -->
-<!-- <!-- 	- Estudo bibliográfico, organização e compartilharmento de informações --> -->
-<!-- <!-- - mudanças pessoal de vida e ideias --> -->
-<!-- <!-- - foco mais pro lado artístico do que qualqeur outra coisa --> -->
-<!-- <!-- - centralização dos projetos atuais, apssados e futuros  --> -->
+# Os Projetos
+> Na internet tudo é muito solto, muito separado. Você esta aqui, também esta lá, mas pode estar também acolá. Cada um é praticamente onipresente, mas ao mesmo tempo ausente. E a muito isso me incomoda, pois todo o tempo que já passei aqui, tudo que já fiz esta onipresente e ausente pelo vasto deserto da internet.
+
+A muito eu tenho tido projetos. Não só a muito tempo, mas em muita quantidade. Maior parte deles, confesso, são inacabados, deixados de lado e até esquecidos. Estão assim por vários motivos, desde meu eventual desinteresse, até impossibilidade técnica ou intelectual do autor. Mas muitos também por faltar um processo, um processo pra auxiliar na conclusão de projetos, incentivos pra isso, metas a longo prazo, e não apenas tarefas da semana que serão esquecidas com facilidade assim que algo mais importante surgir. Além disso, meus projetos caminham por uma gama de temas, tipos, assuntos diferentes que nunca seria possível organiza-los todos em uma só plataforma. Por isso tudo ficou muito distante, separado, porque me desapego da ferramenta, da dinâmica, do assunto, da plataforma, do formato ou me frustro no meio do processo e acabo indo pra próxima ideia que sempre parece mais legal. 
+
+E essa maldita próxima ideia, sempre parece maior que a anterior, melhor, mais gostosa, mais promissora. E agora, tão rápido quanto  a que antes, assumia esse mesmo papel, agora é destronada pela ideia de (hoje?) amanhã. Não faço ideia de onde isso vem, será que tenho medo de criar algo e fracassar? Será que me cobro tanto pra ser perfeito no que boto no mundo, que isso faz com que eu não bote no mundo? Será que, tentando evitar ser o artista que nunca criou nada, que todos tememos ser, eu acabei me tornando ele disfarçadamente? Quase como uma mania infiltrada pra causar o caos?
+
+Minha forma de produção nunca me agradou muito, pois fez com que eu não compartilhasse, não chegasse no fim, algo tão necessário não só para artistas, mas pra satisfação humana também. O compartilhar, o melhorar, o demonstrar, o expressar, não só algo no processo, mas algo finalizado. Mesmo que esse finalizado não seja o fim da obra, mas onde decidiu-se deixa-la.
+
+> Sim, estou finalmente tentando resolver o problema de nunca terminar projetos, começando um novo projeto sobre terminar projetos. E assim Císifo continua sua jornada.
+
+Aqui também quero organizar, expor e documentar os meus projetos de forma a me incentivar a finaliza-los, pra finalmente reuni-los sob o mesmo nome, sob um mesmo teto, um teto que é meu, e não de alguma plataforma estadunidense. Aqui posso expor como preferir tornando essa experiência mais personalizada.
+
+# Eu Renato
+E isso será esse site. Arte, política, produções e filosofias. Totalmente autoral e sob-controle apenas do autor, não existe strike, shadow-ban, gamificação da atenção nem nada do tipo. Um lugar mais meu e mais sobre arte do que sobre like. Mais sobre o fatológico do que o ideológico. 

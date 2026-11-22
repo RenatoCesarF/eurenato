@@ -1,9 +1,8 @@
 # eurenato
 
 ## Tasks
-- [ ] Conseguir trazer a data do blog pro card e pro post
 - [ ] Avançar na tela de detalhes do projeto, dicionando links como stickers 
-- [ ] Otimizar para web as imagens e seus tamanhos (letras, renatos, texturas)
+- [ ] Adicionar tags no blog 
 - [ ] Colocar imagens nos blogs
 - [ ] Ajustar apoia-se
 ----
