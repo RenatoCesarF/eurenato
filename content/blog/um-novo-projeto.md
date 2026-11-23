@@ -42,4 +42,4 @@ Minha forma de produção nunca me agradou muito, pois fez com que eu não compa
 Aqui também quero organizar, expor e documentar os meus projetos de forma a me incentivar a finaliza-los, pra finalmente reuni-los sob o mesmo nome, sob um mesmo teto, um teto que é meu, e não de alguma plataforma estadunidense. Aqui posso expor como preferir tornando essa experiência mais personalizada.
 
 # Eu Renato
-E isso será esse site. Arte, política, produções e filosofias. Totalmente autoral e sob-controle apenas do autor, não existe strike, shadow-ban, gamificação da atenção nem nada do tipo. Um lugar mais meu e mais sobre arte do que sobre like. Mais sobre o fatológico do que o ideológico. 
+É isso que será esse site: arte, política, produções e ideias. Totalmente autoral. Agora é só pensar em como produzir sem abandonar as coisas no meio.

@@ -23,11 +23,13 @@
           </div>
 
           <div class="footer">
-            <PostTag
-              :key="tag"
-              :tag="tag"
-              v-for="(tag, index) in props.tags"
-            />
+            <div class="tags">
+              <PostTag
+                :key="tag"
+                :tag="tag"
+                v-for="(tag, index) in props.tags"
+              />
+            </div>
             <span>{{props.date}}</span>
           </div>
         </article>
@@ -397,6 +399,11 @@
   justify-content: space-between;
 
   font-family: jornal-body, serif;
+}
+
+.content .footer .tags{
+  display: flex;
+  gap: 1vw;
 }
 
 @media (max-width: 600px) {
