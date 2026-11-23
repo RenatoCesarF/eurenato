@@ -11,6 +11,7 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         date: z.string(),
+        tags: z.array(z.string()),
         seo: z.intersection(
           z.object({
             title: z.string().optional(),

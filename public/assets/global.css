@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'punk2';
-  src: url('/assets/punk2.ttf');
-}
-
-@font-face {
-  font-family: 'punk4';
-  src: url('/assets/punk4.ttf');
-}
-
 :root {
   --yellow-bg-color: #FFE469;
   --orange-bg-color: #CD4D39;

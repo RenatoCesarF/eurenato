@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import PostTag from '~/components/smaller/PostTag'
   import ArrowSquare from '~/components/smaller/ArrowSquare'
 
   const route = useRoute()
@@ -17,9 +18,9 @@
 
 <template>
   <div class="blog-bg"
-      :class="{'dark-mode': !darkModeEnable }"
+    :class="{'dark-mode': !darkModeEnable }"
   >
-    <div class="blog-header">
+    <div class="blog-header" >
       <div class="paper-arrow">
         <ArrowSquare 
           direction="left"
@@ -39,18 +40,30 @@
       </div>
     </div>
 
-    <div class="paper" >
-      <div
-        class="paper-content"
+    <div class="paper" :class="{'dark-mode': !darkModeEnable }">
+      <div class="paper-content"
+        :class="{'dark-mode': !darkModeEnable }"
       >
-        <h1 class="post-title">{{ page.title.toUpperCase() }}</h1>
-        <p class="post-description">{{ page.description }}</p>
-        <p>{{ page.date }}</p>
+        <h1 class="post-title" :class="{'dark-mode': !darkModeEnable }">{{ page.title.toUpperCase() }}</h1>
+        
+        <p class="post-description" :class="{'dark-mode': !darkModeEnable }">{{ page.description }}</p>
+
         <hr />
 
+        <div class="footer">
+          <div class="footer-tags">
+            <PostTag
+              :key="tag"
+              :tag="tag"
+              v-for="(tag, index) in page.tags"
+            />
+          </div>
+          <p class="post-date">{{ page.date }}</p>
+        </div>
         <ContentRenderer
           v-if="page"
           :value="page"
+          :class="{'dark-mode': !darkModeEnable }"
           class="content"
         />
       </div>
@@ -165,7 +178,14 @@
   margin: 0 clamp(0rem, calc(12vw - 1rem), 10rem);
   padding: 2rem clamp(1rem, 5vw, 4rem);
 
+  margin-bottom: 10rem;
+
   flex: 1;
+}
+
+.paper.dark-mode {
+  color: var(--paper-bg-color);
+  background-color: #000000;
 }
 
 .paper::before {
@@ -227,6 +247,16 @@
   overflow-wrap: anywhere;
 }
 
+.post-title.dark-mode {
+  color: var(--paper-bg-color);
+  border-bottom: 4px double var(--paper-bg-color);
+}
+
+.post-date{
+  align-self: end;
+  font-family: jornal-body, serif;
+}
+
 .post-description {
   color: #302d02;
   font-size: clamp(1rem, calc(1rem + 1vw), 2.0rem);
@@ -235,6 +265,10 @@
 
   hyphens: auto;
   padding: 0 clamp(0rem, 3vw, 3rem);
+}
+
+.post-description.dark-mode {
+  color: var(--paper-bg-color);
 }
 
 .content {
@@ -246,6 +280,24 @@
   line-height: 1.7;
   text-align: justify;
   overflow-wrap: break-word;
+}
+.content.dark-mode {
+  color: var(--paper-bg-color);
+}
+
+.footer{
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer-tags{
+  display:flex;
+}
+
+.content.dark-mode :deep(h1),
+.content.dark-mode :deep(h2),
+.content.dark-mode :deep(h3) {
+  color: var(--paper-bg-color);
 }
 
 .content :deep(h1),
@@ -259,8 +311,11 @@
   overflow-wrap: anywhere;
 }
 
+
+
+
 .content :deep(h1) {
-  font-size: clamp(3rem, 10vw, 5rem);
+  font-size: clamp(3rem, 7vw, 5rem);
   margin: clamp(1.5rem, 4vw, 3rem) 0
     clamp(0.75rem, 2vw, 1.5rem);
 }
@@ -309,11 +364,16 @@
 
 /* Citações */
 .content :deep(blockquote) {
-  border-left: 4px double #292620;
+  border-left: 3px solid var(--orange-bg-color); 
   padding-left: clamp(0.75rem, 2vw, 1.5rem);
   margin: clamp(1.25rem, 3vw, 2rem) 0;
   font-style: italic;
   color: #50483e;
+}
+
+.content.dark-mode :deep(blockquote) {
+  color: #ddd1b5;
+  border-left: 3px solid var(--orange-bg-color); 
 }
 
 /* Imagens */
@@ -407,7 +467,7 @@
 
   /* Hierarquia dos títulos internos */
   .content :deep(h1) {
-    font-size: clamp(2rem, 20vw, 5rem);
+    font-size: clamp(2rem, 7vw, 5rem);
     line-height: 1.2;
     margin: 2rem 0 0.5rem;
   }

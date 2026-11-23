@@ -1,5 +1,6 @@
 <script setup>
-  const props = defineProps(['title', 'description', 'tag', 'index', 'path','date' ])
+  import PostTag from '~/components/smaller/PostTag'
+  const props = defineProps(['title', 'description', 'tags', 'index', 'path','date' ])
 </script>
 
 <template>
@@ -14,7 +15,6 @@
           aria-hidden="true"
         ></span>
 
-
         <article class="content">
           <div>
             <h3>{{ props.title.toUpperCase() }}</h3>
@@ -23,10 +23,11 @@
           </div>
 
           <div class="footer">
-            <a :href="props.tab">
-              {{ props.tag }}
-            </a>
-
+            <PostTag
+              :key="tag"
+              :tag="tag"
+              v-for="(tag, index) in props.tags"
+            />
             <span>{{props.date}}</span>
           </div>
         </article>
@@ -132,9 +133,7 @@
     drop-shadow(0 5px 3px rgb(50 38 20 / 18%))
     drop-shadow(0 20px 16px rgb(50 38 20 / 17%));
 
-  transform:
-    translateY(calc(var(--offset) - 8px))
-    rotate(0deg);
+  scale: 1.05;
 }
 
 /*
@@ -391,42 +390,6 @@
   text-align: justify;
 
   hyphens: auto;
-}
-
-.content a {
-  text-decoration: none;
-  align-self: flex-start;
-
-  padding: 0.45rem 0.9rem;
-
-  color: white;
-  background: var(--tag-color);
-
-  font-family: Arial, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
-  clip-path: polygon(
-    4% 8%,
-    98% 0,
-    94% 92%,
-    0 100%
-  );
-
-  transform: rotate(-2deg);
-
-  transition: transform 150ms ease;
-}
-
-.content a:hover {
-  transform: rotate(0deg) scale(1.05);
-}
-
-.content a:focus-visible {
-  outline: 3px solid #201e1a;
-  outline-offset: 4px;
 }
 
 .content .footer {

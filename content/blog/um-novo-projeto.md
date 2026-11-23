@@ -2,6 +2,7 @@
 title: Um novo projeto
 description: "Quero dar um passo adiante na minha vida como artista, produtor e pessoa política. Aqui explico de onde surgiu e os porquês da criação desse site."
 date: '29/10/2026' 
+tags: [projeto, filosofia]
 ---
 Aqui começa uma nova fase na minha vida, uma fase que venho a muito evitando, mas que também venho a mundo desejando. Aqui tomo uma decisão, que venho a muito precisando tomar. Aqui inicia-se algo que eu não apenas gosto, mas preciso. Minha paixão pela criação, meus projetos ecléticos, minha solidificação política. Aqui tudo se junta, em um só site, no meu cantinho, onde pretendo dar os próximos passos na minha vida política, artística e pessoal.
 

@@ -7,7 +7,6 @@
 - [ ] Ajustar apoia-se
 ----
 - [ ] Fonte escrita a mão
-- [ ] noodles
 
 ---
 ## Ajustes
@@ -15,9 +14,7 @@
 - [ ] Adicioner noodles no background do blog e de projetos
 - [ ] aumentar tamanho do botão do menu header
 - [ ] Botão apoia-se esta em cima do texto lorem ipsum no celular, mesmo na simulação de celular passa direto, no 
-- [ ] No safari do ios, a ultima fita fica em baixo dos outros elementos em vez de em cima
 - [ ] Ta dando pra passardo primeiro post pro post -1, no safari ios
-- [ ] Dark mode no blog
 
 - https://www.calligraphr.com/en/webapp/app_home/?/templates
 - Editor de texto https://tiptap.dev/docs/editor/getting-started/overview
